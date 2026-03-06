@@ -296,7 +296,7 @@ def run_batch(input_dir: Path) -> None:
     results: list[dict] = []
 
     for idx, case_dir in enumerate(case_dirs, start=1):
-        client_id = f"client_{idx:03d}"
+        client_id = case_dir.name
         print(f"\n{'─'*50}")
         print(f"  Case {idx}/{len(case_dirs)}: {case_dir.name} → {client_id}")
         print(f"{'─'*50}")

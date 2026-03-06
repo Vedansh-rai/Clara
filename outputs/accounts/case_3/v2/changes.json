@@ -1,0 +1,190 @@
+[
+  {
+    "field": "service_area",
+    "old_value": null,
+    "new_value": "Greater Seattle metro",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.431092+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "business_hours",
+    "old_value": null,
+    "new_value": {
+      "monday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "tuesday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "wednesday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "thursday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "friday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "saturday": {
+        "open": null,
+        "close": null,
+        "closed": true
+      },
+      "sunday": {
+        "open": null,
+        "close": null,
+        "closed": true
+      }
+    },
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.431481+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "timezone",
+    "old_value": null,
+    "new_value": "America/Los_Angeles",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.432108+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "after_hours_handling",
+    "old_value": null,
+    "new_value": "Escalate emergency outages to after-hours dispatch and collect all non-emergency requests for next-day callbacks.",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.432516+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "transfer_timeout_seconds",
+    "old_value": null,
+    "new_value": 60,
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.433020+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "fallback_logic",
+    "old_value": null,
+    "new_value": "If transfer fails, apologize and confirm dispatch callback.",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.433396+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "emergency_definitions",
+    "old_value": null,
+    "new_value": [
+      "No heat in freezing weather",
+      "No cooling in medical-sensitive environments"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.433839+00:00",
+    "reason": "onboarding_confirmed \u2014 2 new item(s) added"
+  },
+  {
+    "field": "routing_rules",
+    "old_value": null,
+    "new_value": [
+      {
+        "trigger": "Emergency HVAC outage",
+        "destination": "after_hours_dispatch",
+        "priority": 1,
+        "call_type": "emergency",
+        "notes": "Collect address first"
+      },
+      {
+        "trigger": "Routine maintenance or estimate",
+        "destination": "scheduling_queue",
+        "priority": 2,
+        "call_type": "non_emergency",
+        "notes": "Collect preferred date/time"
+      }
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.434252+00:00",
+    "reason": "onboarding_confirmed \u2014 2 new item(s) added"
+  },
+  {
+    "field": "integration_rules",
+    "old_value": null,
+    "new_value": [
+      "Create ServiceTitan lead for all qualified non-emergency calls"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.434626+00:00",
+    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
+  },
+  {
+    "field": "special_constraints",
+    "old_value": null,
+    "new_value": [
+      "Avoid technical troubleshooting over phone"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.434998+00:00",
+    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
+  },
+  {
+    "field": "transfer_numbers",
+    "old_value": null,
+    "new_value": {
+      "after_hours_dispatch": "+1-206-555-0199"
+    },
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.435361+00:00",
+    "reason": "onboarding_confirmed \u2014 new transfer numbers added"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "Business hours not discussed \u2014 exact days and times unknown",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.435798+00:00",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "Timezone not mentioned",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.436189+00:00",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "dispatch phone number",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.436643+00:00",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "CRM authentication / API details not provided",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.437044+00:00",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "After-hours routing rules not specified",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.437466+00:00",
+    "reason": "Onboarding data addressed this open question"
+  }
+]

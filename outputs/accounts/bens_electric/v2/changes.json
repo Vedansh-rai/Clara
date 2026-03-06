@@ -1,0 +1,127 @@
+[
+  {
+    "field": "company_name",
+    "old_value": "Bens Electric",
+    "new_value": "Ben's Electric Solutions",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.377267+00:00",
+    "reason": "onboarding_override \u2014 onboarding data supersedes demo assumption"
+  },
+  {
+    "field": "industry",
+    "old_value": null,
+    "new_value": "Electrical Services",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.377709+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "service_area",
+    "old_value": null,
+    "new_value": "Calgary, Alberta",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.378146+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "business_hours",
+    "old_value": null,
+    "new_value": {
+      "monday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "tuesday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "wednesday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "thursday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "friday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "saturday": {
+        "open": null,
+        "close": null,
+        "closed": true
+      },
+      "sunday": {
+        "open": null,
+        "close": null,
+        "closed": true
+      }
+    },
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.378538+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "emergency_definitions",
+    "old_value": null,
+    "new_value": [
+      "Gas station pump outages for preferred clients"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.379141+00:00",
+    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
+  },
+  {
+    "field": "routing_rules",
+    "old_value": null,
+    "new_value": [
+      {
+        "trigger": "Emergency or VIP preferred customer",
+        "destination": "ben_cell",
+        "priority": 1,
+        "call_type": "emergency",
+        "notes": null
+      },
+      {
+        "trigger": "Routine service inquiries (EV chargers, panel upgrades)",
+        "destination": "jobber_queue",
+        "priority": 2,
+        "call_type": "non_emergency",
+        "notes": null
+      }
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.379581+00:00",
+    "reason": "onboarding_confirmed \u2014 2 new item(s) added"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "Business hours not discussed \u2014 exact days and times unknown",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.380006+00:00",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "CRM authentication / API details not provided",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.380438+00:00",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "After-hours routing rules not specified",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 09:18:46.380942+00:00",
+    "reason": "Onboarding data addressed this open question"
+  }
+]

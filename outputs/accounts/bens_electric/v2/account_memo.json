@@ -1,0 +1,33 @@
+{
+  "account_id": "bens_electric",
+  "company_name": "Ben's Electric Solutions",
+  "business_hours": {
+    "monday": "open='08:00' close='17:00' closed=False",
+    "tuesday": "open='08:00' close='17:00' closed=False",
+    "wednesday": "open='08:00' close='17:00' closed=False",
+    "thursday": "open='08:00' close='17:00' closed=False",
+    "friday": "open='08:00' close='17:00' closed=False",
+    "saturday": "open=None close=None closed=True",
+    "sunday": "open=None close=None closed=True"
+  },
+  "office_address": null,
+  "services_supported": [],
+  "emergency_definition": [
+    "Gas station pump outages for preferred clients"
+  ],
+  "emergency_routing_rules": [],
+  "non_emergency_routing_rules": [],
+  "call_transfer_rules": [],
+  "integration_constraints": [],
+  "after_hours_flow_summary": null,
+  "office_hours_flow_summary": null,
+  "questions_or_unknowns": [
+    "Timezone not mentioned",
+    "Emergency call definitions not formally stated",
+    "dispatch phone number",
+    "inspection scheduling rules",
+    "Types of work to accept vs decline not specified",
+    "Geographic service area not stated"
+  ],
+  "notes": null
+}

@@ -1,0 +1,314 @@
+{
+  "client_id": "case_10",
+  "company_name": "TechPro IT Services",
+  "version": 2,
+  "source_stage": "form",
+  "created_at": "2026-03-06T09:18:46.399600Z",
+  "updated_at": "2026-03-06T09:18:46.403034Z",
+  "industry": "IT managed services",
+  "crm_system": "ServiceTitan",
+  "service_area": "Greater Minneapolis, MN",
+  "office_address": null,
+  "services_supported": [],
+  "business_hours": {
+    "monday": {
+      "open": "08:00",
+      "close": "18:00",
+      "closed": false
+    },
+    "tuesday": {
+      "open": "08:00",
+      "close": "18:00",
+      "closed": false
+    },
+    "wednesday": {
+      "open": "08:00",
+      "close": "18:00",
+      "closed": false
+    },
+    "thursday": {
+      "open": "08:00",
+      "close": "18:00",
+      "closed": false
+    },
+    "friday": {
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    "saturday": {
+      "open": null,
+      "close": null,
+      "closed": true
+    },
+    "sunday": {
+      "open": null,
+      "close": null,
+      "closed": true
+    }
+  },
+  "timezone": "America/Chicago",
+  "emergency_definitions": [
+    "Complete server or network outage affecting business operations",
+    "Cybersecurity incident — ransomware, breach, or data loss",
+    "Phone or communication system failure"
+  ],
+  "emergency_routing_rules": [],
+  "non_emergency_routing_rules": [],
+  "call_transfer_rules": [],
+  "routing_rules": [
+    {
+      "trigger": "Server outage or cybersecurity incident",
+      "destination": "on_call_engineer",
+      "priority": 1,
+      "call_type": "emergency",
+      "notes": "Collect company name and nature of outage first"
+    },
+    {
+      "trigger": "General helpdesk or workstation issues",
+      "destination": "helpdesk_queue",
+      "priority": 2,
+      "call_type": "non_emergency",
+      "notes": "Create ticket and queue for next available tech"
+    },
+    {
+      "trigger": "New managed services inquiry",
+      "destination": "sales_line",
+      "priority": 3,
+      "call_type": "general",
+      "notes": "Collect company size and current setup"
+    }
+  ],
+  "transfer_numbers": {
+    "on_call_engineer": "+1-612-555-0177",
+    "helpdesk_queue": "+1-612-555-0100",
+    "sales_line": "+1-612-555-0133"
+  },
+  "after_hours_handling": "Critical outages and security incidents go to on-call engineer 24/7. General helpdesk held for business hours.",
+  "after_hours_flow_summary": null,
+  "office_hours_flow_summary": null,
+  "transfer_timeout_seconds": 30,
+  "fallback_logic": "If engineer does not answer within 30 seconds, trigger on-call pager and confirm ETA of 15 minutes.",
+  "integration_rules": [
+    "Create ServiceTitan ticket for every inbound support call",
+    "Tag P1 priority for outage and security calls",
+    "Send ticket confirmation to caller email if available"
+  ],
+  "integration_constraints": [],
+  "special_constraints": [
+    "Never attempt remote troubleshooting on the call — book ticket first",
+    "Always collect company name and point of contact before transferring"
+  ],
+  "notes": null,
+  "questions_or_unknowns": [
+    "Emergency call definitions not formally stated",
+    "inspection scheduling rules",
+    "Types of work to accept vs decline not specified",
+    "Geographic service area not stated"
+  ],
+  "changelog": [
+    {
+      "field": "service_area",
+      "old_value": null,
+      "new_value": "Greater Minneapolis, MN",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.403088Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "business_hours",
+      "old_value": null,
+      "new_value": {
+        "monday": {
+          "open": "08:00",
+          "close": "18:00",
+          "closed": false
+        },
+        "tuesday": {
+          "open": "08:00",
+          "close": "18:00",
+          "closed": false
+        },
+        "wednesday": {
+          "open": "08:00",
+          "close": "18:00",
+          "closed": false
+        },
+        "thursday": {
+          "open": "08:00",
+          "close": "18:00",
+          "closed": false
+        },
+        "friday": {
+          "open": "08:00",
+          "close": "17:00",
+          "closed": false
+        },
+        "saturday": {
+          "open": null,
+          "close": null,
+          "closed": true
+        },
+        "sunday": {
+          "open": null,
+          "close": null,
+          "closed": true
+        }
+      },
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.404522Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "timezone",
+      "old_value": null,
+      "new_value": "America/Chicago",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.405087Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "after_hours_handling",
+      "old_value": null,
+      "new_value": "Critical outages and security incidents go to on-call engineer 24/7. General helpdesk held for business hours.",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.405450Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "transfer_timeout_seconds",
+      "old_value": null,
+      "new_value": 30,
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.405970Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "fallback_logic",
+      "old_value": null,
+      "new_value": "If engineer does not answer within 30 seconds, trigger on-call pager and confirm ETA of 15 minutes.",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.406358Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "emergency_definitions",
+      "old_value": null,
+      "new_value": [
+        "Complete server or network outage affecting business operations",
+        "Cybersecurity incident — ransomware, breach, or data loss",
+        "Phone or communication system failure"
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.406853Z",
+      "reason": "onboarding_confirmed — 3 new item(s) added"
+    },
+    {
+      "field": "routing_rules",
+      "old_value": null,
+      "new_value": [
+        {
+          "trigger": "Server outage or cybersecurity incident",
+          "destination": "on_call_engineer",
+          "priority": 1,
+          "call_type": "emergency",
+          "notes": "Collect company name and nature of outage first"
+        },
+        {
+          "trigger": "General helpdesk or workstation issues",
+          "destination": "helpdesk_queue",
+          "priority": 2,
+          "call_type": "non_emergency",
+          "notes": "Create ticket and queue for next available tech"
+        },
+        {
+          "trigger": "New managed services inquiry",
+          "destination": "sales_line",
+          "priority": 3,
+          "call_type": "general",
+          "notes": "Collect company size and current setup"
+        }
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.407257Z",
+      "reason": "onboarding_confirmed — 3 new item(s) added"
+    },
+    {
+      "field": "integration_rules",
+      "old_value": null,
+      "new_value": [
+        "Create ServiceTitan ticket for every inbound support call",
+        "Tag P1 priority for outage and security calls",
+        "Send ticket confirmation to caller email if available"
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.407623Z",
+      "reason": "onboarding_confirmed — 3 new item(s) added"
+    },
+    {
+      "field": "special_constraints",
+      "old_value": null,
+      "new_value": [
+        "Never attempt remote troubleshooting on the call — book ticket first",
+        "Always collect company name and point of contact before transferring"
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.407990Z",
+      "reason": "onboarding_confirmed — 2 new item(s) added"
+    },
+    {
+      "field": "transfer_numbers",
+      "old_value": null,
+      "new_value": {
+        "on_call_engineer": "+1-612-555-0177",
+        "helpdesk_queue": "+1-612-555-0100",
+        "sales_line": "+1-612-555-0133"
+      },
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.408365Z",
+      "reason": "onboarding_confirmed — new transfer numbers added"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "Business hours not discussed — exact days and times unknown",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.408846Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "Timezone not mentioned",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.409242Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "dispatch phone number",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.409646Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "CRM authentication / API details not provided",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.410042Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "After-hours routing rules not specified",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.410460Z",
+      "reason": "Onboarding data addressed this open question"
+    }
+  ],
+  "prompt": "You are Clara, an AI assistant for TechPro IT Services.\n\nBusiness Hours Flow:\nHours (America/Chicago): Mon: 08:00–18:00, Tue: 08:00–18:00, Wed: 08:00–18:00, Thu: 08:00–18:00, Fri: 08:00–17:00, Sat: Closed, Sun: Closed\n1. Greeting\n2. Ask purpose of call\n3. Collect name and phone number\n4. Route call / Transfer\n5. If transfer fails after 30 seconds: If engineer does not answer within 30 seconds, trigger on-call pager and confirm ETA of 15 minutes.\n6. Ask if caller needs anything else\n7. Close call if no\n\n\n  - Server outage or cybersecurity incident → +1-612-555-0177\n  - General helpdesk or workstation issues → +1-612-555-0100\n  - New managed services inquiry → +1-612-555-0133\n\nIf emergency:\nTransfer immediately to +1-612-555-0177.\n\nAfter-Hours Flow:\nHours (America/Chicago): Mon: 08:00–18:00, Tue: 08:00–18:00, Wed: 08:00–18:00, Thu: 08:00–18:00, Fri: 08:00–17:00, Sat: Closed, Sun: Closed\n1. Greeting\n2. Ask purpose\n3. Confirm emergency\n4. If emergency: collect name, number, address immediately. Attempt transfer to +1-612-555-0177. If transfer fails after 30 seconds: If engineer does not answer within 30 seconds, trigger on-call pager and confirm ETA of 15 minutes..\n5. If non-emergency: collect details and confirm follow-up during business hours.\n6. Ask if they need anything else\n7. Close\n\nRouting Rules:\n- Server outage or cybersecurity incident → +1-612-555-0177 (Collect company name and nature of outage first)\n- General helpdesk or workstation issues → +1-612-555-0100 (Create ticket and queue for next available tech)\n- New managed services inquiry → +1-612-555-0133 (Collect company size and current setup)\n\nSpecial Rules:\n- Create ServiceTitan ticket for every inbound support call\n- Tag P1 priority for outage and security calls\n- Send ticket confirmation to caller email if available\n- Never attempt remote troubleshooting on the call — book ticket first\n- Always collect company name and point of contact before transferring\n\nAlways be polite, calm, and professional.\nNever reveal you are an AI unless directly asked.\nNever provide pricing, legal, or technical advice.\nAlways confirm caller information by reading it back.\nIf you cannot help, say: \"I'll make sure someone follows up with you.\"\n\nOpen Questions (resolve before deployment):\n- Emergency call definitions not formally stated\n- inspection scheduling rules\n- Types of work to accept vs decline not specified\n- Geographic service area not stated",
+  "source_hash": "8c8a18c3e75b70f4dd0838bb4afd74e64d5eff6db91f08575021a55667aca031"
+}

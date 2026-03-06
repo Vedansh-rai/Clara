@@ -1,0 +1,292 @@
+{
+  "client_id": "case_9",
+  "company_name": "ClearView Window Cleaning",
+  "version": 2,
+  "source_stage": "form",
+  "created_at": "2026-03-06T09:18:46.512321Z",
+  "updated_at": "2026-03-06T09:18:46.515702Z",
+  "industry": "Window cleaning services",
+  "crm_system": "Jobber",
+  "service_area": "San Diego Metro, CA",
+  "office_address": null,
+  "services_supported": [],
+  "business_hours": {
+    "monday": {
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    "tuesday": {
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    "wednesday": {
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    "thursday": {
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    "friday": {
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "13:00",
+      "closed": false
+    },
+    "sunday": {
+      "open": null,
+      "close": null,
+      "closed": true
+    }
+  },
+  "timezone": "America/Los_Angeles",
+  "emergency_definitions": [],
+  "emergency_routing_rules": [],
+  "non_emergency_routing_rules": [],
+  "call_transfer_rules": [],
+  "routing_rules": [
+    {
+      "trigger": "New residential or commercial quote",
+      "destination": "office_line",
+      "priority": 1,
+      "call_type": "non_emergency",
+      "notes": "Collect property type and window count"
+    },
+    {
+      "trigger": "Appointment reschedule or cancellation",
+      "destination": "scheduling_queue",
+      "priority": 2,
+      "call_type": "general",
+      "notes": "Confirm 24h notice required"
+    },
+    {
+      "trigger": "Service quality complaint",
+      "destination": "owner_cell",
+      "priority": 3,
+      "call_type": "general",
+      "notes": "Escalate to owner"
+    }
+  ],
+  "transfer_numbers": {
+    "office_line": "+1-619-555-0100",
+    "owner_cell": "+1-619-555-0188"
+  },
+  "after_hours_handling": "No emergency calls expected. Collect all messages for next business day follow-up.",
+  "after_hours_flow_summary": null,
+  "office_hours_flow_summary": null,
+  "transfer_timeout_seconds": 30,
+  "fallback_logic": "If no answer, leave a friendly voicemail and confirm callback within one business day.",
+  "integration_rules": [
+    "Create Jobber quote for every new service inquiry"
+  ],
+  "integration_constraints": [],
+  "special_constraints": [
+    "Do not accept jobs outside the San Diego metro area",
+    "Do not quote prices without knowing the property size"
+  ],
+  "notes": null,
+  "questions_or_unknowns": [
+    "Emergency call definitions not formally stated",
+    "inspection scheduling rules",
+    "Types of work to accept vs decline not specified",
+    "Geographic service area not stated"
+  ],
+  "changelog": [
+    {
+      "field": "service_area",
+      "old_value": null,
+      "new_value": "San Diego Metro, CA",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.515753Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "business_hours",
+      "old_value": null,
+      "new_value": {
+        "monday": {
+          "open": "08:00",
+          "close": "17:00",
+          "closed": false
+        },
+        "tuesday": {
+          "open": "08:00",
+          "close": "17:00",
+          "closed": false
+        },
+        "wednesday": {
+          "open": "08:00",
+          "close": "17:00",
+          "closed": false
+        },
+        "thursday": {
+          "open": "08:00",
+          "close": "17:00",
+          "closed": false
+        },
+        "friday": {
+          "open": "08:00",
+          "close": "17:00",
+          "closed": false
+        },
+        "saturday": {
+          "open": "09:00",
+          "close": "13:00",
+          "closed": false
+        },
+        "sunday": {
+          "open": null,
+          "close": null,
+          "closed": true
+        }
+      },
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.516142Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "timezone",
+      "old_value": null,
+      "new_value": "America/Los_Angeles",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.516687Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "after_hours_handling",
+      "old_value": null,
+      "new_value": "No emergency calls expected. Collect all messages for next business day follow-up.",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.517053Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "transfer_timeout_seconds",
+      "old_value": null,
+      "new_value": 30,
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.517542Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "fallback_logic",
+      "old_value": null,
+      "new_value": "If no answer, leave a friendly voicemail and confirm callback within one business day.",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.517921Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "routing_rules",
+      "old_value": null,
+      "new_value": [
+        {
+          "trigger": "New residential or commercial quote",
+          "destination": "office_line",
+          "priority": 1,
+          "call_type": "non_emergency",
+          "notes": "Collect property type and window count"
+        },
+        {
+          "trigger": "Appointment reschedule or cancellation",
+          "destination": "scheduling_queue",
+          "priority": 2,
+          "call_type": "general",
+          "notes": "Confirm 24h notice required"
+        },
+        {
+          "trigger": "Service quality complaint",
+          "destination": "owner_cell",
+          "priority": 3,
+          "call_type": "general",
+          "notes": "Escalate to owner"
+        }
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.518434Z",
+      "reason": "onboarding_confirmed — 3 new item(s) added"
+    },
+    {
+      "field": "integration_rules",
+      "old_value": null,
+      "new_value": [
+        "Create Jobber quote for every new service inquiry"
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.518812Z",
+      "reason": "onboarding_confirmed — 1 new item(s) added"
+    },
+    {
+      "field": "special_constraints",
+      "old_value": null,
+      "new_value": [
+        "Do not accept jobs outside the San Diego metro area",
+        "Do not quote prices without knowing the property size"
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.519184Z",
+      "reason": "onboarding_confirmed — 2 new item(s) added"
+    },
+    {
+      "field": "transfer_numbers",
+      "old_value": null,
+      "new_value": {
+        "office_line": "+1-619-555-0100",
+        "owner_cell": "+1-619-555-0188"
+      },
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.519554Z",
+      "reason": "onboarding_confirmed — new transfer numbers added"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "Business hours not discussed — exact days and times unknown",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.520011Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "Timezone not mentioned",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.520409Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "dispatch phone number",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.520746Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "CRM authentication / API details not provided",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.521077Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "After-hours routing rules not specified",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.521469Z",
+      "reason": "Onboarding data addressed this open question"
+    }
+  ],
+  "prompt": "You are Clara, an AI assistant for ClearView Window Cleaning.\n\nBusiness Hours Flow:\nHours (America/Los_Angeles): Mon: 08:00–17:00, Tue: 08:00–17:00, Wed: 08:00–17:00, Thu: 08:00–17:00, Fri: 08:00–17:00, Sat: 09:00–13:00, Sun: Closed\n1. Greeting\n2. Ask purpose of call\n3. Collect name and phone number\n4. Route call / Transfer\n5. If transfer fails after 30 seconds: If no answer, leave a friendly voicemail and confirm callback within one business day.\n6. Ask if caller needs anything else\n7. Close call if no\n\n\n  - New residential or commercial quote → +1-619-555-0100\n  - Appointment reschedule or cancellation → scheduling_queue\n  - Service quality complaint → +1-619-555-0188\n\nIf emergency:\nTransfer immediately to +1-619-555-0100.\n\nAfter-Hours Flow:\nHours (America/Los_Angeles): Mon: 08:00–17:00, Tue: 08:00–17:00, Wed: 08:00–17:00, Thu: 08:00–17:00, Fri: 08:00–17:00, Sat: 09:00–13:00, Sun: Closed\n1. Greeting\n2. Ask purpose\n3. Confirm emergency\n4. If emergency: collect name, number, address immediately. Attempt transfer to +1-619-555-0100. If transfer fails after 30 seconds: If no answer, leave a friendly voicemail and confirm callback within one business day..\n5. If non-emergency: collect details and confirm follow-up during business hours.\n6. Ask if they need anything else\n7. Close\n\nRouting Rules:\n- New residential or commercial quote → +1-619-555-0100 (Collect property type and window count)\n- Appointment reschedule or cancellation → scheduling_queue (Confirm 24h notice required)\n- Service quality complaint → +1-619-555-0188 (Escalate to owner)\n\nSpecial Rules:\n- Create Jobber quote for every new service inquiry\n- Do not accept jobs outside the San Diego metro area\n- Do not quote prices without knowing the property size\n\nAlways be polite, calm, and professional.\nNever reveal you are an AI unless directly asked.\nNever provide pricing, legal, or technical advice.\nAlways confirm caller information by reading it back.\nIf you cannot help, say: \"I'll make sure someone follows up with you.\"\n\nOpen Questions (resolve before deployment):\n- Emergency call definitions not formally stated\n- inspection scheduling rules\n- Types of work to accept vs decline not specified\n- Geographic service area not stated",
+  "source_hash": "ab8127fd4ea270a5cc0664fd8b9e7bd43b616f79dbbed63ff5412890894736c2"
+}

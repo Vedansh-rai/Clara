@@ -1,0 +1,310 @@
+{
+  "client_id": "case_7",
+  "company_name": "GreenLeaf Pest Control",
+  "version": 2,
+  "source_stage": "form",
+  "created_at": "2026-03-06T09:18:46.482635Z",
+  "updated_at": "2026-03-06T09:18:46.486168Z",
+  "industry": "Pest control services",
+  "crm_system": "ServiceTrade",
+  "service_area": "Greater Atlanta, GA",
+  "office_address": null,
+  "services_supported": [],
+  "business_hours": {
+    "monday": {
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    "tuesday": {
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    "wednesday": {
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    "thursday": {
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    "friday": {
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    "saturday": {
+      "open": null,
+      "close": null,
+      "closed": true
+    },
+    "sunday": {
+      "open": null,
+      "close": null,
+      "closed": true
+    }
+  },
+  "timezone": "America/New_York",
+  "emergency_definitions": [
+    "Active wasp nest inside structure with at-risk individuals",
+    "Rodent intrusion compromising food storage areas"
+  ],
+  "emergency_routing_rules": [],
+  "non_emergency_routing_rules": [],
+  "call_transfer_rules": [],
+  "routing_rules": [
+    {
+      "trigger": "Active infestation or pest emergency",
+      "destination": "on_call_tech",
+      "priority": 1,
+      "call_type": "emergency",
+      "notes": "Transfer immediately"
+    },
+    {
+      "trigger": "New inspection or treatment request",
+      "destination": "scheduling_line",
+      "priority": 2,
+      "call_type": "non_emergency",
+      "notes": "Collect address and pest type"
+    },
+    {
+      "trigger": "Existing contract or renewal inquiry",
+      "destination": "office_line",
+      "priority": 3,
+      "call_type": "general",
+      "notes": null
+    }
+  ],
+  "transfer_numbers": {
+    "on_call_tech": "+1-404-555-0188",
+    "office_line": "+1-404-555-0100",
+    "scheduling_line": "+1-404-555-0122"
+  },
+  "after_hours_handling": "Emergency infestations escalated to on-call technician. Non-emergency requests held for next business day.",
+  "after_hours_flow_summary": null,
+  "office_hours_flow_summary": null,
+  "transfer_timeout_seconds": 40,
+  "fallback_logic": "If transfer fails, apologize and leave urgent message for technician to call back within 1 hour.",
+  "integration_rules": [
+    "Create ServiceTrade work order for every service request",
+    "Tag emergency calls for same-day dispatch review"
+  ],
+  "integration_constraints": [],
+  "special_constraints": [
+    "Never give treatment estimates on the call",
+    "Confirm service area before booking"
+  ],
+  "notes": null,
+  "questions_or_unknowns": [
+    "Emergency call definitions not formally stated",
+    "inspection scheduling rules",
+    "Types of work to accept vs decline not specified",
+    "Geographic service area not stated"
+  ],
+  "changelog": [
+    {
+      "field": "service_area",
+      "old_value": null,
+      "new_value": "Greater Atlanta, GA",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.486288Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "business_hours",
+      "old_value": null,
+      "new_value": {
+        "monday": {
+          "open": "08:00",
+          "close": "17:00",
+          "closed": false
+        },
+        "tuesday": {
+          "open": "08:00",
+          "close": "17:00",
+          "closed": false
+        },
+        "wednesday": {
+          "open": "08:00",
+          "close": "17:00",
+          "closed": false
+        },
+        "thursday": {
+          "open": "08:00",
+          "close": "17:00",
+          "closed": false
+        },
+        "friday": {
+          "open": "08:00",
+          "close": "17:00",
+          "closed": false
+        },
+        "saturday": {
+          "open": null,
+          "close": null,
+          "closed": true
+        },
+        "sunday": {
+          "open": null,
+          "close": null,
+          "closed": true
+        }
+      },
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.486725Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "timezone",
+      "old_value": null,
+      "new_value": "America/New_York",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.489719Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "after_hours_handling",
+      "old_value": null,
+      "new_value": "Emergency infestations escalated to on-call technician. Non-emergency requests held for next business day.",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.490173Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "transfer_timeout_seconds",
+      "old_value": null,
+      "new_value": 40,
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.490678Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "fallback_logic",
+      "old_value": null,
+      "new_value": "If transfer fails, apologize and leave urgent message for technician to call back within 1 hour.",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.491083Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "emergency_definitions",
+      "old_value": null,
+      "new_value": [
+        "Active wasp nest inside structure with at-risk individuals",
+        "Rodent intrusion compromising food storage areas"
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.491573Z",
+      "reason": "onboarding_confirmed — 2 new item(s) added"
+    },
+    {
+      "field": "routing_rules",
+      "old_value": null,
+      "new_value": [
+        {
+          "trigger": "Active infestation or pest emergency",
+          "destination": "on_call_tech",
+          "priority": 1,
+          "call_type": "emergency",
+          "notes": "Transfer immediately"
+        },
+        {
+          "trigger": "New inspection or treatment request",
+          "destination": "scheduling_line",
+          "priority": 2,
+          "call_type": "non_emergency",
+          "notes": "Collect address and pest type"
+        },
+        {
+          "trigger": "Existing contract or renewal inquiry",
+          "destination": "office_line",
+          "priority": 3,
+          "call_type": "general",
+          "notes": null
+        }
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.491989Z",
+      "reason": "onboarding_confirmed — 3 new item(s) added"
+    },
+    {
+      "field": "integration_rules",
+      "old_value": null,
+      "new_value": [
+        "Create ServiceTrade work order for every service request",
+        "Tag emergency calls for same-day dispatch review"
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.492377Z",
+      "reason": "onboarding_confirmed — 2 new item(s) added"
+    },
+    {
+      "field": "special_constraints",
+      "old_value": null,
+      "new_value": [
+        "Never give treatment estimates on the call",
+        "Confirm service area before booking"
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.492745Z",
+      "reason": "onboarding_confirmed — 2 new item(s) added"
+    },
+    {
+      "field": "transfer_numbers",
+      "old_value": null,
+      "new_value": {
+        "on_call_tech": "+1-404-555-0188",
+        "office_line": "+1-404-555-0100",
+        "scheduling_line": "+1-404-555-0122"
+      },
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.493111Z",
+      "reason": "onboarding_confirmed — new transfer numbers added"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "Business hours not discussed — exact days and times unknown",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.493583Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "Timezone not mentioned",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.493979Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "dispatch phone number",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.494317Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "CRM authentication / API details not provided",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.494646Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "After-hours routing rules not specified",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T09:18:46.495037Z",
+      "reason": "Onboarding data addressed this open question"
+    }
+  ],
+  "prompt": "You are Clara, an AI assistant for GreenLeaf Pest Control.\n\nBusiness Hours Flow:\nHours (America/New_York): Mon: 08:00–17:00, Tue: 08:00–17:00, Wed: 08:00–17:00, Thu: 08:00–17:00, Fri: 08:00–17:00, Sat: Closed, Sun: Closed\n1. Greeting\n2. Ask purpose of call\n3. Collect name and phone number\n4. Route call / Transfer\n5. If transfer fails after 40 seconds: If transfer fails, apologize and leave urgent message for technician to call back within 1 hour.\n6. Ask if caller needs anything else\n7. Close call if no\n\n\n  - Active infestation or pest emergency → +1-404-555-0188\n  - New inspection or treatment request → +1-404-555-0122\n  - Existing contract or renewal inquiry → +1-404-555-0100\n\nIf emergency:\nTransfer immediately to +1-404-555-0188.\n\nAfter-Hours Flow:\nHours (America/New_York): Mon: 08:00–17:00, Tue: 08:00–17:00, Wed: 08:00–17:00, Thu: 08:00–17:00, Fri: 08:00–17:00, Sat: Closed, Sun: Closed\n1. Greeting\n2. Ask purpose\n3. Confirm emergency\n4. If emergency: collect name, number, address immediately. Attempt transfer to +1-404-555-0188. If transfer fails after 40 seconds: If transfer fails, apologize and leave urgent message for technician to call back within 1 hour..\n5. If non-emergency: collect details and confirm follow-up during business hours.\n6. Ask if they need anything else\n7. Close\n\nRouting Rules:\n- Active infestation or pest emergency → +1-404-555-0188 (Transfer immediately)\n- New inspection or treatment request → +1-404-555-0122 (Collect address and pest type)\n- Existing contract or renewal inquiry → +1-404-555-0100\n\nSpecial Rules:\n- Create ServiceTrade work order for every service request\n- Tag emergency calls for same-day dispatch review\n- Never give treatment estimates on the call\n- Confirm service area before booking\n\nAlways be polite, calm, and professional.\nNever reveal you are an AI unless directly asked.\nNever provide pricing, legal, or technical advice.\nAlways confirm caller information by reading it back.\nIf you cannot help, say: \"I'll make sure someone follows up with you.\"\n\nOpen Questions (resolve before deployment):\n- Emergency call definitions not formally stated\n- inspection scheduling rules\n- Types of work to accept vs decline not specified\n- Geographic service area not stated",
+  "source_hash": "c7cbd070cbcb027ee2ba3eb6b4b80d595272c63df41438ae5378900d3c8e6830"
+}
