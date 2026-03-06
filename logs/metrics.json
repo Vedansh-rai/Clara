@@ -1,9 +1,9 @@
 {
-  "run_at": "2026-03-06T08:03:13.314528+00:00",
+  "run_at": "2026-03-06T08:55:09.458354+00:00",
   "total_cases": 11,
   "successful": 11,
   "failed": 0,
-  "elapsed_seconds": 0.05,
+  "elapsed_seconds": 0.08,
   "totals": {
     "v1_agents": 11,
     "v2_agents": 11,
@@ -184,7 +184,7 @@
       "remaining_unknowns": 6,
       "routing_rules": 2,
       "prompt_chars": 1893,
-      "has_after_hours": false,
+      "has_after_hours": true,
       "crm_system": "Jobber",
       "timezone": null,
       "error": null
