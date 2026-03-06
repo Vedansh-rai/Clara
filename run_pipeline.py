@@ -285,9 +285,12 @@ def run_batch(input_dir: Path) -> None:
     if not input_dir.exists() or not input_dir.is_dir():
         raise FileNotFoundError(f"Input directory not found: {input_dir}")
 
-    case_dirs = [d for d in sorted(input_dir.iterdir()) if d.is_dir()]
-    if not case_dirs:
-        raise ValueError(f"No case folders found in {input_dir}")
+    if (input_dir / "demo.txt").exists():
+        case_dirs = [input_dir]
+    else:
+        case_dirs = [d for d in sorted(input_dir.iterdir()) if d.is_dir()]
+        if not case_dirs:
+            raise ValueError(f"No case folders found in {input_dir}")
 
     LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
     LOG_FILE.write_text("", encoding="utf-8")
