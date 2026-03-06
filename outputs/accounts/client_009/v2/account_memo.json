@@ -1,20 +1,20 @@
 {
   "account_id": "client_009",
-  "company_name": "Summit Roofing Co",
+  "company_name": "GreenLeaf Pest Control",
   "business_hours": {
-    "monday": "open='07:00' close='17:00' closed=False",
-    "tuesday": "open='07:00' close='17:00' closed=False",
-    "wednesday": "open='07:00' close='17:00' closed=False",
-    "thursday": "open='07:00' close='17:00' closed=False",
-    "friday": "open='07:00' close='16:00' closed=False",
+    "monday": "open='08:00' close='17:00' closed=False",
+    "tuesday": "open='08:00' close='17:00' closed=False",
+    "wednesday": "open='08:00' close='17:00' closed=False",
+    "thursday": "open='08:00' close='17:00' closed=False",
+    "friday": "open='08:00' close='17:00' closed=False",
     "saturday": "open=None close=None closed=True",
     "sunday": "open=None close=None closed=True"
   },
   "office_address": null,
   "services_supported": [],
   "emergency_definition": [
-    "Active roof leak causing interior water damage",
-    "Storm-related structural damage with safety risk"
+    "Active wasp nest inside structure with at-risk individuals",
+    "Rodent intrusion compromising food storage areas"
   ],
   "emergency_routing_rules": [],
   "non_emergency_routing_rules": [],

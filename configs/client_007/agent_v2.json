@@ -1,101 +1,97 @@
 {
   "client_id": "client_007",
-  "company_name": "Reliable Locksmith Services",
+  "company_name": "PowerClean Pressure Washing",
   "version": 2,
   "source_stage": "form",
-  "created_at": "2026-03-06T08:02:46.844418Z",
-  "updated_at": "2026-03-06T08:02:46.856095Z",
-  "industry": "Locksmith services",
-  "crm_system": "ServiceTitan",
-  "service_area": "Denver Metro Area, CO",
+  "created_at": "2026-03-06T09:16:20.004207Z",
+  "updated_at": "2026-03-06T09:16:20.008596Z",
+  "industry": "Pressure washing services",
+  "crm_system": "Jobber",
+  "service_area": "Greater Nashville, TN",
   "office_address": null,
   "services_supported": [],
   "business_hours": {
     "monday": {
-      "open": "07:00",
-      "close": "20:00",
+      "open": "08:00",
+      "close": "17:00",
       "closed": false
     },
     "tuesday": {
-      "open": "07:00",
-      "close": "20:00",
+      "open": "08:00",
+      "close": "17:00",
       "closed": false
     },
     "wednesday": {
-      "open": "07:00",
-      "close": "20:00",
+      "open": "08:00",
+      "close": "17:00",
       "closed": false
     },
     "thursday": {
-      "open": "07:00",
-      "close": "20:00",
+      "open": "08:00",
+      "close": "17:00",
       "closed": false
     },
     "friday": {
-      "open": "07:00",
-      "close": "20:00",
+      "open": "08:00",
+      "close": "17:00",
       "closed": false
     },
     "saturday": {
-      "open": "08:00",
-      "close": "18:00",
+      "open": "09:00",
+      "close": "14:00",
       "closed": false
     },
     "sunday": {
-      "open": "10:00",
-      "close": "16:00",
-      "closed": false
+      "open": null,
+      "close": null,
+      "closed": true
     }
   },
-  "timezone": "America/Denver",
+  "timezone": "America/Chicago",
   "emergency_definitions": [
-    "Locked out of home or vehicle",
-    "Broken lock preventing property access",
-    "Security breach — lock has been tampered with"
+    "Active water or chemical flooding from equipment failure"
   ],
   "emergency_routing_rules": [],
   "non_emergency_routing_rules": [],
   "call_transfer_rules": [],
   "routing_rules": [
     {
-      "trigger": "Lockout emergency — home, vehicle, or business",
-      "destination": "dispatch_mobile",
+      "trigger": "Equipment flooding or property damage",
+      "destination": "owner_cell",
       "priority": 1,
       "call_type": "emergency",
-      "notes": "Collect full address first, then transfer"
+      "notes": "Transfer immediately"
     },
     {
-      "trigger": "Rekeying or new lock installation request",
-      "destination": "scheduling_line",
+      "trigger": "New estimate request",
+      "destination": "office_line",
       "priority": 2,
       "call_type": "non_emergency",
-      "notes": "Book appointment"
+      "notes": "Collect address and property type"
     },
     {
-      "trigger": "After-hours non-emergency request",
-      "destination": "voicemail_queue",
+      "trigger": "Appointment reschedule",
+      "destination": "scheduling_queue",
       "priority": 3,
       "call_type": "general",
-      "notes": "Leave message, callback next day"
+      "notes": null
     }
   ],
   "transfer_numbers": {
-    "dispatch_mobile": "+1-720-555-0155",
-    "scheduling_line": "+1-720-555-0100"
+    "owner_cell": "+1-615-555-0177",
+    "office_line": "+1-615-555-0100"
   },
-  "after_hours_handling": "Emergency lockouts transfer to dispatch 24/7. Non-urgent requests go to voicemail for next-day callback.",
+  "after_hours_handling": "Emergency flooding calls go to owner cell. All other calls held for next business day.",
   "after_hours_flow_summary": null,
   "office_hours_flow_summary": null,
-  "transfer_timeout_seconds": 20,
-  "fallback_logic": "If transfer fails after 20 seconds, apologize and send automated SMS with ETA to caller's number.",
+  "transfer_timeout_seconds": 30,
+  "fallback_logic": "If transfer fails, apologize and confirm owner will call back within 20 minutes.",
   "integration_rules": [
-    "Create ServiceTitan job for every service call",
-    "Tag emergency lockout calls for priority dispatch"
+    "Create Jobber quote for every estimate request"
   ],
   "integration_constraints": [],
   "special_constraints": [
-    "Always verify caller address before dispatch",
-    "Do not quote prices on the phone — door rate only"
+    "Do not provide pricing on calls — direct to free estimate"
   ],
   "notes": null,
   "questions_or_unknowns": [
@@ -108,9 +104,9 @@
     {
       "field": "service_area",
       "old_value": null,
-      "new_value": "Denver Metro Area, CO",
+      "new_value": "Greater Nashville, TN",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.856579Z",
+      "timestamp": "2026-03-06T09:16:20.008678Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -118,150 +114,146 @@
       "old_value": null,
       "new_value": {
         "monday": {
-          "open": "07:00",
-          "close": "20:00",
+          "open": "08:00",
+          "close": "17:00",
           "closed": false
         },
         "tuesday": {
-          "open": "07:00",
-          "close": "20:00",
+          "open": "08:00",
+          "close": "17:00",
           "closed": false
         },
         "wednesday": {
-          "open": "07:00",
-          "close": "20:00",
+          "open": "08:00",
+          "close": "17:00",
           "closed": false
         },
         "thursday": {
-          "open": "07:00",
-          "close": "20:00",
+          "open": "08:00",
+          "close": "17:00",
           "closed": false
         },
         "friday": {
-          "open": "07:00",
-          "close": "20:00",
+          "open": "08:00",
+          "close": "17:00",
           "closed": false
         },
         "saturday": {
-          "open": "08:00",
-          "close": "18:00",
+          "open": "09:00",
+          "close": "14:00",
           "closed": false
         },
         "sunday": {
-          "open": "10:00",
-          "close": "16:00",
-          "closed": false
+          "open": null,
+          "close": null,
+          "closed": true
         }
       },
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.857954Z",
+      "timestamp": "2026-03-06T09:16:20.009221Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "timezone",
       "old_value": null,
-      "new_value": "America/Denver",
+      "new_value": "America/Chicago",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.858951Z",
+      "timestamp": "2026-03-06T09:16:20.009809Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "after_hours_handling",
       "old_value": null,
-      "new_value": "Emergency lockouts transfer to dispatch 24/7. Non-urgent requests go to voicemail for next-day callback.",
+      "new_value": "Emergency flooding calls go to owner cell. All other calls held for next business day.",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.859610Z",
+      "timestamp": "2026-03-06T09:16:20.010196Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "transfer_timeout_seconds",
       "old_value": null,
-      "new_value": 20,
+      "new_value": 30,
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.860466Z",
+      "timestamp": "2026-03-06T09:16:20.010703Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "fallback_logic",
       "old_value": null,
-      "new_value": "If transfer fails after 20 seconds, apologize and send automated SMS with ETA to caller's number.",
+      "new_value": "If transfer fails, apologize and confirm owner will call back within 20 minutes.",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.861123Z",
+      "timestamp": "2026-03-06T09:16:20.011127Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "emergency_definitions",
       "old_value": null,
       "new_value": [
-        "Locked out of home or vehicle",
-        "Broken lock preventing property access",
-        "Security breach — lock has been tampered with"
+        "Active water or chemical flooding from equipment failure"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.862469Z",
-      "reason": "onboarding_confirmed — 3 new item(s) added"
+      "timestamp": "2026-03-06T09:16:20.011628Z",
+      "reason": "onboarding_confirmed — 1 new item(s) added"
     },
     {
       "field": "routing_rules",
       "old_value": null,
       "new_value": [
         {
-          "trigger": "Lockout emergency — home, vehicle, or business",
-          "destination": "dispatch_mobile",
+          "trigger": "Equipment flooding or property damage",
+          "destination": "owner_cell",
           "priority": 1,
           "call_type": "emergency",
-          "notes": "Collect full address first, then transfer"
+          "notes": "Transfer immediately"
         },
         {
-          "trigger": "Rekeying or new lock installation request",
-          "destination": "scheduling_line",
+          "trigger": "New estimate request",
+          "destination": "office_line",
           "priority": 2,
           "call_type": "non_emergency",
-          "notes": "Book appointment"
+          "notes": "Collect address and property type"
         },
         {
-          "trigger": "After-hours non-emergency request",
-          "destination": "voicemail_queue",
+          "trigger": "Appointment reschedule",
+          "destination": "scheduling_queue",
           "priority": 3,
           "call_type": "general",
-          "notes": "Leave message, callback next day"
+          "notes": null
         }
       ],
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.863214Z",
+      "timestamp": "2026-03-06T09:16:20.012042Z",
       "reason": "onboarding_confirmed — 3 new item(s) added"
     },
     {
       "field": "integration_rules",
       "old_value": null,
       "new_value": [
-        "Create ServiceTitan job for every service call",
-        "Tag emergency lockout calls for priority dispatch"
+        "Create Jobber quote for every estimate request"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.864531Z",
-      "reason": "onboarding_confirmed — 2 new item(s) added"
+      "timestamp": "2026-03-06T09:16:20.012417Z",
+      "reason": "onboarding_confirmed — 1 new item(s) added"
     },
     {
       "field": "special_constraints",
       "old_value": null,
       "new_value": [
-        "Always verify caller address before dispatch",
-        "Do not quote prices on the phone — door rate only"
+        "Do not provide pricing on calls — direct to free estimate"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.865567Z",
-      "reason": "onboarding_confirmed — 2 new item(s) added"
+      "timestamp": "2026-03-06T09:16:20.012794Z",
+      "reason": "onboarding_confirmed — 1 new item(s) added"
     },
     {
       "field": "transfer_numbers",
       "old_value": null,
       "new_value": {
-        "dispatch_mobile": "+1-720-555-0155",
-        "scheduling_line": "+1-720-555-0100"
+        "owner_cell": "+1-615-555-0177",
+        "office_line": "+1-615-555-0100"
       },
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.866285Z",
+      "timestamp": "2026-03-06T09:16:20.013201Z",
       "reason": "onboarding_confirmed — new transfer numbers added"
     },
     {
@@ -269,7 +261,7 @@
       "old_value": "Business hours not discussed — exact days and times unknown",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.867259Z",
+      "timestamp": "2026-03-06T09:16:20.013674Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -277,7 +269,7 @@
       "old_value": "Timezone not mentioned",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.868277Z",
+      "timestamp": "2026-03-06T09:16:20.014082Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -285,7 +277,7 @@
       "old_value": "dispatch phone number",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.868948Z",
+      "timestamp": "2026-03-06T09:16:20.014422Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -293,7 +285,7 @@
       "old_value": "CRM authentication / API details not provided",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.869655Z",
+      "timestamp": "2026-03-06T09:16:20.014936Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -301,10 +293,10 @@
       "old_value": "After-hours routing rules not specified",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.870344Z",
+      "timestamp": "2026-03-06T09:16:20.015400Z",
       "reason": "Onboarding data addressed this open question"
     }
   ],
-  "prompt": "You are Clara, an AI assistant for Reliable Locksmith Services.\n\nBusiness Hours Flow:\nHours (America/Denver): Mon: 07:00–20:00, Tue: 07:00–20:00, Wed: 07:00–20:00, Thu: 07:00–20:00, Fri: 07:00–20:00, Sat: 08:00–18:00, Sun: 10:00–16:00\n1. Greeting\n2. Ask purpose of call\n3. Collect name and phone number\n4. Route call / Transfer\n5. If transfer fails after 20 seconds: If transfer fails after 20 seconds, apologize and send automated SMS with ETA to caller's number.\n6. Ask if caller needs anything else\n7. Close call if no\n\n\n  - Lockout emergency — home, vehicle, or business → +1-720-555-0155\n  - Rekeying or new lock installation request → +1-720-555-0100\n  - After-hours non-emergency request → voicemail_queue\n\nIf emergency:\nTransfer immediately to +1-720-555-0155.\n\nAfter-Hours Flow:\nHours (America/Denver): Mon: 07:00–20:00, Tue: 07:00–20:00, Wed: 07:00–20:00, Thu: 07:00–20:00, Fri: 07:00–20:00, Sat: 08:00–18:00, Sun: 10:00–16:00\n1. Greeting\n2. Ask purpose\n3. Confirm emergency\n4. If emergency: collect name, number, address immediately. Attempt transfer to +1-720-555-0155. If transfer fails after 20 seconds: If transfer fails after 20 seconds, apologize and send automated SMS with ETA to caller's number..\n5. If non-emergency: collect details and confirm follow-up during business hours.\n6. Ask if they need anything else\n7. Close\n\nRouting Rules:\n- Lockout emergency — home, vehicle, or business → +1-720-555-0155 (Collect full address first, then transfer)\n- Rekeying or new lock installation request → +1-720-555-0100 (Book appointment)\n- After-hours non-emergency request → voicemail_queue (Leave message, callback next day)\n\nSpecial Rules:\n- Create ServiceTitan job for every service call\n- Tag emergency lockout calls for priority dispatch\n- Always verify caller address before dispatch\n- Do not quote prices on the phone — door rate only\n\nAlways be polite, calm, and professional.\nNever reveal you are an AI unless directly asked.\nNever provide pricing, legal, or technical advice.\nAlways confirm caller information by reading it back.\nIf you cannot help, say: \"I'll make sure someone follows up with you.\"\n\nOpen Questions (resolve before deployment):\n- Emergency call definitions not formally stated\n- inspection scheduling rules\n- Types of work to accept vs decline not specified\n- Geographic service area not stated",
-  "source_hash": "39a4c665a61a6c6c42c616bd236f37280888f4e64e28082c266a6afbac8cd4a4"
+  "prompt": "You are Clara, an AI assistant for PowerClean Pressure Washing.\n\nBusiness Hours Flow:\nHours (America/Chicago): Mon: 08:00–17:00, Tue: 08:00–17:00, Wed: 08:00–17:00, Thu: 08:00–17:00, Fri: 08:00–17:00, Sat: 09:00–14:00, Sun: Closed\n1. Greeting\n2. Ask purpose of call\n3. Collect name and phone number\n4. Route call / Transfer\n5. If transfer fails after 30 seconds: If transfer fails, apologize and confirm owner will call back within 20 minutes.\n6. Ask if caller needs anything else\n7. Close call if no\n\n\n  - Equipment flooding or property damage → +1-615-555-0177\n  - New estimate request → +1-615-555-0100\n  - Appointment reschedule → scheduling_queue\n\nIf emergency:\nTransfer immediately to +1-615-555-0177.\n\nAfter-Hours Flow:\nHours (America/Chicago): Mon: 08:00–17:00, Tue: 08:00–17:00, Wed: 08:00–17:00, Thu: 08:00–17:00, Fri: 08:00–17:00, Sat: 09:00–14:00, Sun: Closed\n1. Greeting\n2. Ask purpose\n3. Confirm emergency\n4. If emergency: collect name, number, address immediately. Attempt transfer to +1-615-555-0177. If transfer fails after 30 seconds: If transfer fails, apologize and confirm owner will call back within 20 minutes..\n5. If non-emergency: collect details and confirm follow-up during business hours.\n6. Ask if they need anything else\n7. Close\n\nRouting Rules:\n- Equipment flooding or property damage → +1-615-555-0177 (Transfer immediately)\n- New estimate request → +1-615-555-0100 (Collect address and property type)\n- Appointment reschedule → scheduling_queue\n\nSpecial Rules:\n- Create Jobber quote for every estimate request\n- Do not provide pricing on calls — direct to free estimate\n\nAlways be polite, calm, and professional.\nNever reveal you are an AI unless directly asked.\nNever provide pricing, legal, or technical advice.\nAlways confirm caller information by reading it back.\nIf you cannot help, say: \"I'll make sure someone follows up with you.\"\n\nOpen Questions (resolve before deployment):\n- Emergency call definitions not formally stated\n- inspection scheduling rules\n- Types of work to accept vs decline not specified\n- Geographic service area not stated",
+  "source_hash": "f1ee8eb35cb359ecd2c528beda02ad35c26dc2e16e17a8910ab5b481f2f74cbe"
 }

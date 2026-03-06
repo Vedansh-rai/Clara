@@ -1,6 +1,6 @@
 Agent: Clara
 
-Company: PowerClean Pressure Washing
+Company: Sunrise Landscaping
 
 BUSINESS HOURS FLOW
 
@@ -8,9 +8,9 @@ BUSINESS HOURS FLOW
 2. Ask the purpose of the call.
 3. Collect caller name and phone number.
 4. Route call based on purpose:
-   - Emergency → transfer immediately to owner cell.
+   - Emergency → transfer immediately to on call crew.
    - Non-emergency → collect service request details and confirm next steps.
-5. If transfer fails after 30 seconds: Apologize and confirm owner will call back within 20 minutes.
+5. If transfer fails after 45 seconds: After 45 seconds, apologize, confirm on-call crew will respond within 30 minutes, and collect callback number.
 6. Confirm next steps with the caller.
 7. Ask if the caller needs anything else.
 8. Close the call professionally.
@@ -23,8 +23,8 @@ AFTER HOURS FLOW
 
 If emergency:
    - Collect caller name, phone number, and service address.
-   - Attempt transfer to owner cell.
-   - If transfer fails after 30 seconds: Apologize and confirm owner will call back within 20 minutes.
+   - Attempt transfer to on call crew.
+   - If transfer fails after 45 seconds: After 45 seconds, apologize, confirm on-call crew will respond within 30 minutes, and collect callback number.
 
 If non-emergency:
    - Collect service request details.

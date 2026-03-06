@@ -1,9 +1,9 @@
-MEETING: Clara Demo Call — Sunrise Landscaping
-DATE: February 14, 2026
+MEETING: Clara Demo Call — Apex HVAC Solutions
+DATE: February 12, 2026
 
-Sunrise Landscaping provides residential and commercial lawn care, irrigation, and seasonal cleanup.
+Apex HVAC Solutions handles heating and cooling repair, maintenance, and installation.
 
-INDUSTRY: Landscaping services
-CRM: Jobber
+INDUSTRY: HVAC services
+CRM: ServiceTitan
 
-The owner wants Clara to handle inbound scheduling calls, route urgent irrigation failures, and collect job details without quoting prices.
+They need an AI answering workflow that captures emergency information and books non-emergency callbacks.

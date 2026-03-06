@@ -2,9 +2,9 @@
   {
     "field": "service_area",
     "old_value": null,
-    "new_value": "Central Orlando, FL",
+    "new_value": "Greater Seattle metro",
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.778426+00:00",
+    "timestamp": "2026-03-06 09:16:19.977049+00:00",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
@@ -12,34 +12,34 @@
     "old_value": null,
     "new_value": {
       "monday": {
-        "open": "07:00",
-        "close": "18:00",
+        "open": "08:00",
+        "close": "17:00",
         "closed": false
       },
       "tuesday": {
-        "open": "07:00",
-        "close": "18:00",
+        "open": "08:00",
+        "close": "17:00",
         "closed": false
       },
       "wednesday": {
-        "open": "07:00",
-        "close": "18:00",
+        "open": "08:00",
+        "close": "17:00",
         "closed": false
       },
       "thursday": {
-        "open": "07:00",
-        "close": "18:00",
+        "open": "08:00",
+        "close": "17:00",
         "closed": false
       },
       "friday": {
-        "open": "07:00",
+        "open": "08:00",
         "close": "17:00",
         "closed": false
       },
       "saturday": {
-        "open": "08:00",
-        "close": "13:00",
-        "closed": false
+        "open": null,
+        "close": null,
+        "closed": true
       },
       "sunday": {
         "open": null,
@@ -48,50 +48,50 @@
       }
     },
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.779163+00:00",
+    "timestamp": "2026-03-06 09:16:19.977436+00:00",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
     "field": "timezone",
     "old_value": null,
-    "new_value": "America/New_York",
+    "new_value": "America/Los_Angeles",
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.780236+00:00",
+    "timestamp": "2026-03-06 09:16:19.977988+00:00",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
     "field": "after_hours_handling",
     "old_value": null,
-    "new_value": "Collect emergency details and transfer to on-call crew. Non-emergency requests held for next business day.",
+    "new_value": "Escalate emergency outages to after-hours dispatch and collect all non-emergency requests for next-day callbacks.",
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.781491+00:00",
+    "timestamp": "2026-03-06 09:16:19.978374+00:00",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
     "field": "transfer_timeout_seconds",
     "old_value": null,
-    "new_value": 45,
+    "new_value": 60,
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.782470+00:00",
+    "timestamp": "2026-03-06 09:16:19.978868+00:00",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
     "field": "fallback_logic",
     "old_value": null,
-    "new_value": "If transfer fails after 45 seconds, apologize, confirm on-call crew will respond within 30 minutes, and collect callback number.",
+    "new_value": "If transfer fails, apologize and confirm dispatch callback.",
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.783283+00:00",
+    "timestamp": "2026-03-06 09:16:19.979249+00:00",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
     "field": "emergency_definitions",
     "old_value": null,
     "new_value": [
-      "Irrigation system flooding or uncontrolled water discharge",
-      "Downed trees blocking access or causing property damage"
+      "No heat in freezing weather",
+      "No cooling in medical-sensitive environments"
     ],
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.784405+00:00",
+    "timestamp": "2026-03-06 09:16:19.979691+00:00",
     "reason": "onboarding_confirmed \u2014 2 new item(s) added"
   },
   {
@@ -99,63 +99,52 @@
     "old_value": null,
     "new_value": [
       {
-        "trigger": "Irrigation flooding or major water damage",
-        "destination": "on_call_crew",
+        "trigger": "Emergency HVAC outage",
+        "destination": "after_hours_dispatch",
         "priority": 1,
         "call_type": "emergency",
-        "notes": "Immediate transfer"
+        "notes": "Collect address first"
       },
       {
-        "trigger": "New service estimate or inspection",
+        "trigger": "Routine maintenance or estimate",
         "destination": "scheduling_queue",
         "priority": 2,
         "call_type": "non_emergency",
-        "notes": "Collect address and preferred date"
-      },
-      {
-        "trigger": "Existing job reschedule or status",
-        "destination": "office_line",
-        "priority": 3,
-        "call_type": "general",
-        "notes": null
+        "notes": "Collect preferred date/time"
       }
     ],
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.785278+00:00",
-    "reason": "onboarding_confirmed \u2014 3 new item(s) added"
+    "timestamp": "2026-03-06 09:16:19.980087+00:00",
+    "reason": "onboarding_confirmed \u2014 2 new item(s) added"
   },
   {
     "field": "integration_rules",
     "old_value": null,
     "new_value": [
-      "Create Jobber job for every new service request",
-      "Tag emergency calls with URGENT label"
+      "Create ServiceTitan lead for all qualified non-emergency calls"
     ],
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.785938+00:00",
-    "reason": "onboarding_confirmed \u2014 2 new item(s) added"
+    "timestamp": "2026-03-06 09:16:19.980455+00:00",
+    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
   },
   {
     "field": "special_constraints",
     "old_value": null,
     "new_value": [
-      "Do not quote prices on the call",
-      "Do not schedule outside the service area"
+      "Avoid technical troubleshooting over phone"
     ],
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.786649+00:00",
-    "reason": "onboarding_confirmed \u2014 2 new item(s) added"
+    "timestamp": "2026-03-06 09:16:19.980819+00:00",
+    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
   },
   {
     "field": "transfer_numbers",
     "old_value": null,
     "new_value": {
-      "on_call_crew": "+1-407-555-0133",
-      "office_line": "+1-407-555-0100",
-      "scheduling_queue": "+1-407-555-0144"
+      "after_hours_dispatch": "+1-206-555-0199"
     },
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.787279+00:00",
+    "timestamp": "2026-03-06 09:16:19.981188+00:00",
     "reason": "onboarding_confirmed \u2014 new transfer numbers added"
   },
   {
@@ -163,7 +152,7 @@
     "old_value": "Business hours not discussed \u2014 exact days and times unknown",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.788088+00:00",
+    "timestamp": "2026-03-06 09:16:19.981626+00:00",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -171,7 +160,7 @@
     "old_value": "Timezone not mentioned",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.789661+00:00",
+    "timestamp": "2026-03-06 09:16:19.982016+00:00",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -179,7 +168,7 @@
     "old_value": "dispatch phone number",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.791248+00:00",
+    "timestamp": "2026-03-06 09:16:19.982353+00:00",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -187,7 +176,7 @@
     "old_value": "CRM authentication / API details not provided",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.792097+00:00",
+    "timestamp": "2026-03-06 09:16:19.982687+00:00",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -195,7 +184,7 @@
     "old_value": "After-hours routing rules not specified",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.793002+00:00",
+    "timestamp": "2026-03-06 09:16:19.983075+00:00",
     "reason": "Onboarding data addressed this open question"
   }
 ]

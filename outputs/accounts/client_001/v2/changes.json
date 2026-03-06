@@ -1,10 +1,26 @@
 [
   {
+    "field": "company_name",
+    "old_value": "Client 001",
+    "new_value": "Ben's Electric Solutions",
+    "source": "form",
+    "timestamp": "2026-03-06 09:16:19.916240+00:00",
+    "reason": "onboarding_override \u2014 onboarding data supersedes demo assumption"
+  },
+  {
+    "field": "industry",
+    "old_value": null,
+    "new_value": "Electrical Services",
+    "source": "form",
+    "timestamp": "2026-03-06 09:16:19.916731+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
     "field": "service_area",
     "old_value": null,
-    "new_value": "North Texas commercial zone",
+    "new_value": "Calgary, Alberta",
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.643121+00:00",
+    "timestamp": "2026-03-06 09:16:19.917168+00:00",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
@@ -33,7 +49,7 @@
       },
       "friday": {
         "open": "08:00",
-        "close": "16:00",
+        "close": "17:00",
         "closed": false
       },
       "saturday": {
@@ -48,103 +64,40 @@
       }
     },
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.644829+00:00",
-    "reason": "onboarding_confirmed \u2014 field was previously unknown"
-  },
-  {
-    "field": "timezone",
-    "old_value": null,
-    "new_value": "America/Chicago",
-    "source": "form",
-    "timestamp": "2026-03-06 08:02:46.646183+00:00",
-    "reason": "onboarding_confirmed \u2014 field was previously unknown"
-  },
-  {
-    "field": "after_hours_handling",
-    "old_value": null,
-    "new_value": "Emergency calls should be escalated to dispatch. Non-emergency requests are collected for next business day follow-up.",
-    "source": "form",
-    "timestamp": "2026-03-06 08:02:46.647020+00:00",
-    "reason": "onboarding_confirmed \u2014 field was previously unknown"
-  },
-  {
-    "field": "transfer_timeout_seconds",
-    "old_value": null,
-    "new_value": 60,
-    "source": "form",
-    "timestamp": "2026-03-06 08:02:46.648408+00:00",
-    "reason": "onboarding_confirmed \u2014 field was previously unknown"
-  },
-  {
-    "field": "fallback_logic",
-    "old_value": null,
-    "new_value": "If transfer fails, apologize and confirm dispatch will follow up.",
-    "source": "form",
-    "timestamp": "2026-03-06 08:02:46.649161+00:00",
+    "timestamp": "2026-03-06 09:16:19.917567+00:00",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
     "field": "emergency_definitions",
     "old_value": null,
     "new_value": [
-      "Active sprinkler leak with flooding risk",
-      "Fire alarm panel outage in occupied building",
-      "Suppression system discharge emergency"
+      "Gas station pump outages for preferred clients"
     ],
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.649975+00:00",
-    "reason": "onboarding_confirmed \u2014 3 new item(s) added"
+    "timestamp": "2026-03-06 09:16:19.918203+00:00",
+    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
   },
   {
     "field": "routing_rules",
     "old_value": null,
     "new_value": [
       {
-        "trigger": "Caller reports active sprinkler leak or suppression emergency",
-        "destination": "dispatch",
+        "trigger": "Emergency or VIP preferred customer",
+        "destination": "ben_cell",
         "priority": 1,
         "call_type": "emergency",
-        "notes": "Transfer immediately"
+        "notes": null
       },
       {
-        "trigger": "Caller requests inspection or certification",
-        "destination": "inspection_queue",
+        "trigger": "Routine service inquiries (EV chargers, panel upgrades)",
+        "destination": "jobber_queue",
         "priority": 2,
-        "call_type": "inspection",
-        "notes": "Collect property address and best callback"
-      },
-      {
-        "trigger": "General service request",
-        "destination": "service_queue",
-        "priority": 3,
         "call_type": "non_emergency",
-        "notes": "Collect contact and issue details"
+        "notes": null
       }
     ],
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.650709+00:00",
-    "reason": "onboarding_confirmed \u2014 3 new item(s) added"
-  },
-  {
-    "field": "integration_rules",
-    "old_value": null,
-    "new_value": [
-      "Create ServiceTrade ticket for all non-emergency requests",
-      "Tag emergency calls for immediate follow-up"
-    ],
-    "source": "form",
-    "timestamp": "2026-03-06 08:02:46.651358+00:00",
-    "reason": "onboarding_confirmed \u2014 2 new item(s) added"
-  },
-  {
-    "field": "special_constraints",
-    "old_value": null,
-    "new_value": [
-      "Do not provide pricing on calls",
-      "Confirm life-safety issues before ending emergency calls"
-    ],
-    "source": "form",
-    "timestamp": "2026-03-06 08:02:46.652002+00:00",
+    "timestamp": "2026-03-06 09:16:19.918622+00:00",
     "reason": "onboarding_confirmed \u2014 2 new item(s) added"
   },
   {
@@ -152,15 +105,7 @@
     "old_value": "Business hours not discussed \u2014 exact days and times unknown",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.652728+00:00",
-    "reason": "Onboarding data addressed this open question"
-  },
-  {
-    "field": "questions_or_unknowns",
-    "old_value": "Timezone not mentioned",
-    "new_value": "RESOLVED",
-    "source": "form",
-    "timestamp": "2026-03-06 08:02:46.653443+00:00",
+    "timestamp": "2026-03-06 09:16:19.919165+00:00",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -168,7 +113,7 @@
     "old_value": "CRM authentication / API details not provided",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.654039+00:00",
+    "timestamp": "2026-03-06 09:16:19.919885+00:00",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -176,7 +121,7 @@
     "old_value": "After-hours routing rules not specified",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06 08:02:46.654696+00:00",
+    "timestamp": "2026-03-06 09:16:19.920421+00:00",
     "reason": "Onboarding data addressed this open question"
   }
 ]

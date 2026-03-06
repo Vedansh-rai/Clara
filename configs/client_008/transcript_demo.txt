@@ -1,9 +1,10 @@
-MEETING: Clara Demo Call — GreenLeaf Pest Control
-DATE: February 17, 2026
+MEETING: Clara Demo Call — Reliable Locksmith Services
+DATE: February 16, 2026
 
-GreenLeaf Pest Control provides residential and commercial pest inspection, treatment, and prevention.
+Reliable Locksmith Services handles residential and commercial lockouts, rekeying, and security installations.
 
-INDUSTRY: Pest control services
-CRM: ServiceTrade
+INDUSTRY: Locksmith services
+CRM: ServiceTitan
 
-They want Clara to book inspections, screen for urgent infestations, and route emergency calls to on-call technicians.
+They need 24/7 call handling for lockouts. Emergency lockout calls need to reach a technician immediately.
+The owner said after-hours transfers are critical for their business model.

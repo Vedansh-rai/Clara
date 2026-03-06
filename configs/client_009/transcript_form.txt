@@ -1,41 +1,41 @@
 {
-  "company_name": "Summit Roofing Co",
-  "industry": "Roofing services",
-  "crm_system": "Jobber",
-  "service_area": "Greater Denver, CO",
-  "timezone": "America/Denver",
+  "company_name": "GreenLeaf Pest Control",
+  "industry": "Pest control services",
+  "crm_system": "ServiceTrade",
+  "service_area": "Greater Atlanta, GA",
+  "timezone": "America/New_York",
   "business_hours": {
-    "monday": { "open": "07:00", "close": "17:00", "closed": false },
-    "tuesday": { "open": "07:00", "close": "17:00", "closed": false },
-    "wednesday": { "open": "07:00", "close": "17:00", "closed": false },
-    "thursday": { "open": "07:00", "close": "17:00", "closed": false },
-    "friday": { "open": "07:00", "close": "16:00", "closed": false },
+    "monday": { "open": "08:00", "close": "17:00", "closed": false },
+    "tuesday": { "open": "08:00", "close": "17:00", "closed": false },
+    "wednesday": { "open": "08:00", "close": "17:00", "closed": false },
+    "thursday": { "open": "08:00", "close": "17:00", "closed": false },
+    "friday": { "open": "08:00", "close": "17:00", "closed": false },
     "saturday": { "closed": true },
     "sunday": { "closed": true }
   },
   "emergency_definitions": [
-    "Active roof leak causing interior water damage",
-    "Storm-related structural damage with safety risk"
+    "Active wasp nest inside structure with at-risk individuals",
+    "Rodent intrusion compromising food storage areas"
   ],
   "routing_rules": [
-    { "trigger": "Active leak or storm damage emergency", "destination": "emergency_dispatch", "priority": 1, "call_type": "emergency", "notes": "Collect address and immediate situation" },
-    { "trigger": "Insurance claim inspection request", "destination": "claims_line", "priority": 2, "call_type": "non_emergency", "notes": "Collect policy and damage details" },
-    { "trigger": "New roof estimate", "destination": "scheduling_line", "priority": 3, "call_type": "non_emergency", "notes": "Book free estimate" }
+    { "trigger": "Active infestation or pest emergency", "destination": "on_call_tech", "priority": 1, "call_type": "emergency", "notes": "Transfer immediately" },
+    { "trigger": "New inspection or treatment request", "destination": "scheduling_line", "priority": 2, "call_type": "non_emergency", "notes": "Collect address and pest type" },
+    { "trigger": "Existing contract or renewal inquiry", "destination": "office_line", "priority": 3, "call_type": "general", "notes": null }
   ],
   "transfer_numbers": {
-    "emergency_dispatch": "+1-303-555-0199",
-    "claims_line": "+1-303-555-0155",
-    "scheduling_line": "+1-303-555-0100"
+    "on_call_tech": "+1-404-555-0188",
+    "office_line": "+1-404-555-0100",
+    "scheduling_line": "+1-404-555-0122"
   },
-  "after_hours_handling": "Emergency leak or damage calls go to dispatch. All other calls collected for next business day.",
-  "transfer_timeout_seconds": 45,
-  "fallback_logic": "If no answer after 45 seconds, apologize and confirm an emergency crew will contact within 30 minutes.",
+  "after_hours_handling": "Emergency infestations escalated to on-call technician. Non-emergency requests held for next business day.",
+  "transfer_timeout_seconds": 40,
+  "fallback_logic": "If transfer fails, apologize and leave urgent message for technician to call back within 1 hour.",
   "integration_rules": [
-    "Create Jobber job for every estimate and inspection",
-    "Flag all insurance claim calls for priority review"
+    "Create ServiceTrade work order for every service request",
+    "Tag emergency calls for same-day dispatch review"
   ],
   "special_constraints": [
-    "Do not provide cost estimates on the call",
-    "Always ask for photos of damage to send to the crew"
+    "Never give treatment estimates on the call",
+    "Confirm service area before booking"
   ]
 }

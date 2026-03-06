@@ -1,9 +1,9 @@
-MEETING: Clara Demo Call — Apex HVAC Solutions
-DATE: February 12, 2026
+MEETING: Clara Demo Call — Metro Plumbing Co
+DATE: February 11, 2026
 
-Apex HVAC Solutions handles heating and cooling repair, maintenance, and installation.
+Metro Plumbing Co provides residential and commercial plumbing repairs and drain services.
 
-INDUSTRY: HVAC services
-CRM: ServiceTitan
+INDUSTRY: Plumbing services
+CRM: Jobber
 
-They need an AI answering workflow that captures emergency information and books non-emergency callbacks.
+The team wants Clara to collect caller details, separate emergencies from routine requests, and route priority calls to dispatch.

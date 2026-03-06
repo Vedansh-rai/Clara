@@ -1,6 +1,6 @@
 Agent: Clara
 
-Company: Fire Protection Services
+Company: Ben's Electric Solutions
 
 BUSINESS HOURS FLOW
 

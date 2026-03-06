@@ -1,45 +1,45 @@
 {
   "client_id": "client_010",
-  "company_name": "ClearView Window Cleaning",
+  "company_name": "Summit Roofing Co",
   "version": 2,
   "source_stage": "form",
-  "created_at": "2026-03-06T08:02:46.934586Z",
-  "updated_at": "2026-03-06T08:02:46.941126Z",
-  "industry": "Window cleaning services",
+  "created_at": "2026-03-06T09:16:20.050843Z",
+  "updated_at": "2026-03-06T09:16:20.054153Z",
+  "industry": "Roofing services",
   "crm_system": "Jobber",
-  "service_area": "San Diego Metro, CA",
+  "service_area": "Greater Denver, CO",
   "office_address": null,
   "services_supported": [],
   "business_hours": {
     "monday": {
-      "open": "08:00",
+      "open": "07:00",
       "close": "17:00",
       "closed": false
     },
     "tuesday": {
-      "open": "08:00",
+      "open": "07:00",
       "close": "17:00",
       "closed": false
     },
     "wednesday": {
-      "open": "08:00",
+      "open": "07:00",
       "close": "17:00",
       "closed": false
     },
     "thursday": {
-      "open": "08:00",
+      "open": "07:00",
       "close": "17:00",
       "closed": false
     },
     "friday": {
-      "open": "08:00",
-      "close": "17:00",
+      "open": "07:00",
+      "close": "16:00",
       "closed": false
     },
     "saturday": {
-      "open": "09:00",
-      "close": "13:00",
-      "closed": false
+      "open": null,
+      "close": null,
+      "closed": true
     },
     "sunday": {
       "open": null,
@@ -47,50 +47,55 @@
       "closed": true
     }
   },
-  "timezone": "America/Los_Angeles",
-  "emergency_definitions": [],
+  "timezone": "America/Denver",
+  "emergency_definitions": [
+    "Active roof leak causing interior water damage",
+    "Storm-related structural damage with safety risk"
+  ],
   "emergency_routing_rules": [],
   "non_emergency_routing_rules": [],
   "call_transfer_rules": [],
   "routing_rules": [
     {
-      "trigger": "New residential or commercial quote",
-      "destination": "office_line",
+      "trigger": "Active leak or storm damage emergency",
+      "destination": "emergency_dispatch",
       "priority": 1,
-      "call_type": "non_emergency",
-      "notes": "Collect property type and window count"
+      "call_type": "emergency",
+      "notes": "Collect address and immediate situation"
     },
     {
-      "trigger": "Appointment reschedule or cancellation",
-      "destination": "scheduling_queue",
+      "trigger": "Insurance claim inspection request",
+      "destination": "claims_line",
       "priority": 2,
-      "call_type": "general",
-      "notes": "Confirm 24h notice required"
+      "call_type": "non_emergency",
+      "notes": "Collect policy and damage details"
     },
     {
-      "trigger": "Service quality complaint",
-      "destination": "owner_cell",
+      "trigger": "New roof estimate",
+      "destination": "scheduling_line",
       "priority": 3,
-      "call_type": "general",
-      "notes": "Escalate to owner"
+      "call_type": "non_emergency",
+      "notes": "Book free estimate"
     }
   ],
   "transfer_numbers": {
-    "office_line": "+1-619-555-0100",
-    "owner_cell": "+1-619-555-0188"
+    "emergency_dispatch": "+1-303-555-0199",
+    "claims_line": "+1-303-555-0155",
+    "scheduling_line": "+1-303-555-0100"
   },
-  "after_hours_handling": "No emergency calls expected. Collect all messages for next business day follow-up.",
+  "after_hours_handling": "Emergency leak or damage calls go to dispatch. All other calls collected for next business day.",
   "after_hours_flow_summary": null,
   "office_hours_flow_summary": null,
-  "transfer_timeout_seconds": 30,
-  "fallback_logic": "If no answer, leave a friendly voicemail and confirm callback within one business day.",
+  "transfer_timeout_seconds": 45,
+  "fallback_logic": "If no answer after 45 seconds, apologize and confirm an emergency crew will contact within 30 minutes.",
   "integration_rules": [
-    "Create Jobber quote for every new service inquiry"
+    "Create Jobber job for every estimate and inspection",
+    "Flag all insurance claim calls for priority review"
   ],
   "integration_constraints": [],
   "special_constraints": [
-    "Do not accept jobs outside the San Diego metro area",
-    "Do not quote prices without knowing the property size"
+    "Do not provide cost estimates on the call",
+    "Always ask for photos of damage to send to the crew"
   ],
   "notes": null,
   "questions_or_unknowns": [
@@ -103,9 +108,9 @@
     {
       "field": "service_area",
       "old_value": null,
-      "new_value": "San Diego Metro, CA",
+      "new_value": "Greater Denver, CO",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.941234Z",
+      "timestamp": "2026-03-06T09:16:20.054205Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -113,34 +118,34 @@
       "old_value": null,
       "new_value": {
         "monday": {
-          "open": "08:00",
+          "open": "07:00",
           "close": "17:00",
           "closed": false
         },
         "tuesday": {
-          "open": "08:00",
+          "open": "07:00",
           "close": "17:00",
           "closed": false
         },
         "wednesday": {
-          "open": "08:00",
+          "open": "07:00",
           "close": "17:00",
           "closed": false
         },
         "thursday": {
-          "open": "08:00",
+          "open": "07:00",
           "close": "17:00",
           "closed": false
         },
         "friday": {
-          "open": "08:00",
-          "close": "17:00",
+          "open": "07:00",
+          "close": "16:00",
           "closed": false
         },
         "saturday": {
-          "open": "09:00",
-          "close": "13:00",
-          "closed": false
+          "open": null,
+          "close": null,
+          "closed": true
         },
         "sunday": {
           "open": null,
@@ -149,101 +154,114 @@
         }
       },
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.942516Z",
+      "timestamp": "2026-03-06T09:16:20.054605Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "timezone",
       "old_value": null,
-      "new_value": "America/Los_Angeles",
+      "new_value": "America/Denver",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.943470Z",
+      "timestamp": "2026-03-06T09:16:20.055294Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "after_hours_handling",
       "old_value": null,
-      "new_value": "No emergency calls expected. Collect all messages for next business day follow-up.",
+      "new_value": "Emergency leak or damage calls go to dispatch. All other calls collected for next business day.",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.944104Z",
+      "timestamp": "2026-03-06T09:16:20.055680Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "transfer_timeout_seconds",
       "old_value": null,
-      "new_value": 30,
+      "new_value": 45,
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.944920Z",
+      "timestamp": "2026-03-06T09:16:20.056184Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "fallback_logic",
       "old_value": null,
-      "new_value": "If no answer, leave a friendly voicemail and confirm callback within one business day.",
+      "new_value": "If no answer after 45 seconds, apologize and confirm an emergency crew will contact within 30 minutes.",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.945559Z",
+      "timestamp": "2026-03-06T09:16:20.056571Z",
       "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "emergency_definitions",
+      "old_value": null,
+      "new_value": [
+        "Active roof leak causing interior water damage",
+        "Storm-related structural damage with safety risk"
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T09:16:20.057094Z",
+      "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
       "field": "routing_rules",
       "old_value": null,
       "new_value": [
         {
-          "trigger": "New residential or commercial quote",
-          "destination": "office_line",
+          "trigger": "Active leak or storm damage emergency",
+          "destination": "emergency_dispatch",
           "priority": 1,
-          "call_type": "non_emergency",
-          "notes": "Collect property type and window count"
+          "call_type": "emergency",
+          "notes": "Collect address and immediate situation"
         },
         {
-          "trigger": "Appointment reschedule or cancellation",
-          "destination": "scheduling_queue",
+          "trigger": "Insurance claim inspection request",
+          "destination": "claims_line",
           "priority": 2,
-          "call_type": "general",
-          "notes": "Confirm 24h notice required"
+          "call_type": "non_emergency",
+          "notes": "Collect policy and damage details"
         },
         {
-          "trigger": "Service quality complaint",
-          "destination": "owner_cell",
+          "trigger": "New roof estimate",
+          "destination": "scheduling_line",
           "priority": 3,
-          "call_type": "general",
-          "notes": "Escalate to owner"
+          "call_type": "non_emergency",
+          "notes": "Book free estimate"
         }
       ],
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.946381Z",
+      "timestamp": "2026-03-06T09:16:20.057499Z",
       "reason": "onboarding_confirmed — 3 new item(s) added"
     },
     {
       "field": "integration_rules",
       "old_value": null,
       "new_value": [
-        "Create Jobber quote for every new service inquiry"
+        "Create Jobber job for every estimate and inspection",
+        "Flag all insurance claim calls for priority review"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.947507Z",
-      "reason": "onboarding_confirmed — 1 new item(s) added"
+      "timestamp": "2026-03-06T09:16:20.057873Z",
+      "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
       "field": "special_constraints",
       "old_value": null,
       "new_value": [
-        "Do not accept jobs outside the San Diego metro area",
-        "Do not quote prices without knowing the property size"
+        "Do not provide cost estimates on the call",
+        "Always ask for photos of damage to send to the crew"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.948311Z",
+      "timestamp": "2026-03-06T09:16:20.058244Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
       "field": "transfer_numbers",
       "old_value": null,
       "new_value": {
-        "office_line": "+1-619-555-0100",
-        "owner_cell": "+1-619-555-0188"
+        "emergency_dispatch": "+1-303-555-0199",
+        "claims_line": "+1-303-555-0155",
+        "scheduling_line": "+1-303-555-0100"
       },
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.949011Z",
+      "timestamp": "2026-03-06T09:16:20.058626Z",
       "reason": "onboarding_confirmed — new transfer numbers added"
     },
     {
@@ -251,7 +269,7 @@
       "old_value": "Business hours not discussed — exact days and times unknown",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.950420Z",
+      "timestamp": "2026-03-06T09:16:20.059106Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -259,7 +277,7 @@
       "old_value": "Timezone not mentioned",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.951112Z",
+      "timestamp": "2026-03-06T09:16:20.059504Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -267,7 +285,7 @@
       "old_value": "dispatch phone number",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.951876Z",
+      "timestamp": "2026-03-06T09:16:20.059838Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -275,7 +293,7 @@
       "old_value": "CRM authentication / API details not provided",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.952526Z",
+      "timestamp": "2026-03-06T09:16:20.060172Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -283,10 +301,10 @@
       "old_value": "After-hours routing rules not specified",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.953466Z",
+      "timestamp": "2026-03-06T09:16:20.060560Z",
       "reason": "Onboarding data addressed this open question"
     }
   ],
-  "prompt": "You are Clara, an AI assistant for ClearView Window Cleaning.\n\nBusiness Hours Flow:\nHours (America/Los_Angeles): Mon: 08:00–17:00, Tue: 08:00–17:00, Wed: 08:00–17:00, Thu: 08:00–17:00, Fri: 08:00–17:00, Sat: 09:00–13:00, Sun: Closed\n1. Greeting\n2. Ask purpose of call\n3. Collect name and phone number\n4. Route call / Transfer\n5. If transfer fails after 30 seconds: If no answer, leave a friendly voicemail and confirm callback within one business day.\n6. Ask if caller needs anything else\n7. Close call if no\n\n\n  - New residential or commercial quote → +1-619-555-0100\n  - Appointment reschedule or cancellation → scheduling_queue\n  - Service quality complaint → +1-619-555-0188\n\nIf emergency:\nTransfer immediately to +1-619-555-0100.\n\nAfter-Hours Flow:\nHours (America/Los_Angeles): Mon: 08:00–17:00, Tue: 08:00–17:00, Wed: 08:00–17:00, Thu: 08:00–17:00, Fri: 08:00–17:00, Sat: 09:00–13:00, Sun: Closed\n1. Greeting\n2. Ask purpose\n3. Confirm emergency\n4. If emergency: collect name, number, address immediately. Attempt transfer to +1-619-555-0100. If transfer fails after 30 seconds: If no answer, leave a friendly voicemail and confirm callback within one business day..\n5. If non-emergency: collect details and confirm follow-up during business hours.\n6. Ask if they need anything else\n7. Close\n\nRouting Rules:\n- New residential or commercial quote → +1-619-555-0100 (Collect property type and window count)\n- Appointment reschedule or cancellation → scheduling_queue (Confirm 24h notice required)\n- Service quality complaint → +1-619-555-0188 (Escalate to owner)\n\nSpecial Rules:\n- Create Jobber quote for every new service inquiry\n- Do not accept jobs outside the San Diego metro area\n- Do not quote prices without knowing the property size\n\nAlways be polite, calm, and professional.\nNever reveal you are an AI unless directly asked.\nNever provide pricing, legal, or technical advice.\nAlways confirm caller information by reading it back.\nIf you cannot help, say: \"I'll make sure someone follows up with you.\"\n\nOpen Questions (resolve before deployment):\n- Emergency call definitions not formally stated\n- inspection scheduling rules\n- Types of work to accept vs decline not specified\n- Geographic service area not stated",
-  "source_hash": "ab8127fd4ea270a5cc0664fd8b9e7bd43b616f79dbbed63ff5412890894736c2"
+  "prompt": "You are Clara, an AI assistant for Summit Roofing Co.\n\nBusiness Hours Flow:\nHours (America/Denver): Mon: 07:00–17:00, Tue: 07:00–17:00, Wed: 07:00–17:00, Thu: 07:00–17:00, Fri: 07:00–16:00, Sat: Closed, Sun: Closed\n1. Greeting\n2. Ask purpose of call\n3. Collect name and phone number\n4. Route call / Transfer\n5. If transfer fails after 45 seconds: If no answer after 45 seconds, apologize and confirm an emergency crew will contact within 30 minutes.\n6. Ask if caller needs anything else\n7. Close call if no\n\n\n  - Active leak or storm damage emergency → +1-303-555-0199\n  - Insurance claim inspection request → +1-303-555-0155\n  - New roof estimate → +1-303-555-0100\n\nIf emergency:\nTransfer immediately to +1-303-555-0199.\n\nAfter-Hours Flow:\nHours (America/Denver): Mon: 07:00–17:00, Tue: 07:00–17:00, Wed: 07:00–17:00, Thu: 07:00–17:00, Fri: 07:00–16:00, Sat: Closed, Sun: Closed\n1. Greeting\n2. Ask purpose\n3. Confirm emergency\n4. If emergency: collect name, number, address immediately. Attempt transfer to +1-303-555-0199. If transfer fails after 45 seconds: If no answer after 45 seconds, apologize and confirm an emergency crew will contact within 30 minutes..\n5. If non-emergency: collect details and confirm follow-up during business hours.\n6. Ask if they need anything else\n7. Close\n\nRouting Rules:\n- Active leak or storm damage emergency → +1-303-555-0199 (Collect address and immediate situation)\n- Insurance claim inspection request → +1-303-555-0155 (Collect policy and damage details)\n- New roof estimate → +1-303-555-0100 (Book free estimate)\n\nSpecial Rules:\n- Create Jobber job for every estimate and inspection\n- Flag all insurance claim calls for priority review\n- Do not provide cost estimates on the call\n- Always ask for photos of damage to send to the crew\n\nAlways be polite, calm, and professional.\nNever reveal you are an AI unless directly asked.\nNever provide pricing, legal, or technical advice.\nAlways confirm caller information by reading it back.\nIf you cannot help, say: \"I'll make sure someone follows up with you.\"\n\nOpen Questions (resolve before deployment):\n- Emergency call definitions not formally stated\n- inspection scheduling rules\n- Types of work to accept vs decline not specified\n- Geographic service area not stated",
+  "source_hash": "79394109c44bdfc4ad518f625f7f70e811ea9cbe261cdbcf55b45c0a2bbddb4f"
 }

@@ -1,45 +1,45 @@
 {
   "client_id": "client_005",
-  "company_name": "Sunrise Landscaping",
+  "company_name": "Apex HVAC Solutions",
   "version": 2,
   "source_stage": "form",
-  "created_at": "2026-03-06T08:02:46.768621Z",
-  "updated_at": "2026-03-06T08:02:46.778334Z",
-  "industry": "Landscaping services",
-  "crm_system": "Jobber",
-  "service_area": "Central Orlando, FL",
+  "created_at": "2026-03-06T09:16:19.973574Z",
+  "updated_at": "2026-03-06T09:16:19.976996Z",
+  "industry": "HVAC services",
+  "crm_system": "ServiceTitan",
+  "service_area": "Greater Seattle metro",
   "office_address": null,
   "services_supported": [],
   "business_hours": {
     "monday": {
-      "open": "07:00",
-      "close": "18:00",
+      "open": "08:00",
+      "close": "17:00",
       "closed": false
     },
     "tuesday": {
-      "open": "07:00",
-      "close": "18:00",
+      "open": "08:00",
+      "close": "17:00",
       "closed": false
     },
     "wednesday": {
-      "open": "07:00",
-      "close": "18:00",
+      "open": "08:00",
+      "close": "17:00",
       "closed": false
     },
     "thursday": {
-      "open": "07:00",
-      "close": "18:00",
+      "open": "08:00",
+      "close": "17:00",
       "closed": false
     },
     "friday": {
-      "open": "07:00",
+      "open": "08:00",
       "close": "17:00",
       "closed": false
     },
     "saturday": {
-      "open": "08:00",
-      "close": "13:00",
-      "closed": false
+      "open": null,
+      "close": null,
+      "closed": true
     },
     "sunday": {
       "open": null,
@@ -47,55 +47,44 @@
       "closed": true
     }
   },
-  "timezone": "America/New_York",
+  "timezone": "America/Los_Angeles",
   "emergency_definitions": [
-    "Irrigation system flooding or uncontrolled water discharge",
-    "Downed trees blocking access or causing property damage"
+    "No heat in freezing weather",
+    "No cooling in medical-sensitive environments"
   ],
   "emergency_routing_rules": [],
   "non_emergency_routing_rules": [],
   "call_transfer_rules": [],
   "routing_rules": [
     {
-      "trigger": "Irrigation flooding or major water damage",
-      "destination": "on_call_crew",
+      "trigger": "Emergency HVAC outage",
+      "destination": "after_hours_dispatch",
       "priority": 1,
       "call_type": "emergency",
-      "notes": "Immediate transfer"
+      "notes": "Collect address first"
     },
     {
-      "trigger": "New service estimate or inspection",
+      "trigger": "Routine maintenance or estimate",
       "destination": "scheduling_queue",
       "priority": 2,
       "call_type": "non_emergency",
-      "notes": "Collect address and preferred date"
-    },
-    {
-      "trigger": "Existing job reschedule or status",
-      "destination": "office_line",
-      "priority": 3,
-      "call_type": "general",
-      "notes": null
+      "notes": "Collect preferred date/time"
     }
   ],
   "transfer_numbers": {
-    "on_call_crew": "+1-407-555-0133",
-    "office_line": "+1-407-555-0100",
-    "scheduling_queue": "+1-407-555-0144"
+    "after_hours_dispatch": "+1-206-555-0199"
   },
-  "after_hours_handling": "Collect emergency details and transfer to on-call crew. Non-emergency requests held for next business day.",
+  "after_hours_handling": "Escalate emergency outages to after-hours dispatch and collect all non-emergency requests for next-day callbacks.",
   "after_hours_flow_summary": null,
   "office_hours_flow_summary": null,
-  "transfer_timeout_seconds": 45,
-  "fallback_logic": "If transfer fails after 45 seconds, apologize, confirm on-call crew will respond within 30 minutes, and collect callback number.",
+  "transfer_timeout_seconds": 60,
+  "fallback_logic": "If transfer fails, apologize and confirm dispatch callback.",
   "integration_rules": [
-    "Create Jobber job for every new service request",
-    "Tag emergency calls with URGENT label"
+    "Create ServiceTitan lead for all qualified non-emergency calls"
   ],
   "integration_constraints": [],
   "special_constraints": [
-    "Do not quote prices on the call",
-    "Do not schedule outside the service area"
+    "Avoid technical troubleshooting over phone"
   ],
   "notes": null,
   "questions_or_unknowns": [
@@ -108,9 +97,9 @@
     {
       "field": "service_area",
       "old_value": null,
-      "new_value": "Central Orlando, FL",
+      "new_value": "Greater Seattle metro",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.778426Z",
+      "timestamp": "2026-03-06T09:16:19.977049Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -118,34 +107,34 @@
       "old_value": null,
       "new_value": {
         "monday": {
-          "open": "07:00",
-          "close": "18:00",
+          "open": "08:00",
+          "close": "17:00",
           "closed": false
         },
         "tuesday": {
-          "open": "07:00",
-          "close": "18:00",
+          "open": "08:00",
+          "close": "17:00",
           "closed": false
         },
         "wednesday": {
-          "open": "07:00",
-          "close": "18:00",
+          "open": "08:00",
+          "close": "17:00",
           "closed": false
         },
         "thursday": {
-          "open": "07:00",
-          "close": "18:00",
+          "open": "08:00",
+          "close": "17:00",
           "closed": false
         },
         "friday": {
-          "open": "07:00",
+          "open": "08:00",
           "close": "17:00",
           "closed": false
         },
         "saturday": {
-          "open": "08:00",
-          "close": "13:00",
-          "closed": false
+          "open": null,
+          "close": null,
+          "closed": true
         },
         "sunday": {
           "open": null,
@@ -154,50 +143,50 @@
         }
       },
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.779163Z",
+      "timestamp": "2026-03-06T09:16:19.977436Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "timezone",
       "old_value": null,
-      "new_value": "America/New_York",
+      "new_value": "America/Los_Angeles",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.780236Z",
+      "timestamp": "2026-03-06T09:16:19.977988Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "after_hours_handling",
       "old_value": null,
-      "new_value": "Collect emergency details and transfer to on-call crew. Non-emergency requests held for next business day.",
+      "new_value": "Escalate emergency outages to after-hours dispatch and collect all non-emergency requests for next-day callbacks.",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.781491Z",
+      "timestamp": "2026-03-06T09:16:19.978374Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "transfer_timeout_seconds",
       "old_value": null,
-      "new_value": 45,
+      "new_value": 60,
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.782470Z",
+      "timestamp": "2026-03-06T09:16:19.978868Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "fallback_logic",
       "old_value": null,
-      "new_value": "If transfer fails after 45 seconds, apologize, confirm on-call crew will respond within 30 minutes, and collect callback number.",
+      "new_value": "If transfer fails, apologize and confirm dispatch callback.",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.783283Z",
+      "timestamp": "2026-03-06T09:16:19.979249Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "emergency_definitions",
       "old_value": null,
       "new_value": [
-        "Irrigation system flooding or uncontrolled water discharge",
-        "Downed trees blocking access or causing property damage"
+        "No heat in freezing weather",
+        "No cooling in medical-sensitive environments"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.784405Z",
+      "timestamp": "2026-03-06T09:16:19.979691Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -205,63 +194,52 @@
       "old_value": null,
       "new_value": [
         {
-          "trigger": "Irrigation flooding or major water damage",
-          "destination": "on_call_crew",
+          "trigger": "Emergency HVAC outage",
+          "destination": "after_hours_dispatch",
           "priority": 1,
           "call_type": "emergency",
-          "notes": "Immediate transfer"
+          "notes": "Collect address first"
         },
         {
-          "trigger": "New service estimate or inspection",
+          "trigger": "Routine maintenance or estimate",
           "destination": "scheduling_queue",
           "priority": 2,
           "call_type": "non_emergency",
-          "notes": "Collect address and preferred date"
-        },
-        {
-          "trigger": "Existing job reschedule or status",
-          "destination": "office_line",
-          "priority": 3,
-          "call_type": "general",
-          "notes": null
+          "notes": "Collect preferred date/time"
         }
       ],
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.785278Z",
-      "reason": "onboarding_confirmed — 3 new item(s) added"
+      "timestamp": "2026-03-06T09:16:19.980087Z",
+      "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
       "field": "integration_rules",
       "old_value": null,
       "new_value": [
-        "Create Jobber job for every new service request",
-        "Tag emergency calls with URGENT label"
+        "Create ServiceTitan lead for all qualified non-emergency calls"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.785938Z",
-      "reason": "onboarding_confirmed — 2 new item(s) added"
+      "timestamp": "2026-03-06T09:16:19.980455Z",
+      "reason": "onboarding_confirmed — 1 new item(s) added"
     },
     {
       "field": "special_constraints",
       "old_value": null,
       "new_value": [
-        "Do not quote prices on the call",
-        "Do not schedule outside the service area"
+        "Avoid technical troubleshooting over phone"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.786649Z",
-      "reason": "onboarding_confirmed — 2 new item(s) added"
+      "timestamp": "2026-03-06T09:16:19.980819Z",
+      "reason": "onboarding_confirmed — 1 new item(s) added"
     },
     {
       "field": "transfer_numbers",
       "old_value": null,
       "new_value": {
-        "on_call_crew": "+1-407-555-0133",
-        "office_line": "+1-407-555-0100",
-        "scheduling_queue": "+1-407-555-0144"
+        "after_hours_dispatch": "+1-206-555-0199"
       },
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.787279Z",
+      "timestamp": "2026-03-06T09:16:19.981188Z",
       "reason": "onboarding_confirmed — new transfer numbers added"
     },
     {
@@ -269,7 +247,7 @@
       "old_value": "Business hours not discussed — exact days and times unknown",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.788088Z",
+      "timestamp": "2026-03-06T09:16:19.981626Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -277,7 +255,7 @@
       "old_value": "Timezone not mentioned",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.789661Z",
+      "timestamp": "2026-03-06T09:16:19.982016Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -285,7 +263,7 @@
       "old_value": "dispatch phone number",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.791248Z",
+      "timestamp": "2026-03-06T09:16:19.982353Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -293,7 +271,7 @@
       "old_value": "CRM authentication / API details not provided",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.792097Z",
+      "timestamp": "2026-03-06T09:16:19.982687Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -301,10 +279,10 @@
       "old_value": "After-hours routing rules not specified",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.793002Z",
+      "timestamp": "2026-03-06T09:16:19.983075Z",
       "reason": "Onboarding data addressed this open question"
     }
   ],
-  "prompt": "You are Clara, an AI assistant for Sunrise Landscaping.\n\nBusiness Hours Flow:\nHours (America/New_York): Mon: 07:00–18:00, Tue: 07:00–18:00, Wed: 07:00–18:00, Thu: 07:00–18:00, Fri: 07:00–17:00, Sat: 08:00–13:00, Sun: Closed\n1. Greeting\n2. Ask purpose of call\n3. Collect name and phone number\n4. Route call / Transfer\n5. If transfer fails after 45 seconds: If transfer fails after 45 seconds, apologize, confirm on-call crew will respond within 30 minutes, and collect callback number.\n6. Ask if caller needs anything else\n7. Close call if no\n\n\n  - Irrigation flooding or major water damage → +1-407-555-0133\n  - New service estimate or inspection → +1-407-555-0144\n  - Existing job reschedule or status → +1-407-555-0100\n\nIf emergency:\nTransfer immediately to +1-407-555-0133.\n\nAfter-Hours Flow:\nHours (America/New_York): Mon: 07:00–18:00, Tue: 07:00–18:00, Wed: 07:00–18:00, Thu: 07:00–18:00, Fri: 07:00–17:00, Sat: 08:00–13:00, Sun: Closed\n1. Greeting\n2. Ask purpose\n3. Confirm emergency\n4. If emergency: collect name, number, address immediately. Attempt transfer to +1-407-555-0133. If transfer fails after 45 seconds: If transfer fails after 45 seconds, apologize, confirm on-call crew will respond within 30 minutes, and collect callback number..\n5. If non-emergency: collect details and confirm follow-up during business hours.\n6. Ask if they need anything else\n7. Close\n\nRouting Rules:\n- Irrigation flooding or major water damage → +1-407-555-0133 (Immediate transfer)\n- New service estimate or inspection → +1-407-555-0144 (Collect address and preferred date)\n- Existing job reschedule or status → +1-407-555-0100\n\nSpecial Rules:\n- Create Jobber job for every new service request\n- Tag emergency calls with URGENT label\n- Do not quote prices on the call\n- Do not schedule outside the service area\n\nAlways be polite, calm, and professional.\nNever reveal you are an AI unless directly asked.\nNever provide pricing, legal, or technical advice.\nAlways confirm caller information by reading it back.\nIf you cannot help, say: \"I'll make sure someone follows up with you.\"\n\nOpen Questions (resolve before deployment):\n- Emergency call definitions not formally stated\n- inspection scheduling rules\n- Types of work to accept vs decline not specified\n- Geographic service area not stated",
-  "source_hash": "003b204fe7ada1f2efd147aac914c70486d7e765fb2c05b174c133bdf5120093"
+  "prompt": "You are Clara, an AI assistant for Apex HVAC Solutions.\n\nBusiness Hours Flow:\nHours (America/Los_Angeles): Mon: 08:00–17:00, Tue: 08:00–17:00, Wed: 08:00–17:00, Thu: 08:00–17:00, Fri: 08:00–17:00, Sat: Closed, Sun: Closed\n1. Greeting\n2. Ask purpose of call\n3. Collect name and phone number\n4. Route call / Transfer\n5. If transfer fails after 60 seconds: If transfer fails, apologize and confirm dispatch callback.\n6. Ask if caller needs anything else\n7. Close call if no\n\n\n  - Emergency HVAC outage → +1-206-555-0199\n  - Routine maintenance or estimate → scheduling_queue\n\nIf emergency:\nTransfer immediately to +1-206-555-0199.\n\nAfter-Hours Flow:\nHours (America/Los_Angeles): Mon: 08:00–17:00, Tue: 08:00–17:00, Wed: 08:00–17:00, Thu: 08:00–17:00, Fri: 08:00–17:00, Sat: Closed, Sun: Closed\n1. Greeting\n2. Ask purpose\n3. Confirm emergency\n4. If emergency: collect name, number, address immediately. Attempt transfer to +1-206-555-0199. If transfer fails after 60 seconds: If transfer fails, apologize and confirm dispatch callback..\n5. If non-emergency: collect details and confirm follow-up during business hours.\n6. Ask if they need anything else\n7. Close\n\nRouting Rules:\n- Emergency HVAC outage → +1-206-555-0199 (Collect address first)\n- Routine maintenance or estimate → scheduling_queue (Collect preferred date/time)\n\nSpecial Rules:\n- Create ServiceTitan lead for all qualified non-emergency calls\n- Avoid technical troubleshooting over phone\n\nAlways be polite, calm, and professional.\nNever reveal you are an AI unless directly asked.\nNever provide pricing, legal, or technical advice.\nAlways confirm caller information by reading it back.\nIf you cannot help, say: \"I'll make sure someone follows up with you.\"\n\nOpen Questions (resolve before deployment):\n- Emergency call definitions not formally stated\n- inspection scheduling rules\n- Types of work to accept vs decline not specified\n- Geographic service area not stated",
+  "source_hash": "7d8b4d64dc70414e5406f9a251244453334b6030d108086abc33d56bf475e82d"
 }

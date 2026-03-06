@@ -2,9 +2,9 @@
   {
     "field": "service_area",
     "old_value": null,
-    "new_value": "San Diego Metro, CA",
+    "new_value": "Greater Denver, CO",
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.941234Z",
+    "timestamp": "2026-03-06T09:16:20.054205Z",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
@@ -12,34 +12,34 @@
     "old_value": null,
     "new_value": {
       "monday": {
-        "open": "08:00",
+        "open": "07:00",
         "close": "17:00",
         "closed": false
       },
       "tuesday": {
-        "open": "08:00",
+        "open": "07:00",
         "close": "17:00",
         "closed": false
       },
       "wednesday": {
-        "open": "08:00",
+        "open": "07:00",
         "close": "17:00",
         "closed": false
       },
       "thursday": {
-        "open": "08:00",
+        "open": "07:00",
         "close": "17:00",
         "closed": false
       },
       "friday": {
-        "open": "08:00",
-        "close": "17:00",
+        "open": "07:00",
+        "close": "16:00",
         "closed": false
       },
       "saturday": {
-        "open": "09:00",
-        "close": "13:00",
-        "closed": false
+        "open": null,
+        "close": null,
+        "closed": true
       },
       "sunday": {
         "open": null,
@@ -48,101 +48,114 @@
       }
     },
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.942516Z",
+    "timestamp": "2026-03-06T09:16:20.054605Z",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
     "field": "timezone",
     "old_value": null,
-    "new_value": "America/Los_Angeles",
+    "new_value": "America/Denver",
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.943470Z",
+    "timestamp": "2026-03-06T09:16:20.055294Z",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
     "field": "after_hours_handling",
     "old_value": null,
-    "new_value": "No emergency calls expected. Collect all messages for next business day follow-up.",
+    "new_value": "Emergency leak or damage calls go to dispatch. All other calls collected for next business day.",
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.944104Z",
+    "timestamp": "2026-03-06T09:16:20.055680Z",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
     "field": "transfer_timeout_seconds",
     "old_value": null,
-    "new_value": 30,
+    "new_value": 45,
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.944920Z",
+    "timestamp": "2026-03-06T09:16:20.056184Z",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
     "field": "fallback_logic",
     "old_value": null,
-    "new_value": "If no answer, leave a friendly voicemail and confirm callback within one business day.",
+    "new_value": "If no answer after 45 seconds, apologize and confirm an emergency crew will contact within 30 minutes.",
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.945559Z",
+    "timestamp": "2026-03-06T09:16:20.056571Z",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "emergency_definitions",
+    "old_value": null,
+    "new_value": [
+      "Active roof leak causing interior water damage",
+      "Storm-related structural damage with safety risk"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06T09:16:20.057094Z",
+    "reason": "onboarding_confirmed \u2014 2 new item(s) added"
   },
   {
     "field": "routing_rules",
     "old_value": null,
     "new_value": [
       {
-        "trigger": "New residential or commercial quote",
-        "destination": "office_line",
+        "trigger": "Active leak or storm damage emergency",
+        "destination": "emergency_dispatch",
         "priority": 1,
-        "call_type": "non_emergency",
-        "notes": "Collect property type and window count"
+        "call_type": "emergency",
+        "notes": "Collect address and immediate situation"
       },
       {
-        "trigger": "Appointment reschedule or cancellation",
-        "destination": "scheduling_queue",
+        "trigger": "Insurance claim inspection request",
+        "destination": "claims_line",
         "priority": 2,
-        "call_type": "general",
-        "notes": "Confirm 24h notice required"
+        "call_type": "non_emergency",
+        "notes": "Collect policy and damage details"
       },
       {
-        "trigger": "Service quality complaint",
-        "destination": "owner_cell",
+        "trigger": "New roof estimate",
+        "destination": "scheduling_line",
         "priority": 3,
-        "call_type": "general",
-        "notes": "Escalate to owner"
+        "call_type": "non_emergency",
+        "notes": "Book free estimate"
       }
     ],
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.946381Z",
+    "timestamp": "2026-03-06T09:16:20.057499Z",
     "reason": "onboarding_confirmed \u2014 3 new item(s) added"
   },
   {
     "field": "integration_rules",
     "old_value": null,
     "new_value": [
-      "Create Jobber quote for every new service inquiry"
+      "Create Jobber job for every estimate and inspection",
+      "Flag all insurance claim calls for priority review"
     ],
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.947507Z",
-    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
+    "timestamp": "2026-03-06T09:16:20.057873Z",
+    "reason": "onboarding_confirmed \u2014 2 new item(s) added"
   },
   {
     "field": "special_constraints",
     "old_value": null,
     "new_value": [
-      "Do not accept jobs outside the San Diego metro area",
-      "Do not quote prices without knowing the property size"
+      "Do not provide cost estimates on the call",
+      "Always ask for photos of damage to send to the crew"
     ],
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.948311Z",
+    "timestamp": "2026-03-06T09:16:20.058244Z",
     "reason": "onboarding_confirmed \u2014 2 new item(s) added"
   },
   {
     "field": "transfer_numbers",
     "old_value": null,
     "new_value": {
-      "office_line": "+1-619-555-0100",
-      "owner_cell": "+1-619-555-0188"
+      "emergency_dispatch": "+1-303-555-0199",
+      "claims_line": "+1-303-555-0155",
+      "scheduling_line": "+1-303-555-0100"
     },
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.949011Z",
+    "timestamp": "2026-03-06T09:16:20.058626Z",
     "reason": "onboarding_confirmed \u2014 new transfer numbers added"
   },
   {
@@ -150,7 +163,7 @@
     "old_value": "Business hours not discussed \u2014 exact days and times unknown",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.950420Z",
+    "timestamp": "2026-03-06T09:16:20.059106Z",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -158,7 +171,7 @@
     "old_value": "Timezone not mentioned",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.951112Z",
+    "timestamp": "2026-03-06T09:16:20.059504Z",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -166,7 +179,7 @@
     "old_value": "dispatch phone number",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.951876Z",
+    "timestamp": "2026-03-06T09:16:20.059838Z",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -174,7 +187,7 @@
     "old_value": "CRM authentication / API details not provided",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.952526Z",
+    "timestamp": "2026-03-06T09:16:20.060172Z",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -182,7 +195,7 @@
     "old_value": "After-hours routing rules not specified",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06T08:02:46.953466Z",
+    "timestamp": "2026-03-06T09:16:20.060560Z",
     "reason": "Onboarding data addressed this open question"
   }
 ]

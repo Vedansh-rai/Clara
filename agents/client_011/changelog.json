@@ -1,26 +1,10 @@
 [
   {
-    "field": "company_name",
-    "old_value": "Client 011",
-    "new_value": "Ben's Electric Solutions",
-    "source": "form",
-    "timestamp": "2026-03-06T08:55:09.449257Z",
-    "reason": "onboarding_override \u2014 onboarding data supersedes demo assumption"
-  },
-  {
-    "field": "industry",
-    "old_value": null,
-    "new_value": "Electrical Services",
-    "source": "form",
-    "timestamp": "2026-03-06T08:55:09.449784Z",
-    "reason": "onboarding_confirmed \u2014 field was previously unknown"
-  },
-  {
     "field": "service_area",
     "old_value": null,
-    "new_value": "Calgary, Alberta",
+    "new_value": "San Diego Metro, CA",
     "source": "form",
-    "timestamp": "2026-03-06T08:55:09.450236Z",
+    "timestamp": "2026-03-06T09:16:20.068027Z",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
@@ -53,9 +37,9 @@
         "closed": false
       },
       "saturday": {
-        "open": null,
-        "close": null,
-        "closed": true
+        "open": "09:00",
+        "close": "13:00",
+        "closed": false
       },
       "sunday": {
         "open": null,
@@ -64,48 +48,125 @@
       }
     },
     "source": "form",
-    "timestamp": "2026-03-06T08:55:09.450638Z",
+    "timestamp": "2026-03-06T09:16:20.068484Z",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
-    "field": "emergency_definitions",
+    "field": "timezone",
     "old_value": null,
-    "new_value": [
-      "Gas station pump outages for preferred clients"
-    ],
+    "new_value": "America/Los_Angeles",
     "source": "form",
-    "timestamp": "2026-03-06T08:55:09.451647Z",
-    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
+    "timestamp": "2026-03-06T09:16:20.069051Z",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "after_hours_handling",
+    "old_value": null,
+    "new_value": "No emergency calls expected. Collect all messages for next business day follow-up.",
+    "source": "form",
+    "timestamp": "2026-03-06T09:16:20.069430Z",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "transfer_timeout_seconds",
+    "old_value": null,
+    "new_value": 30,
+    "source": "form",
+    "timestamp": "2026-03-06T09:16:20.069934Z",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "fallback_logic",
+    "old_value": null,
+    "new_value": "If no answer, leave a friendly voicemail and confirm callback within one business day.",
+    "source": "form",
+    "timestamp": "2026-03-06T09:16:20.070320Z",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
     "field": "routing_rules",
     "old_value": null,
     "new_value": [
       {
-        "trigger": "Emergency or VIP preferred customer",
-        "destination": "ben_cell",
+        "trigger": "New residential or commercial quote",
+        "destination": "office_line",
         "priority": 1,
-        "call_type": "emergency",
-        "notes": null
+        "call_type": "non_emergency",
+        "notes": "Collect property type and window count"
       },
       {
-        "trigger": "Routine service inquiries (EV chargers, panel upgrades)",
-        "destination": "jobber_queue",
+        "trigger": "Appointment reschedule or cancellation",
+        "destination": "scheduling_queue",
         "priority": 2,
-        "call_type": "non_emergency",
-        "notes": null
+        "call_type": "general",
+        "notes": "Confirm 24h notice required"
+      },
+      {
+        "trigger": "Service quality complaint",
+        "destination": "owner_cell",
+        "priority": 3,
+        "call_type": "general",
+        "notes": "Escalate to owner"
       }
     ],
     "source": "form",
-    "timestamp": "2026-03-06T08:55:09.452097Z",
+    "timestamp": "2026-03-06T09:16:20.070887Z",
+    "reason": "onboarding_confirmed \u2014 3 new item(s) added"
+  },
+  {
+    "field": "integration_rules",
+    "old_value": null,
+    "new_value": [
+      "Create Jobber quote for every new service inquiry"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06T09:16:20.071305Z",
+    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
+  },
+  {
+    "field": "special_constraints",
+    "old_value": null,
+    "new_value": [
+      "Do not accept jobs outside the San Diego metro area",
+      "Do not quote prices without knowing the property size"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06T09:16:20.071696Z",
     "reason": "onboarding_confirmed \u2014 2 new item(s) added"
+  },
+  {
+    "field": "transfer_numbers",
+    "old_value": null,
+    "new_value": {
+      "office_line": "+1-619-555-0100",
+      "owner_cell": "+1-619-555-0188"
+    },
+    "source": "form",
+    "timestamp": "2026-03-06T09:16:20.072079Z",
+    "reason": "onboarding_confirmed \u2014 new transfer numbers added"
   },
   {
     "field": "questions_or_unknowns",
     "old_value": "Business hours not discussed \u2014 exact days and times unknown",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06T08:55:09.452532Z",
+    "timestamp": "2026-03-06T09:16:20.072542Z",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "Timezone not mentioned",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06T09:16:20.072946Z",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "dispatch phone number",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06T09:16:20.073279Z",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -113,7 +174,7 @@
     "old_value": "CRM authentication / API details not provided",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06T08:55:09.452978Z",
+    "timestamp": "2026-03-06T09:16:20.073611Z",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -121,7 +182,7 @@
     "old_value": "After-hours routing rules not specified",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06T08:55:09.453417Z",
+    "timestamp": "2026-03-06T09:16:20.074001Z",
     "reason": "Onboarding data addressed this open question"
   }
 ]

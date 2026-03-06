@@ -1,21 +1,21 @@
 {
   "account_id": "client_002",
-  "company_name": "TechPro IT Services",
+  "company_name": "Fire Protection Services",
   "business_hours": {
-    "monday": "open='08:00' close='18:00' closed=False",
-    "tuesday": "open='08:00' close='18:00' closed=False",
-    "wednesday": "open='08:00' close='18:00' closed=False",
-    "thursday": "open='08:00' close='18:00' closed=False",
-    "friday": "open='08:00' close='17:00' closed=False",
+    "monday": "open='08:00' close='17:00' closed=False",
+    "tuesday": "open='08:00' close='17:00' closed=False",
+    "wednesday": "open='08:00' close='17:00' closed=False",
+    "thursday": "open='08:00' close='17:00' closed=False",
+    "friday": "open='08:00' close='16:00' closed=False",
     "saturday": "open=None close=None closed=True",
     "sunday": "open=None close=None closed=True"
   },
   "office_address": null,
   "services_supported": [],
   "emergency_definition": [
-    "Complete server or network outage affecting business operations",
-    "Cybersecurity incident \u2014 ransomware, breach, or data loss",
-    "Phone or communication system failure"
+    "Active sprinkler leak with flooding risk",
+    "Fire alarm panel outage in occupied building",
+    "Suppression system discharge emergency"
   ],
   "emergency_routing_rules": [],
   "non_emergency_routing_rules": [],
@@ -25,6 +25,7 @@
   "office_hours_flow_summary": null,
   "questions_or_unknowns": [
     "Emergency call definitions not formally stated",
+    "dispatch phone number",
     "inspection scheduling rules",
     "Types of work to accept vs decline not specified",
     "Geographic service area not stated"

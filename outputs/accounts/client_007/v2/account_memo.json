@@ -1,21 +1,19 @@
 {
   "account_id": "client_007",
-  "company_name": "Reliable Locksmith Services",
+  "company_name": "PowerClean Pressure Washing",
   "business_hours": {
-    "monday": "open='07:00' close='20:00' closed=False",
-    "tuesday": "open='07:00' close='20:00' closed=False",
-    "wednesday": "open='07:00' close='20:00' closed=False",
-    "thursday": "open='07:00' close='20:00' closed=False",
-    "friday": "open='07:00' close='20:00' closed=False",
-    "saturday": "open='08:00' close='18:00' closed=False",
-    "sunday": "open='10:00' close='16:00' closed=False"
+    "monday": "open='08:00' close='17:00' closed=False",
+    "tuesday": "open='08:00' close='17:00' closed=False",
+    "wednesday": "open='08:00' close='17:00' closed=False",
+    "thursday": "open='08:00' close='17:00' closed=False",
+    "friday": "open='08:00' close='17:00' closed=False",
+    "saturday": "open='09:00' close='14:00' closed=False",
+    "sunday": "open=None close=None closed=True"
   },
   "office_address": null,
   "services_supported": [],
   "emergency_definition": [
-    "Locked out of home or vehicle",
-    "Broken lock preventing property access",
-    "Security breach \u2014 lock has been tampered with"
+    "Active water or chemical flooding from equipment failure"
   ],
   "emergency_routing_rules": [],
   "non_emergency_routing_rules": [],

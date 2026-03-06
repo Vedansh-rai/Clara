@@ -1,6 +1,6 @@
 Agent: Clara
 
-Company: Reliable Locksmith Services
+Company: PowerClean Pressure Washing
 
 BUSINESS HOURS FLOW
 
@@ -8,9 +8,9 @@ BUSINESS HOURS FLOW
 2. Ask the purpose of the call.
 3. Collect caller name and phone number.
 4. Route call based on purpose:
-   - Emergency → transfer immediately to dispatch mobile.
+   - Emergency → transfer immediately to owner cell.
    - Non-emergency → collect service request details and confirm next steps.
-5. If transfer fails after 20 seconds: After 20 seconds, apologize and send automated SMS with ETA to caller's number.
+5. If transfer fails after 30 seconds: Apologize and confirm owner will call back within 20 minutes.
 6. Confirm next steps with the caller.
 7. Ask if the caller needs anything else.
 8. Close the call professionally.
@@ -23,8 +23,8 @@ AFTER HOURS FLOW
 
 If emergency:
    - Collect caller name, phone number, and service address.
-   - Attempt transfer to dispatch mobile.
-   - If transfer fails after 20 seconds: After 20 seconds, apologize and send automated SMS with ETA to caller's number.
+   - Attempt transfer to owner cell.
+   - If transfer fails after 30 seconds: Apologize and confirm owner will call back within 20 minutes.
 
 If non-emergency:
    - Collect service request details.

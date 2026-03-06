@@ -1,6 +1,6 @@
 Agent: Clara
 
-Company: Summit Roofing Co
+Company: GreenLeaf Pest Control
 
 BUSINESS HOURS FLOW
 
@@ -8,9 +8,9 @@ BUSINESS HOURS FLOW
 2. Ask the purpose of the call.
 3. Collect caller name and phone number.
 4. Route call based on purpose:
-   - Emergency → transfer immediately to emergency dispatch.
+   - Emergency → transfer immediately to on call tech.
    - Non-emergency → collect service request details and confirm next steps.
-5. If transfer fails after 45 seconds: If no answer after 45 seconds, apologize and confirm an emergency crew will contact within 30 minutes.
+5. If transfer fails after 40 seconds: Apologize and leave urgent message for technician to call back within 1 hour.
 6. Confirm next steps with the caller.
 7. Ask if the caller needs anything else.
 8. Close the call professionally.
@@ -23,8 +23,8 @@ AFTER HOURS FLOW
 
 If emergency:
    - Collect caller name, phone number, and service address.
-   - Attempt transfer to emergency dispatch.
-   - If transfer fails after 45 seconds: If no answer after 45 seconds, apologize and confirm an emergency crew will contact within 30 minutes.
+   - Attempt transfer to on call tech.
+   - If transfer fails after 40 seconds: Apologize and leave urgent message for technician to call back within 1 hour.
 
 If non-emergency:
    - Collect service request details.

@@ -1,9 +1,9 @@
-MEETING: Clara Demo Call — ClearView Window Cleaning
-DATE: February 19, 2026
+MEETING: Clara Demo Call — Summit Roofing Co
+DATE: February 18, 2026
 
-ClearView Window Cleaning provides residential and commercial window cleaning and glass restoration.
+Summit Roofing Co provides residential and commercial roof inspection, repair, and installation.
 
-INDUSTRY: Window cleaning services
+INDUSTRY: Roofing services
 CRM: Jobber
 
-They want Clara to book appointments, answer service area questions, and handle reschedule requests professionally.
+They need Clara to capture storm damage emergency calls after hours, and route non-emergency inspection requests to scheduling.

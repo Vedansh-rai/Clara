@@ -1,9 +1,9 @@
 {
-  "run_at": "2026-03-06T08:55:09.458354+00:00",
+  "run_at": "2026-03-06T09:16:20.076805+00:00",
   "total_cases": 11,
   "successful": 11,
   "failed": 0,
-  "elapsed_seconds": 0.08,
+  "elapsed_seconds": 0.17,
   "totals": {
     "v1_agents": 11,
     "v2_agents": 11,
@@ -15,6 +15,22 @@
   "clients": [
     {
       "client_id": "client_001",
+      "company_name": "Ben's Electric Solutions",
+      "case_dir": "bens_electric",
+      "status": "success",
+      "v1_unknowns": 9,
+      "v2_changes": 9,
+      "resolved_unknowns": 3,
+      "remaining_unknowns": 6,
+      "routing_rules": 2,
+      "prompt_chars": 1893,
+      "has_after_hours": false,
+      "crm_system": "Jobber",
+      "timezone": null,
+      "error": null
+    },
+    {
+      "client_id": "client_002",
       "company_name": "Fire Protection Services",
       "case_dir": "case_1",
       "status": "success",
@@ -30,7 +46,7 @@
       "error": null
     },
     {
-      "client_id": "client_002",
+      "client_id": "client_003",
       "company_name": "TechPro IT Services",
       "case_dir": "case_10",
       "status": "success",
@@ -46,7 +62,7 @@
       "error": null
     },
     {
-      "client_id": "client_003",
+      "client_id": "client_004",
       "company_name": "Metro Plumbing Co",
       "case_dir": "case_2",
       "status": "success",
@@ -62,7 +78,7 @@
       "error": null
     },
     {
-      "client_id": "client_004",
+      "client_id": "client_005",
       "company_name": "Apex HVAC Solutions",
       "case_dir": "case_3",
       "status": "success",
@@ -78,7 +94,7 @@
       "error": null
     },
     {
-      "client_id": "client_005",
+      "client_id": "client_006",
       "company_name": "Sunrise Landscaping",
       "case_dir": "case_4",
       "status": "success",
@@ -94,7 +110,7 @@
       "error": null
     },
     {
-      "client_id": "client_006",
+      "client_id": "client_007",
       "company_name": "PowerClean Pressure Washing",
       "case_dir": "case_5",
       "status": "success",
@@ -110,7 +126,7 @@
       "error": null
     },
     {
-      "client_id": "client_007",
+      "client_id": "client_008",
       "company_name": "Reliable Locksmith Services",
       "case_dir": "case_6",
       "status": "success",
@@ -126,7 +142,7 @@
       "error": null
     },
     {
-      "client_id": "client_008",
+      "client_id": "client_009",
       "company_name": "GreenLeaf Pest Control",
       "case_dir": "case_7",
       "status": "success",
@@ -142,7 +158,7 @@
       "error": null
     },
     {
-      "client_id": "client_009",
+      "client_id": "client_010",
       "company_name": "Summit Roofing Co",
       "case_dir": "case_8",
       "status": "success",
@@ -158,7 +174,7 @@
       "error": null
     },
     {
-      "client_id": "client_010",
+      "client_id": "client_011",
       "company_name": "ClearView Window Cleaning",
       "case_dir": "case_9",
       "status": "success",
@@ -171,22 +187,6 @@
       "has_after_hours": true,
       "crm_system": "Jobber",
       "timezone": "America/Los_Angeles",
-      "error": null
-    },
-    {
-      "client_id": "client_011",
-      "company_name": "Ben's Electric Solutions",
-      "case_dir": "case_99_bens_electric",
-      "status": "success",
-      "v1_unknowns": 9,
-      "v2_changes": 9,
-      "resolved_unknowns": 3,
-      "remaining_unknowns": 6,
-      "routing_rules": 2,
-      "prompt_chars": 1893,
-      "has_after_hours": true,
-      "crm_system": "Jobber",
-      "timezone": null,
       "error": null
     }
   ]

@@ -1,9 +1,9 @@
-MEETING: Clara Demo Call — PowerClean Pressure Washing
-DATE: February 15, 2026
+MEETING: Clara Demo Call — Sunrise Landscaping
+DATE: February 14, 2026
 
-PowerClean Pressure Washing handles residential and commercial exterior cleaning including driveways, siding, and roofs.
+Sunrise Landscaping provides residential and commercial lawn care, irrigation, and seasonal cleanup.
 
-INDUSTRY: Pressure washing services
+INDUSTRY: Landscaping services
 CRM: Jobber
 
-The team needs Clara to capture leads, book appointments, and escalate urgent flooding or damage calls.
+The owner wants Clara to handle inbound scheduling calls, route urgent irrigation failures, and collect job details without quoting prices.

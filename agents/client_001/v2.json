@@ -1,13 +1,13 @@
 {
   "client_id": "client_001",
-  "company_name": "Fire Protection Services",
+  "company_name": "Ben's Electric Solutions",
   "version": 2,
   "source_stage": "form",
-  "created_at": "2026-03-06T08:02:46.628623Z",
-  "updated_at": "2026-03-06T08:02:46.642718Z",
-  "industry": "Fire protection services",
-  "crm_system": "ServiceTrade",
-  "service_area": "North Texas commercial zone",
+  "created_at": "2026-03-06T09:16:19.910267Z",
+  "updated_at": "2026-03-06T09:16:19.916220Z",
+  "industry": "Electrical Services",
+  "crm_system": "Jobber",
+  "service_area": "Calgary, Alberta",
   "office_address": null,
   "services_supported": [],
   "business_hours": {
@@ -33,7 +33,7 @@
     },
     "friday": {
       "open": "08:00",
-      "close": "16:00",
+      "close": "17:00",
       "closed": false
     },
     "saturday": {
@@ -47,55 +47,41 @@
       "closed": true
     }
   },
-  "timezone": "America/Chicago",
+  "timezone": null,
   "emergency_definitions": [
-    "Active sprinkler leak with flooding risk",
-    "Fire alarm panel outage in occupied building",
-    "Suppression system discharge emergency"
+    "Gas station pump outages for preferred clients"
   ],
   "emergency_routing_rules": [],
   "non_emergency_routing_rules": [],
   "call_transfer_rules": [],
   "routing_rules": [
     {
-      "trigger": "Caller reports active sprinkler leak or suppression emergency",
-      "destination": "dispatch",
+      "trigger": "Emergency or VIP preferred customer",
+      "destination": "ben_cell",
       "priority": 1,
       "call_type": "emergency",
-      "notes": "Transfer immediately"
+      "notes": null
     },
     {
-      "trigger": "Caller requests inspection or certification",
-      "destination": "inspection_queue",
+      "trigger": "Routine service inquiries (EV chargers, panel upgrades)",
+      "destination": "jobber_queue",
       "priority": 2,
-      "call_type": "inspection",
-      "notes": "Collect property address and best callback"
-    },
-    {
-      "trigger": "General service request",
-      "destination": "service_queue",
-      "priority": 3,
       "call_type": "non_emergency",
-      "notes": "Collect contact and issue details"
+      "notes": null
     }
   ],
   "transfer_numbers": {},
-  "after_hours_handling": "Emergency calls should be escalated to dispatch. Non-emergency requests are collected for next business day follow-up.",
+  "after_hours_handling": null,
   "after_hours_flow_summary": null,
   "office_hours_flow_summary": null,
-  "transfer_timeout_seconds": 60,
-  "fallback_logic": "If transfer fails, apologize and confirm dispatch will follow up.",
-  "integration_rules": [
-    "Create ServiceTrade ticket for all non-emergency requests",
-    "Tag emergency calls for immediate follow-up"
-  ],
+  "transfer_timeout_seconds": null,
+  "fallback_logic": null,
+  "integration_rules": [],
   "integration_constraints": [],
-  "special_constraints": [
-    "Do not provide pricing on calls",
-    "Confirm life-safety issues before ending emergency calls"
-  ],
+  "special_constraints": [],
   "notes": null,
   "questions_or_unknowns": [
+    "Timezone not mentioned",
     "Emergency call definitions not formally stated",
     "dispatch phone number",
     "inspection scheduling rules",
@@ -104,11 +90,27 @@
   ],
   "changelog": [
     {
+      "field": "company_name",
+      "old_value": "Client 001",
+      "new_value": "Ben's Electric Solutions",
+      "source": "form",
+      "timestamp": "2026-03-06T09:16:19.916240Z",
+      "reason": "onboarding_override — onboarding data supersedes demo assumption"
+    },
+    {
+      "field": "industry",
+      "old_value": null,
+      "new_value": "Electrical Services",
+      "source": "form",
+      "timestamp": "2026-03-06T09:16:19.916731Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
       "field": "service_area",
       "old_value": null,
-      "new_value": "North Texas commercial zone",
+      "new_value": "Calgary, Alberta",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.643121Z",
+      "timestamp": "2026-03-06T09:16:19.917168Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -137,7 +139,7 @@
         },
         "friday": {
           "open": "08:00",
-          "close": "16:00",
+          "close": "17:00",
           "closed": false
         },
         "saturday": {
@@ -152,103 +154,40 @@
         }
       },
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.644829Z",
-      "reason": "onboarding_confirmed — field was previously unknown"
-    },
-    {
-      "field": "timezone",
-      "old_value": null,
-      "new_value": "America/Chicago",
-      "source": "form",
-      "timestamp": "2026-03-06T08:02:46.646183Z",
-      "reason": "onboarding_confirmed — field was previously unknown"
-    },
-    {
-      "field": "after_hours_handling",
-      "old_value": null,
-      "new_value": "Emergency calls should be escalated to dispatch. Non-emergency requests are collected for next business day follow-up.",
-      "source": "form",
-      "timestamp": "2026-03-06T08:02:46.647020Z",
-      "reason": "onboarding_confirmed — field was previously unknown"
-    },
-    {
-      "field": "transfer_timeout_seconds",
-      "old_value": null,
-      "new_value": 60,
-      "source": "form",
-      "timestamp": "2026-03-06T08:02:46.648408Z",
-      "reason": "onboarding_confirmed — field was previously unknown"
-    },
-    {
-      "field": "fallback_logic",
-      "old_value": null,
-      "new_value": "If transfer fails, apologize and confirm dispatch will follow up.",
-      "source": "form",
-      "timestamp": "2026-03-06T08:02:46.649161Z",
+      "timestamp": "2026-03-06T09:16:19.917567Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
       "field": "emergency_definitions",
       "old_value": null,
       "new_value": [
-        "Active sprinkler leak with flooding risk",
-        "Fire alarm panel outage in occupied building",
-        "Suppression system discharge emergency"
+        "Gas station pump outages for preferred clients"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.649975Z",
-      "reason": "onboarding_confirmed — 3 new item(s) added"
+      "timestamp": "2026-03-06T09:16:19.918203Z",
+      "reason": "onboarding_confirmed — 1 new item(s) added"
     },
     {
       "field": "routing_rules",
       "old_value": null,
       "new_value": [
         {
-          "trigger": "Caller reports active sprinkler leak or suppression emergency",
-          "destination": "dispatch",
+          "trigger": "Emergency or VIP preferred customer",
+          "destination": "ben_cell",
           "priority": 1,
           "call_type": "emergency",
-          "notes": "Transfer immediately"
+          "notes": null
         },
         {
-          "trigger": "Caller requests inspection or certification",
-          "destination": "inspection_queue",
+          "trigger": "Routine service inquiries (EV chargers, panel upgrades)",
+          "destination": "jobber_queue",
           "priority": 2,
-          "call_type": "inspection",
-          "notes": "Collect property address and best callback"
-        },
-        {
-          "trigger": "General service request",
-          "destination": "service_queue",
-          "priority": 3,
           "call_type": "non_emergency",
-          "notes": "Collect contact and issue details"
+          "notes": null
         }
       ],
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.650709Z",
-      "reason": "onboarding_confirmed — 3 new item(s) added"
-    },
-    {
-      "field": "integration_rules",
-      "old_value": null,
-      "new_value": [
-        "Create ServiceTrade ticket for all non-emergency requests",
-        "Tag emergency calls for immediate follow-up"
-      ],
-      "source": "form",
-      "timestamp": "2026-03-06T08:02:46.651358Z",
-      "reason": "onboarding_confirmed — 2 new item(s) added"
-    },
-    {
-      "field": "special_constraints",
-      "old_value": null,
-      "new_value": [
-        "Do not provide pricing on calls",
-        "Confirm life-safety issues before ending emergency calls"
-      ],
-      "source": "form",
-      "timestamp": "2026-03-06T08:02:46.652002Z",
+      "timestamp": "2026-03-06T09:16:19.918622Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -256,15 +195,7 @@
       "old_value": "Business hours not discussed — exact days and times unknown",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.652728Z",
-      "reason": "Onboarding data addressed this open question"
-    },
-    {
-      "field": "questions_or_unknowns",
-      "old_value": "Timezone not mentioned",
-      "new_value": "RESOLVED",
-      "source": "form",
-      "timestamp": "2026-03-06T08:02:46.653443Z",
+      "timestamp": "2026-03-06T09:16:19.919165Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -272,7 +203,7 @@
       "old_value": "CRM authentication / API details not provided",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.654039Z",
+      "timestamp": "2026-03-06T09:16:19.919885Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -280,10 +211,10 @@
       "old_value": "After-hours routing rules not specified",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T08:02:46.654696Z",
+      "timestamp": "2026-03-06T09:16:19.920421Z",
       "reason": "Onboarding data addressed this open question"
     }
   ],
-  "prompt": "You are Clara, an AI assistant for Fire Protection Services.\n\nBusiness Hours Flow:\nHours (America/Chicago): Mon: 08:00–17:00, Tue: 08:00–17:00, Wed: 08:00–17:00, Thu: 08:00–17:00, Fri: 08:00–16:00, Sat: Closed, Sun: Closed\n1. Greeting\n2. Ask purpose of call\n3. Collect name and phone number\n4. Route call / Transfer\n5. If transfer fails after 60 seconds: If transfer fails, apologize and confirm dispatch will follow up.\n6. Ask if caller needs anything else\n7. Close call if no\n\n\n  - Caller reports active sprinkler leak or suppression emergency → dispatch\n  - Caller requests inspection or certification → inspection_queue\n  - General service request → service_queue\n\nIf emergency:\nTransfer immediately to {{dispatch_number}}.\n\nAfter-Hours Flow:\nHours (America/Chicago): Mon: 08:00–17:00, Tue: 08:00–17:00, Wed: 08:00–17:00, Thu: 08:00–17:00, Fri: 08:00–16:00, Sat: Closed, Sun: Closed\n1. Greeting\n2. Ask purpose\n3. Confirm emergency\n4. If emergency: collect name, number, address immediately. Attempt transfer to {{dispatch_number}}. If transfer fails after 60 seconds: If transfer fails, apologize and confirm dispatch will follow up..\n5. If non-emergency: collect details and confirm follow-up during business hours.\n6. Ask if they need anything else\n7. Close\n\nRouting Rules:\n- Caller reports active sprinkler leak or suppression emergency → dispatch (Transfer immediately)\n- Caller requests inspection or certification → inspection_queue (Collect property address and best callback)\n- General service request → service_queue (Collect contact and issue details)\n\nSpecial Rules:\n- Create ServiceTrade ticket for all non-emergency requests\n- Tag emergency calls for immediate follow-up\n- Do not provide pricing on calls\n- Confirm life-safety issues before ending emergency calls\n\nAlways be polite, calm, and professional.\nNever reveal you are an AI unless directly asked.\nNever provide pricing, legal, or technical advice.\nAlways confirm caller information by reading it back.\nIf you cannot help, say: \"I'll make sure someone follows up with you.\"\n\nOpen Questions (resolve before deployment):\n- Emergency call definitions not formally stated\n- dispatch phone number\n- inspection scheduling rules\n- Types of work to accept vs decline not specified\n- Geographic service area not stated",
-  "source_hash": "cd9b599d8ab8590cb3a00632900de5c640104c74e3a7fd9e6fe204360c0adcde"
+  "prompt": "You are Clara, an AI assistant for Ben's Electric Solutions.\n\nBusiness Hours Flow:\nHours ({{timezone}}): Mon: 08:00–17:00, Tue: 08:00–17:00, Wed: 08:00–17:00, Thu: 08:00–17:00, Fri: 08:00–17:00, Sat: Closed, Sun: Closed\n1. Greeting\n2. Ask purpose of call\n3. Collect name and phone number\n4. Route call / Transfer\n5. If transfer fails after {{transfer_timeout}} seconds: inform the caller and leave a message for dispatch\n6. Ask if caller needs anything else\n7. Close call if no\n\n\n  - Emergency or VIP preferred customer → ben_cell\n  - Routine service inquiries (EV chargers, panel upgrades) → jobber_queue\n\nIf emergency:\nTransfer immediately to {{dispatch_number}}.\n\nAfter-Hours Flow:\nHours ({{timezone}}): Mon: 08:00–17:00, Tue: 08:00–17:00, Wed: 08:00–17:00, Thu: 08:00–17:00, Fri: 08:00–17:00, Sat: Closed, Sun: Closed\n1. Greeting\n2. Ask purpose\n3. Confirm emergency\n4. If emergency: collect name, number, address immediately. Attempt transfer to {{dispatch_number}}. If transfer fails after {{transfer_timeout}} seconds: leave a message and assure the caller an on-call technician will follow up.\n5. If non-emergency: collect details and confirm follow-up during business hours.\n6. Ask if they need anything else\n7. Close\n\nRouting Rules:\n- Emergency or VIP preferred customer → ben_cell\n- Routine service inquiries (EV chargers, panel upgrades) → jobber_queue\n\nAlways be polite, calm, and professional.\nNever reveal you are an AI unless directly asked.\nNever provide pricing, legal, or technical advice.\nAlways confirm caller information by reading it back.\nIf you cannot help, say: \"I'll make sure someone follows up with you.\"\n\nOpen Questions (resolve before deployment):\n- Timezone not mentioned\n- Emergency call definitions not formally stated\n- dispatch phone number\n- inspection scheduling rules\n- Types of work to accept vs decline not specified\n- Geographic service area not stated",
+  "source_hash": "28a95e2127db1a6cf41a40cb55bd8228503f3862e006cd84388fb78e4fddce25"
 }

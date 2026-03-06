@@ -1,41 +1,37 @@
 {
-  "company_name": "Reliable Locksmith Services",
-  "industry": "Locksmith services",
-  "crm_system": "ServiceTitan",
-  "service_area": "Denver Metro Area, CO",
-  "timezone": "America/Denver",
+  "company_name": "PowerClean Pressure Washing",
+  "industry": "Pressure washing services",
+  "crm_system": "Jobber",
+  "service_area": "Greater Nashville, TN",
+  "timezone": "America/Chicago",
   "business_hours": {
-    "monday": { "open": "07:00", "close": "20:00", "closed": false },
-    "tuesday": { "open": "07:00", "close": "20:00", "closed": false },
-    "wednesday": { "open": "07:00", "close": "20:00", "closed": false },
-    "thursday": { "open": "07:00", "close": "20:00", "closed": false },
-    "friday": { "open": "07:00", "close": "20:00", "closed": false },
-    "saturday": { "open": "08:00", "close": "18:00", "closed": false },
-    "sunday": { "open": "10:00", "close": "16:00", "closed": false }
+    "monday": { "open": "08:00", "close": "17:00", "closed": false },
+    "tuesday": { "open": "08:00", "close": "17:00", "closed": false },
+    "wednesday": { "open": "08:00", "close": "17:00", "closed": false },
+    "thursday": { "open": "08:00", "close": "17:00", "closed": false },
+    "friday": { "open": "08:00", "close": "17:00", "closed": false },
+    "saturday": { "open": "09:00", "close": "14:00", "closed": false },
+    "sunday": { "closed": true }
   },
   "emergency_definitions": [
-    "Locked out of home or vehicle",
-    "Broken lock preventing property access",
-    "Security breach — lock has been tampered with"
+    "Active water or chemical flooding from equipment failure"
   ],
   "routing_rules": [
-    { "trigger": "Lockout emergency — home, vehicle, or business", "destination": "dispatch_mobile", "priority": 1, "call_type": "emergency", "notes": "Collect full address first, then transfer" },
-    { "trigger": "Rekeying or new lock installation request", "destination": "scheduling_line", "priority": 2, "call_type": "non_emergency", "notes": "Book appointment" },
-    { "trigger": "After-hours non-emergency request", "destination": "voicemail_queue", "priority": 3, "call_type": "general", "notes": "Leave message, callback next day" }
+    { "trigger": "Equipment flooding or property damage", "destination": "owner_cell", "priority": 1, "call_type": "emergency", "notes": "Transfer immediately" },
+    { "trigger": "New estimate request", "destination": "office_line", "priority": 2, "call_type": "non_emergency", "notes": "Collect address and property type" },
+    { "trigger": "Appointment reschedule", "destination": "scheduling_queue", "priority": 3, "call_type": "general", "notes": null }
   ],
   "transfer_numbers": {
-    "dispatch_mobile": "+1-720-555-0155",
-    "scheduling_line": "+1-720-555-0100"
+    "owner_cell": "+1-615-555-0177",
+    "office_line": "+1-615-555-0100"
   },
-  "after_hours_handling": "Emergency lockouts transfer to dispatch 24/7. Non-urgent requests go to voicemail for next-day callback.",
-  "transfer_timeout_seconds": 20,
-  "fallback_logic": "If transfer fails after 20 seconds, apologize and send automated SMS with ETA to caller's number.",
+  "after_hours_handling": "Emergency flooding calls go to owner cell. All other calls held for next business day.",
+  "transfer_timeout_seconds": 30,
+  "fallback_logic": "If transfer fails, apologize and confirm owner will call back within 20 minutes.",
   "integration_rules": [
-    "Create ServiceTitan job for every service call",
-    "Tag emergency lockout calls for priority dispatch"
+    "Create Jobber quote for every estimate request"
   ],
   "special_constraints": [
-    "Always verify caller address before dispatch",
-    "Do not quote prices on the phone — door rate only"
+    "Do not provide pricing on calls — direct to free estimate"
   ]
 }

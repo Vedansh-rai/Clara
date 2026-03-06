@@ -1,20 +1,21 @@
 {
   "account_id": "client_008",
-  "company_name": "GreenLeaf Pest Control",
+  "company_name": "Reliable Locksmith Services",
   "business_hours": {
-    "monday": "open='08:00' close='17:00' closed=False",
-    "tuesday": "open='08:00' close='17:00' closed=False",
-    "wednesday": "open='08:00' close='17:00' closed=False",
-    "thursday": "open='08:00' close='17:00' closed=False",
-    "friday": "open='08:00' close='17:00' closed=False",
-    "saturday": "open=None close=None closed=True",
-    "sunday": "open=None close=None closed=True"
+    "monday": "open='07:00' close='20:00' closed=False",
+    "tuesday": "open='07:00' close='20:00' closed=False",
+    "wednesday": "open='07:00' close='20:00' closed=False",
+    "thursday": "open='07:00' close='20:00' closed=False",
+    "friday": "open='07:00' close='20:00' closed=False",
+    "saturday": "open='08:00' close='18:00' closed=False",
+    "sunday": "open='10:00' close='16:00' closed=False"
   },
   "office_address": null,
   "services_supported": [],
   "emergency_definition": [
-    "Active wasp nest inside structure with at-risk individuals",
-    "Rodent intrusion compromising food storage areas"
+    "Locked out of home or vehicle",
+    "Broken lock preventing property access",
+    "Security breach \u2014 lock has been tampered with"
   ],
   "emergency_routing_rules": [],
   "non_emergency_routing_rules": [],

@@ -1,9 +1,10 @@
-MEETING: Clara Demo Call — TechPro IT Services
-DATE: February 20, 2026
+MEETING: Clara Demo Call — Fire Protection Services
+DATE: February 10, 2026
 
-TechPro IT Services provides managed IT support, network troubleshooting, and cybersecurity services for small businesses.
+Fire Protection Services handles fire alarm inspections, suppression checks, and emergency response support for commercial properties.
 
-INDUSTRY: IT managed services
-CRM: ServiceTitan
+INDUSTRY: Fire protection services
+CRM: ServiceTrade
 
-They need Clara to triage incoming support calls by urgency — server outages need immediate escalation, general helpdesk calls can be queued.
+The owner said the team needs Clara to answer calls, capture caller details, and route emergencies quickly.
+After-hours handling and transfer rules were discussed at a high level but not finalized.

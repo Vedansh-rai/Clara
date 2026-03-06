@@ -1,9 +1,9 @@
-MEETING: Clara Demo Call — Summit Roofing Co
-DATE: February 18, 2026
+MEETING: Clara Demo Call — GreenLeaf Pest Control
+DATE: February 17, 2026
 
-Summit Roofing Co provides residential and commercial roof inspection, repair, and installation.
+GreenLeaf Pest Control provides residential and commercial pest inspection, treatment, and prevention.
 
-INDUSTRY: Roofing services
-CRM: Jobber
+INDUSTRY: Pest control services
+CRM: ServiceTrade
 
-They need Clara to capture storm damage emergency calls after hours, and route non-emergency inspection requests to scheduling.
+They want Clara to book inspections, screen for urgent infestations, and route emergency calls to on-call technicians.

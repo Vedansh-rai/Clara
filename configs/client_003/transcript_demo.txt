@@ -1,9 +1,9 @@
-MEETING: Clara Demo Call — Metro Plumbing Co
-DATE: February 11, 2026
+MEETING: Clara Demo Call — TechPro IT Services
+DATE: February 20, 2026
 
-Metro Plumbing Co provides residential and commercial plumbing repairs and drain services.
+TechPro IT Services provides managed IT support, network troubleshooting, and cybersecurity services for small businesses.
 
-INDUSTRY: Plumbing services
-CRM: Jobber
+INDUSTRY: IT managed services
+CRM: ServiceTitan
 
-The team wants Clara to collect caller details, separate emergencies from routine requests, and route priority calls to dispatch.
+They need Clara to triage incoming support calls by urgency — server outages need immediate escalation, general helpdesk calls can be queued.
