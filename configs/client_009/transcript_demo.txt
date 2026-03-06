@@ -1,0 +1,9 @@
+MEETING: Clara Demo Call — Summit Roofing Co
+DATE: February 18, 2026
+
+Summit Roofing Co provides residential and commercial roof inspection, repair, and installation.
+
+INDUSTRY: Roofing services
+CRM: Jobber
+
+They need Clara to capture storm damage emergency calls after hours, and route non-emergency inspection requests to scheduling.

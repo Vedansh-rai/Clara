@@ -1,0 +1,70 @@
+[
+  {
+    "field": "company_name",
+    "old_value": "Test Company",
+    "new_value": "Test Company Updated",
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:46.256235Z",
+    "reason": "onboarding_override \u2014 onboarding data supersedes demo assumption"
+  },
+  {
+    "field": "after_hours_handling",
+    "old_value": "Route to dispatch",
+    "new_value": "Route to backup dispatch",
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:46.257161Z",
+    "reason": "onboarding_override \u2014 onboarding data supersedes demo assumption"
+  },
+  {
+    "field": "fallback_logic",
+    "old_value": "Notify dispatch",
+    "new_value": "Call supervisor",
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:46.258626Z",
+    "reason": "onboarding_override \u2014 onboarding data supersedes demo assumption"
+  },
+  {
+    "field": "emergency_definitions",
+    "old_value": null,
+    "new_value": [
+      "Emergency type B"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:46.259282Z",
+    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
+  },
+  {
+    "field": "routing_rules",
+    "old_value": null,
+    "new_value": [
+      {
+        "trigger": "Caller says emergency",
+        "destination": "dispatch_2",
+        "priority": 1,
+        "call_type": "emergency",
+        "notes": null
+      }
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:46.260001Z",
+    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
+  },
+  {
+    "field": "transfer_numbers",
+    "old_value": null,
+    "new_value": {
+      "dispatch_2": "+1-555-0002"
+    },
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:46.260664Z",
+    "reason": "onboarding_confirmed \u2014 new transfer numbers added"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "Emergency definition unclear",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:46.261350Z",
+    "reason": "Onboarding data addressed this open question"
+  }
+]

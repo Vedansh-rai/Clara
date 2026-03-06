@@ -1,0 +1,41 @@
+{
+  "company_name": "GreenLeaf Pest Control",
+  "industry": "Pest control services",
+  "crm_system": "ServiceTrade",
+  "service_area": "Greater Atlanta, GA",
+  "timezone": "America/New_York",
+  "business_hours": {
+    "monday": { "open": "08:00", "close": "17:00", "closed": false },
+    "tuesday": { "open": "08:00", "close": "17:00", "closed": false },
+    "wednesday": { "open": "08:00", "close": "17:00", "closed": false },
+    "thursday": { "open": "08:00", "close": "17:00", "closed": false },
+    "friday": { "open": "08:00", "close": "17:00", "closed": false },
+    "saturday": { "closed": true },
+    "sunday": { "closed": true }
+  },
+  "emergency_definitions": [
+    "Active wasp nest inside structure with at-risk individuals",
+    "Rodent intrusion compromising food storage areas"
+  ],
+  "routing_rules": [
+    { "trigger": "Active infestation or pest emergency", "destination": "on_call_tech", "priority": 1, "call_type": "emergency", "notes": "Transfer immediately" },
+    { "trigger": "New inspection or treatment request", "destination": "scheduling_line", "priority": 2, "call_type": "non_emergency", "notes": "Collect address and pest type" },
+    { "trigger": "Existing contract or renewal inquiry", "destination": "office_line", "priority": 3, "call_type": "general", "notes": null }
+  ],
+  "transfer_numbers": {
+    "on_call_tech": "+1-404-555-0188",
+    "office_line": "+1-404-555-0100",
+    "scheduling_line": "+1-404-555-0122"
+  },
+  "after_hours_handling": "Emergency infestations escalated to on-call technician. Non-emergency requests held for next business day.",
+  "transfer_timeout_seconds": 40,
+  "fallback_logic": "If transfer fails, apologize and leave urgent message for technician to call back within 1 hour.",
+  "integration_rules": [
+    "Create ServiceTrade work order for every service request",
+    "Tag emergency calls for same-day dispatch review"
+  ],
+  "special_constraints": [
+    "Never give treatment estimates on the call",
+    "Confirm service area before booking"
+  ]
+}

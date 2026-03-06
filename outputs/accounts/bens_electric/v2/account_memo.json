@@ -1,0 +1,34 @@
+{
+  "account_id": "bens_electric",
+  "company_name": "Ben's Electric Solutions",
+  "business_hours": {
+    "monday": "open='07:00' close='17:00' closed=False",
+    "tuesday": "open='07:00' close='17:00' closed=False",
+    "wednesday": "open='07:00' close='17:00' closed=False",
+    "thursday": "open='07:00' close='17:00' closed=False",
+    "friday": "open='07:00' close='16:00' closed=False",
+    "saturday": "open=None close=None closed=True",
+    "sunday": "open=None close=None closed=True"
+  },
+  "office_address": null,
+  "services_supported": [],
+  "emergency_definition": [
+    "Ben Penoyer personally handles after-hours emergency calls",
+    "Active electrical fire or sparking panels",
+    "Complete power outage impacting safety systems",
+    "Downed power lines on or near the property",
+    "Electrical shock injury or risk of electrocution"
+  ],
+  "emergency_routing_rules": [],
+  "non_emergency_routing_rules": [],
+  "call_transfer_rules": [],
+  "integration_constraints": [],
+  "after_hours_flow_summary": null,
+  "office_hours_flow_summary": null,
+  "questions_or_unknowns": [
+    "Emergency call definitions not formally stated",
+    "Types of work to accept vs decline not specified",
+    "Geographic service area not stated"
+  ],
+  "notes": null
+}

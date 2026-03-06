@@ -1,0 +1,41 @@
+{
+  "company_name": "Sunrise Landscaping",
+  "industry": "Landscaping services",
+  "crm_system": "Jobber",
+  "service_area": "Central Orlando, FL",
+  "timezone": "America/New_York",
+  "business_hours": {
+    "monday": { "open": "07:00", "close": "18:00", "closed": false },
+    "tuesday": { "open": "07:00", "close": "18:00", "closed": false },
+    "wednesday": { "open": "07:00", "close": "18:00", "closed": false },
+    "thursday": { "open": "07:00", "close": "18:00", "closed": false },
+    "friday": { "open": "07:00", "close": "17:00", "closed": false },
+    "saturday": { "open": "08:00", "close": "13:00", "closed": false },
+    "sunday": { "closed": true }
+  },
+  "emergency_definitions": [
+    "Irrigation system flooding or uncontrolled water discharge",
+    "Downed trees blocking access or causing property damage"
+  ],
+  "routing_rules": [
+    { "trigger": "Irrigation flooding or major water damage", "destination": "on_call_crew", "priority": 1, "call_type": "emergency", "notes": "Immediate transfer" },
+    { "trigger": "New service estimate or inspection", "destination": "scheduling_queue", "priority": 2, "call_type": "non_emergency", "notes": "Collect address and preferred date" },
+    { "trigger": "Existing job reschedule or status", "destination": "office_line", "priority": 3, "call_type": "general", "notes": null }
+  ],
+  "transfer_numbers": {
+    "on_call_crew": "+1-407-555-0133",
+    "office_line": "+1-407-555-0100",
+    "scheduling_queue": "+1-407-555-0144"
+  },
+  "after_hours_handling": "Collect emergency details and transfer to on-call crew. Non-emergency requests held for next business day.",
+  "transfer_timeout_seconds": 45,
+  "fallback_logic": "If transfer fails after 45 seconds, apologize, confirm on-call crew will respond within 30 minutes, and collect callback number.",
+  "integration_rules": [
+    "Create Jobber job for every new service request",
+    "Tag emergency calls with URGENT label"
+  ],
+  "special_constraints": [
+    "Do not quote prices on the call",
+    "Do not schedule outside the service area"
+  ]
+}

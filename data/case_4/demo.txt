@@ -1,0 +1,9 @@
+MEETING: Clara Demo Call — Sunrise Landscaping
+DATE: February 14, 2026
+
+Sunrise Landscaping provides residential and commercial lawn care, irrigation, and seasonal cleanup.
+
+INDUSTRY: Landscaping services
+CRM: Jobber
+
+The owner wants Clara to handle inbound scheduling calls, route urgent irrigation failures, and collect job details without quoting prices.

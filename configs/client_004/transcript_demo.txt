@@ -1,0 +1,9 @@
+MEETING: Clara Demo Call — Apex HVAC Solutions
+DATE: February 12, 2026
+
+Apex HVAC Solutions handles heating and cooling repair, maintenance, and installation.
+
+INDUSTRY: HVAC services
+CRM: ServiceTitan
+
+They need an AI answering workflow that captures emergency information and books non-emergency callbacks.

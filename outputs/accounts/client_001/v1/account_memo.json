@@ -1,0 +1,26 @@
+{
+  "account_id": "client_001",
+  "company_name": "Fire Protection Services",
+  "business_hours": null,
+  "office_address": null,
+  "services_supported": [],
+  "emergency_definition": [],
+  "emergency_routing_rules": [],
+  "non_emergency_routing_rules": [],
+  "call_transfer_rules": [],
+  "integration_constraints": [],
+  "after_hours_flow_summary": null,
+  "office_hours_flow_summary": null,
+  "questions_or_unknowns": [
+    "Business hours not discussed \u2014 exact days and times unknown",
+    "Timezone not mentioned",
+    "Emergency call definitions not formally stated",
+    "dispatch phone number",
+    "inspection scheduling rules",
+    "CRM authentication / API details not provided",
+    "After-hours routing rules not specified",
+    "Types of work to accept vs decline not specified",
+    "Geographic service area not stated"
+  ],
+  "notes": null
+}

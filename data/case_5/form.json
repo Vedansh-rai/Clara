@@ -1,0 +1,37 @@
+{
+  "company_name": "PowerClean Pressure Washing",
+  "industry": "Pressure washing services",
+  "crm_system": "Jobber",
+  "service_area": "Greater Nashville, TN",
+  "timezone": "America/Chicago",
+  "business_hours": {
+    "monday": { "open": "08:00", "close": "17:00", "closed": false },
+    "tuesday": { "open": "08:00", "close": "17:00", "closed": false },
+    "wednesday": { "open": "08:00", "close": "17:00", "closed": false },
+    "thursday": { "open": "08:00", "close": "17:00", "closed": false },
+    "friday": { "open": "08:00", "close": "17:00", "closed": false },
+    "saturday": { "open": "09:00", "close": "14:00", "closed": false },
+    "sunday": { "closed": true }
+  },
+  "emergency_definitions": [
+    "Active water or chemical flooding from equipment failure"
+  ],
+  "routing_rules": [
+    { "trigger": "Equipment flooding or property damage", "destination": "owner_cell", "priority": 1, "call_type": "emergency", "notes": "Transfer immediately" },
+    { "trigger": "New estimate request", "destination": "office_line", "priority": 2, "call_type": "non_emergency", "notes": "Collect address and property type" },
+    { "trigger": "Appointment reschedule", "destination": "scheduling_queue", "priority": 3, "call_type": "general", "notes": null }
+  ],
+  "transfer_numbers": {
+    "owner_cell": "+1-615-555-0177",
+    "office_line": "+1-615-555-0100"
+  },
+  "after_hours_handling": "Emergency flooding calls go to owner cell. All other calls held for next business day.",
+  "transfer_timeout_seconds": 30,
+  "fallback_logic": "If transfer fails, apologize and confirm owner will call back within 20 minutes.",
+  "integration_rules": [
+    "Create Jobber quote for every estimate request"
+  ],
+  "special_constraints": [
+    "Do not provide pricing on calls — direct to free estimate"
+  ]
+}

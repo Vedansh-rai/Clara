@@ -1,0 +1,20 @@
+{
+  "account_id": "test_unknowns",
+  "company_name": "Company",
+  "business_hours": null,
+  "office_address": null,
+  "services_supported": [],
+  "emergency_definition": [],
+  "emergency_routing_rules": [],
+  "non_emergency_routing_rules": [],
+  "call_transfer_rules": [],
+  "integration_constraints": [],
+  "after_hours_flow_summary": null,
+  "office_hours_flow_summary": null,
+  "questions_or_unknowns": [
+    "Industry not stated",
+    "CRM system unclear",
+    "Service area unknown"
+  ],
+  "notes": null
+}

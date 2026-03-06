@@ -1,0 +1,290 @@
+{
+  "client_id": "client_003",
+  "company_name": "Metro Plumbing Co",
+  "version": 2,
+  "source_stage": "form",
+  "created_at": "2026-03-06T05:44:00.743239Z",
+  "updated_at": "2026-03-06T05:44:00.748669Z",
+  "industry": "Plumbing services",
+  "crm_system": "Jobber",
+  "service_area": "Greater Phoenix area",
+  "office_address": null,
+  "services_supported": [],
+  "business_hours": {
+    "monday": {
+      "open": "07:00",
+      "close": "18:00",
+      "closed": false
+    },
+    "tuesday": {
+      "open": "07:00",
+      "close": "18:00",
+      "closed": false
+    },
+    "wednesday": {
+      "open": "07:00",
+      "close": "18:00",
+      "closed": false
+    },
+    "thursday": {
+      "open": "07:00",
+      "close": "18:00",
+      "closed": false
+    },
+    "friday": {
+      "open": "07:00",
+      "close": "18:00",
+      "closed": false
+    },
+    "saturday": {
+      "open": "08:00",
+      "close": "13:00",
+      "closed": false
+    },
+    "sunday": {
+      "open": null,
+      "close": null,
+      "closed": true
+    }
+  },
+  "timezone": "America/Phoenix",
+  "emergency_definitions": [
+    "Major active leak with flooding",
+    "Sewer backup affecting occupied space"
+  ],
+  "emergency_routing_rules": [],
+  "non_emergency_routing_rules": [],
+  "call_transfer_rules": [],
+  "routing_rules": [
+    {
+      "trigger": "Emergency water leak",
+      "destination": "on_call_dispatch",
+      "priority": 1,
+      "call_type": "emergency",
+      "notes": "Transfer immediately"
+    },
+    {
+      "trigger": "Non-emergency plumbing request",
+      "destination": "office_line",
+      "priority": 2,
+      "call_type": "non_emergency",
+      "notes": "Collect details then transfer"
+    }
+  ],
+  "transfer_numbers": {
+    "on_call_dispatch": "+1-602-555-0111",
+    "office_line": "+1-602-555-0122"
+  },
+  "after_hours_handling": "Transfer emergencies to on-call dispatch and collect details for non-emergency follow-up.",
+  "after_hours_flow_summary": null,
+  "office_hours_flow_summary": null,
+  "transfer_timeout_seconds": 45,
+  "fallback_logic": "If transfer fails after 45 seconds, apologize and promise callback within 15 minutes.",
+  "integration_rules": [
+    "Create Jobber request for all non-emergency callers"
+  ],
+  "integration_constraints": [],
+  "special_constraints": [
+    "Never quote prices on calls"
+  ],
+  "notes": null,
+  "questions_or_unknowns": [
+    "Emergency call definitions not formally stated",
+    "inspection scheduling rules",
+    "Types of work to accept vs decline not specified",
+    "Geographic service area not stated"
+  ],
+  "changelog": [
+    {
+      "field": "service_area",
+      "old_value": null,
+      "new_value": "Greater Phoenix area",
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.748750Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "business_hours",
+      "old_value": null,
+      "new_value": {
+        "monday": {
+          "open": "07:00",
+          "close": "18:00",
+          "closed": false
+        },
+        "tuesday": {
+          "open": "07:00",
+          "close": "18:00",
+          "closed": false
+        },
+        "wednesday": {
+          "open": "07:00",
+          "close": "18:00",
+          "closed": false
+        },
+        "thursday": {
+          "open": "07:00",
+          "close": "18:00",
+          "closed": false
+        },
+        "friday": {
+          "open": "07:00",
+          "close": "18:00",
+          "closed": false
+        },
+        "saturday": {
+          "open": "08:00",
+          "close": "13:00",
+          "closed": false
+        },
+        "sunday": {
+          "open": null,
+          "close": null,
+          "closed": true
+        }
+      },
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.749408Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "timezone",
+      "old_value": null,
+      "new_value": "America/Phoenix",
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.750359Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "after_hours_handling",
+      "old_value": null,
+      "new_value": "Transfer emergencies to on-call dispatch and collect details for non-emergency follow-up.",
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.750999Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "transfer_timeout_seconds",
+      "old_value": null,
+      "new_value": 45,
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.751825Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "fallback_logic",
+      "old_value": null,
+      "new_value": "If transfer fails after 45 seconds, apologize and promise callback within 15 minutes.",
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.752484Z",
+      "reason": "onboarding_confirmed — field was previously unknown"
+    },
+    {
+      "field": "emergency_definitions",
+      "old_value": null,
+      "new_value": [
+        "Major active leak with flooding",
+        "Sewer backup affecting occupied space"
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.753319Z",
+      "reason": "onboarding_confirmed — 2 new item(s) added"
+    },
+    {
+      "field": "routing_rules",
+      "old_value": null,
+      "new_value": [
+        {
+          "trigger": "Emergency water leak",
+          "destination": "on_call_dispatch",
+          "priority": 1,
+          "call_type": "emergency",
+          "notes": "Transfer immediately"
+        },
+        {
+          "trigger": "Non-emergency plumbing request",
+          "destination": "office_line",
+          "priority": 2,
+          "call_type": "non_emergency",
+          "notes": "Collect details then transfer"
+        }
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.753991Z",
+      "reason": "onboarding_confirmed — 2 new item(s) added"
+    },
+    {
+      "field": "integration_rules",
+      "old_value": null,
+      "new_value": [
+        "Create Jobber request for all non-emergency callers"
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.754606Z",
+      "reason": "onboarding_confirmed — 1 new item(s) added"
+    },
+    {
+      "field": "special_constraints",
+      "old_value": null,
+      "new_value": [
+        "Never quote prices on calls"
+      ],
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.755284Z",
+      "reason": "onboarding_confirmed — 1 new item(s) added"
+    },
+    {
+      "field": "transfer_numbers",
+      "old_value": null,
+      "new_value": {
+        "on_call_dispatch": "+1-602-555-0111",
+        "office_line": "+1-602-555-0122"
+      },
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.756045Z",
+      "reason": "onboarding_confirmed — new transfer numbers added"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "Business hours not discussed — exact days and times unknown",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.756826Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "Timezone not mentioned",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.757501Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "dispatch phone number",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.758088Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "CRM authentication / API details not provided",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.758662Z",
+      "reason": "Onboarding data addressed this open question"
+    },
+    {
+      "field": "questions_or_unknowns",
+      "old_value": "After-hours routing rules not specified",
+      "new_value": "RESOLVED",
+      "source": "form",
+      "timestamp": "2026-03-06T05:44:00.759287Z",
+      "reason": "Onboarding data addressed this open question"
+    }
+  ],
+  "prompt": "You are Clara, an AI assistant for Metro Plumbing Co.\n\nBusiness Hours Flow:\nHours (America/Phoenix): Mon: 07:00–18:00, Tue: 07:00–18:00, Wed: 07:00–18:00, Thu: 07:00–18:00, Fri: 07:00–18:00, Sat: 08:00–13:00, Sun: Closed\n1. Greeting\n2. Ask purpose of call\n3. Collect name and phone number\n4. Route call / Transfer\n5. If transfer fails after 45 seconds: If transfer fails after 45 seconds, apologize and promise callback within 15 minutes.\n6. Ask if caller needs anything else\n7. Close call if no\n\n\n  - Emergency water leak → +1-602-555-0111\n  - Non-emergency plumbing request → +1-602-555-0122\n\nIf emergency:\nTransfer immediately to +1-602-555-0111.\n\nAfter-Hours Flow:\nHours (America/Phoenix): Mon: 07:00–18:00, Tue: 07:00–18:00, Wed: 07:00–18:00, Thu: 07:00–18:00, Fri: 07:00–18:00, Sat: 08:00–13:00, Sun: Closed\n1. Greeting\n2. Ask purpose\n3. Confirm emergency\n4. If emergency: collect name, number, address immediately. Attempt transfer to +1-602-555-0111. If transfer fails after 45 seconds: If transfer fails after 45 seconds, apologize and promise callback within 15 minutes..\n5. If non-emergency: collect details and confirm follow-up during business hours.\n6. Ask if they need anything else\n7. Close\n\nRouting Rules:\n- Emergency water leak → +1-602-555-0111 (Transfer immediately)\n- Non-emergency plumbing request → +1-602-555-0122 (Collect details then transfer)\n\nSpecial Rules:\n- Create Jobber request for all non-emergency callers\n- Never quote prices on calls\n\nAlways be polite, calm, and professional.\nNever reveal you are an AI unless directly asked.\nNever provide pricing, legal, or technical advice.\nAlways confirm caller information by reading it back.\nIf you cannot help, say: \"I'll make sure someone follows up with you.\"\n\nOpen Questions (resolve before deployment):\n- Emergency call definitions not formally stated\n- inspection scheduling rules\n- Types of work to accept vs decline not specified\n- Geographic service area not stated",
+  "source_hash": "d94df2fd185fe28615c7c5e911e5c8112bfcbbb827bde00aae061b1a4ab5c096"
+}

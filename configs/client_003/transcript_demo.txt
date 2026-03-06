@@ -1,0 +1,9 @@
+MEETING: Clara Demo Call — Metro Plumbing Co
+DATE: February 11, 2026
+
+Metro Plumbing Co provides residential and commercial plumbing repairs and drain services.
+
+INDUSTRY: Plumbing services
+CRM: Jobber
+
+The team wants Clara to collect caller details, separate emergencies from routine requests, and route priority calls to dispatch.

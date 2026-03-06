@@ -1,0 +1,41 @@
+{
+  "company_name": "Reliable Locksmith Services",
+  "industry": "Locksmith services",
+  "crm_system": "ServiceTitan",
+  "service_area": "Denver Metro Area, CO",
+  "timezone": "America/Denver",
+  "business_hours": {
+    "monday": { "open": "07:00", "close": "20:00", "closed": false },
+    "tuesday": { "open": "07:00", "close": "20:00", "closed": false },
+    "wednesday": { "open": "07:00", "close": "20:00", "closed": false },
+    "thursday": { "open": "07:00", "close": "20:00", "closed": false },
+    "friday": { "open": "07:00", "close": "20:00", "closed": false },
+    "saturday": { "open": "08:00", "close": "18:00", "closed": false },
+    "sunday": { "open": "10:00", "close": "16:00", "closed": false }
+  },
+  "emergency_definitions": [
+    "Locked out of home or vehicle",
+    "Broken lock preventing property access",
+    "Security breach — lock has been tampered with"
+  ],
+  "routing_rules": [
+    { "trigger": "Lockout emergency — home, vehicle, or business", "destination": "dispatch_mobile", "priority": 1, "call_type": "emergency", "notes": "Collect full address first, then transfer" },
+    { "trigger": "Rekeying or new lock installation request", "destination": "scheduling_line", "priority": 2, "call_type": "non_emergency", "notes": "Book appointment" },
+    { "trigger": "After-hours non-emergency request", "destination": "voicemail_queue", "priority": 3, "call_type": "general", "notes": "Leave message, callback next day" }
+  ],
+  "transfer_numbers": {
+    "dispatch_mobile": "+1-720-555-0155",
+    "scheduling_line": "+1-720-555-0100"
+  },
+  "after_hours_handling": "Emergency lockouts transfer to dispatch 24/7. Non-urgent requests go to voicemail for next-day callback.",
+  "transfer_timeout_seconds": 20,
+  "fallback_logic": "If transfer fails after 20 seconds, apologize and send automated SMS with ETA to caller's number.",
+  "integration_rules": [
+    "Create ServiceTitan job for every service call",
+    "Tag emergency lockout calls for priority dispatch"
+  ],
+  "special_constraints": [
+    "Always verify caller address before dispatch",
+    "Do not quote prices on the phone — door rate only"
+  ]
+}

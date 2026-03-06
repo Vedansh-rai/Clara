@@ -1,0 +1,9 @@
+MEETING: Clara Demo Call — GreenLeaf Pest Control
+DATE: February 17, 2026
+
+GreenLeaf Pest Control provides residential and commercial pest inspection, treatment, and prevention.
+
+INDUSTRY: Pest control services
+CRM: ServiceTrade
+
+They want Clara to book inspections, screen for urgent infestations, and route emergency calls to on-call technicians.

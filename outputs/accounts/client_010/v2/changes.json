@@ -1,0 +1,188 @@
+[
+  {
+    "field": "service_area",
+    "old_value": null,
+    "new_value": "San Diego Metro, CA",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.907192+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "business_hours",
+    "old_value": null,
+    "new_value": {
+      "monday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "tuesday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "wednesday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "thursday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "friday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "13:00",
+        "closed": false
+      },
+      "sunday": {
+        "open": null,
+        "close": null,
+        "closed": true
+      }
+    },
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.907858+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "timezone",
+    "old_value": null,
+    "new_value": "America/Los_Angeles",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.908967+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "after_hours_handling",
+    "old_value": null,
+    "new_value": "No emergency calls expected. Collect all messages for next business day follow-up.",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.909615+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "transfer_timeout_seconds",
+    "old_value": null,
+    "new_value": 30,
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.910438+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "fallback_logic",
+    "old_value": null,
+    "new_value": "If no answer, leave a friendly voicemail and confirm callback within one business day.",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.911080+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "routing_rules",
+    "old_value": null,
+    "new_value": [
+      {
+        "trigger": "New residential or commercial quote",
+        "destination": "office_line",
+        "priority": 1,
+        "call_type": "non_emergency",
+        "notes": "Collect property type and window count"
+      },
+      {
+        "trigger": "Appointment reschedule or cancellation",
+        "destination": "scheduling_queue",
+        "priority": 2,
+        "call_type": "general",
+        "notes": "Confirm 24h notice required"
+      },
+      {
+        "trigger": "Service quality complaint",
+        "destination": "owner_cell",
+        "priority": 3,
+        "call_type": "general",
+        "notes": "Escalate to owner"
+      }
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.911896+00:00",
+    "reason": "onboarding_confirmed \u2014 3 new item(s) added"
+  },
+  {
+    "field": "integration_rules",
+    "old_value": null,
+    "new_value": [
+      "Create Jobber quote for every new service inquiry"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.912531+00:00",
+    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
+  },
+  {
+    "field": "special_constraints",
+    "old_value": null,
+    "new_value": [
+      "Do not accept jobs outside the San Diego metro area",
+      "Do not quote prices without knowing the property size"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.913188+00:00",
+    "reason": "onboarding_confirmed \u2014 2 new item(s) added"
+  },
+  {
+    "field": "transfer_numbers",
+    "old_value": null,
+    "new_value": {
+      "office_line": "+1-619-555-0100",
+      "owner_cell": "+1-619-555-0188"
+    },
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.913900+00:00",
+    "reason": "onboarding_confirmed \u2014 new transfer numbers added"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "Business hours not discussed \u2014 exact days and times unknown",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.914699+00:00",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "Timezone not mentioned",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.915436+00:00",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "dispatch phone number",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.916084+00:00",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "CRM authentication / API details not provided",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.916732+00:00",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "After-hours routing rules not specified",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.917442+00:00",
+    "reason": "Onboarding data addressed this open question"
+  }
+]

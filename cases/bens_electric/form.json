@@ -1,0 +1,69 @@
+{
+  "company_name": "Ben's Electric Solutions",
+  "industry": "Electrical contracting",
+  "crm_system": "Jobber",
+  "service_area": "Greater Boston area, MA",
+  "timezone": "America/New_York",
+  "business_hours": {
+    "monday":    { "open": "07:00", "close": "17:00", "closed": false },
+    "tuesday":   { "open": "07:00", "close": "17:00", "closed": false },
+    "wednesday": { "open": "07:00", "close": "17:00", "closed": false },
+    "thursday":  { "open": "07:00", "close": "17:00", "closed": false },
+    "friday":    { "open": "07:00", "close": "16:00", "closed": false },
+    "saturday":  { "closed": true },
+    "sunday":    { "closed": true }
+  },
+  "emergency_definitions": [
+    "Active electrical fire or sparking panels",
+    "Complete power outage impacting safety systems",
+    "Downed power lines on or near the property",
+    "Electrical shock injury or risk of electrocution"
+  ],
+  "routing_rules": [
+    {
+      "trigger": "Caller describes an active electrical fire, sparking, or shock hazard",
+      "destination": "Ben Penoyer on-call cell",
+      "priority": 1,
+      "call_type": "emergency",
+      "notes": "Transfer immediately, do not collect additional information first"
+    },
+    {
+      "trigger": "Caller reports power outage affecting safety or medical equipment",
+      "destination": "Ben Penoyer on-call cell",
+      "priority": 2,
+      "call_type": "emergency",
+      "notes": null
+    },
+    {
+      "trigger": "Caller requests a service call or inspection during business hours",
+      "destination": "Ben's Electric main office line",
+      "priority": 3,
+      "call_type": "non_emergency",
+      "notes": "Collect name, number, address, and brief description before transferring"
+    },
+    {
+      "trigger": "Caller requests scheduling an inspection or estimate",
+      "destination": "Voicemail / callback queue",
+      "priority": 4,
+      "call_type": "inspection",
+      "notes": "Collect contact details and preferred time. Agent confirms someone will call back within one business day."
+    }
+  ],
+  "transfer_numbers": {
+    "ben_penoyer_on_call": "+1-617-555-0192",
+    "main_office_line":    "+1-617-555-0100"
+  },
+  "after_hours_handling": "Route emergencies immediately to Ben's on-call cell. For non-emergencies, collect caller details and confirm follow-up during business hours.",
+  "transfer_timeout_seconds": 45,
+  "fallback_logic": "If on-call transfer fails after 45 seconds, apologize, assure the caller that Ben has been paged and will call back within 15 minutes, and collect a callback number if not already provided.",
+  "integration_rules": [
+    "Create a new Jobber job for every non-emergency service request with caller name, number, and description",
+    "Do NOT create a Jobber job for calls that end without a service request",
+    "Tag all emergency calls in Jobber with status 'EMERGENCY — immediate follow-up required'"
+  ],
+  "special_constraints": [
+    "Never quote pricing on the call — always direct to a follow-up estimate appointment",
+    "Do not accept commercial fire suppression or sprinkler jobs — refer those callers to a fire protection company",
+    "If a caller asks specifically for Ben by name, attempt to transfer to his cell during business hours"
+  ]
+}

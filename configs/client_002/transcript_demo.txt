@@ -1,0 +1,9 @@
+MEETING: Clara Demo Call — TechPro IT Services
+DATE: February 20, 2026
+
+TechPro IT Services provides managed IT support, network troubleshooting, and cybersecurity services for small businesses.
+
+INDUSTRY: IT managed services
+CRM: ServiceTitan
+
+They need Clara to triage incoming support calls by urgency — server outages need immediate escalation, general helpdesk calls can be queued.

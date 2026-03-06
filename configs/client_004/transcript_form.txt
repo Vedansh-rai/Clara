@@ -1,0 +1,48 @@
+{
+  "company_name": "Apex HVAC Solutions",
+  "industry": "HVAC services",
+  "crm_system": "ServiceTitan",
+  "service_area": "Greater Seattle metro",
+  "timezone": "America/Los_Angeles",
+  "business_hours": {
+    "monday": { "open": "08:00", "close": "17:00", "closed": false },
+    "tuesday": { "open": "08:00", "close": "17:00", "closed": false },
+    "wednesday": { "open": "08:00", "close": "17:00", "closed": false },
+    "thursday": { "open": "08:00", "close": "17:00", "closed": false },
+    "friday": { "open": "08:00", "close": "17:00", "closed": false },
+    "saturday": { "closed": true },
+    "sunday": { "closed": true }
+  },
+  "emergency_definitions": [
+    "No heat in freezing weather",
+    "No cooling in medical-sensitive environments"
+  ],
+  "routing_rules": [
+    {
+      "trigger": "Emergency HVAC outage",
+      "destination": "after_hours_dispatch",
+      "priority": 1,
+      "call_type": "emergency",
+      "notes": "Collect address first"
+    },
+    {
+      "trigger": "Routine maintenance or estimate",
+      "destination": "scheduling_queue",
+      "priority": 2,
+      "call_type": "non_emergency",
+      "notes": "Collect preferred date/time"
+    }
+  ],
+  "transfer_numbers": {
+    "after_hours_dispatch": "+1-206-555-0199"
+  },
+  "after_hours_handling": "Escalate emergency outages to after-hours dispatch and collect all non-emergency requests for next-day callbacks.",
+  "transfer_timeout_seconds": 60,
+  "fallback_logic": "If transfer fails, apologize and confirm dispatch callback.",
+  "integration_rules": [
+    "Create ServiceTitan lead for all qualified non-emergency calls"
+  ],
+  "special_constraints": [
+    "Avoid technical troubleshooting over phone"
+  ]
+}

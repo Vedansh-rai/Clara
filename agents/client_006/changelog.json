@@ -1,0 +1,197 @@
+[
+  {
+    "field": "service_area",
+    "old_value": null,
+    "new_value": "Greater Nashville, TN",
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.818169Z",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "business_hours",
+    "old_value": null,
+    "new_value": {
+      "monday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "tuesday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "wednesday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "thursday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "friday": {
+        "open": "08:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "14:00",
+        "closed": false
+      },
+      "sunday": {
+        "open": null,
+        "close": null,
+        "closed": true
+      }
+    },
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.818842Z",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "timezone",
+    "old_value": null,
+    "new_value": "America/Chicago",
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.819745Z",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "after_hours_handling",
+    "old_value": null,
+    "new_value": "Emergency flooding calls go to owner cell. All other calls held for next business day.",
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.820353Z",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "transfer_timeout_seconds",
+    "old_value": null,
+    "new_value": 30,
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.821152Z",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "fallback_logic",
+    "old_value": null,
+    "new_value": "If transfer fails, apologize and confirm owner will call back within 20 minutes.",
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.821775Z",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "emergency_definitions",
+    "old_value": null,
+    "new_value": [
+      "Active water or chemical flooding from equipment failure"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.822605Z",
+    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
+  },
+  {
+    "field": "routing_rules",
+    "old_value": null,
+    "new_value": [
+      {
+        "trigger": "Equipment flooding or property damage",
+        "destination": "owner_cell",
+        "priority": 1,
+        "call_type": "emergency",
+        "notes": "Transfer immediately"
+      },
+      {
+        "trigger": "New estimate request",
+        "destination": "office_line",
+        "priority": 2,
+        "call_type": "non_emergency",
+        "notes": "Collect address and property type"
+      },
+      {
+        "trigger": "Appointment reschedule",
+        "destination": "scheduling_queue",
+        "priority": 3,
+        "call_type": "general",
+        "notes": null
+      }
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.823309Z",
+    "reason": "onboarding_confirmed \u2014 3 new item(s) added"
+  },
+  {
+    "field": "integration_rules",
+    "old_value": null,
+    "new_value": [
+      "Create Jobber quote for every estimate request"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.823939Z",
+    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
+  },
+  {
+    "field": "special_constraints",
+    "old_value": null,
+    "new_value": [
+      "Do not provide pricing on calls \u2014 direct to free estimate"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.824560Z",
+    "reason": "onboarding_confirmed \u2014 1 new item(s) added"
+  },
+  {
+    "field": "transfer_numbers",
+    "old_value": null,
+    "new_value": {
+      "owner_cell": "+1-615-555-0177",
+      "office_line": "+1-615-555-0100"
+    },
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.825181Z",
+    "reason": "onboarding_confirmed \u2014 new transfer numbers added"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "Business hours not discussed \u2014 exact days and times unknown",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.825885Z",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "Timezone not mentioned",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.826538Z",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "dispatch phone number",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.827098Z",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "CRM authentication / API details not provided",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.827649Z",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "After-hours routing rules not specified",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06T05:44:00.828269Z",
+    "reason": "Onboarding data addressed this open question"
+  }
+]

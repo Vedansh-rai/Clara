@@ -1,0 +1,101 @@
+{
+  "name": "Clara AI Onboarding Pipeline",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "eec7935f-bf90-4e56-834c-6f8d38b6d8b6",
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        380,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "command": "python pipeline/pipeline.py batch --input-dir ./cases/ --stage demo --force"
+      },
+      "id": "2d8f0f03-68e1-4c6e-8260-22c7aed0aa0a",
+      "name": "Execute Pipeline A (Demo -> v1)",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        600,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "command": "python pipeline/pipeline.py batch --input-dir ./cases/ --stage form --force"
+      },
+      "id": "4268e594-55cc-44b4-8ab3-7729f6b98ea5",
+      "name": "Execute Pipeline B (Form -> v2+)",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        820,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "command": "ls -lR outputs/"
+      },
+      "id": "6713916b-d1e9-4e7d-abcf-4d3f3f51174c",
+      "name": "Verify Output Dirs",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        1040,
+        240
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking \"Execute Workflow\"": {
+      "main": [
+        [
+          {
+            "node": "Execute Pipeline A (Demo -> v1)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Pipeline A (Demo -> v1)": {
+      "main": [
+        [
+          {
+            "node": "Execute Pipeline B (Form -> v2+)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Pipeline B (Form -> v2+)": {
+      "main": [
+        [
+          {
+            "node": "Verify Output Dirs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "f295b282-eab3-4d7a-b153-61fc0fde92f2",
+  "id": "5H6j23T4Q1hM6G8t",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "tags": []
+}

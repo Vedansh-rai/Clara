@@ -1,0 +1,55 @@
+{
+  "company_name": "Fire Protection Services",
+  "industry": "Fire protection services",
+  "crm_system": "ServiceTrade",
+  "service_area": "North Texas commercial zone",
+  "timezone": "America/Chicago",
+  "business_hours": {
+    "monday": { "open": "08:00", "close": "17:00", "closed": false },
+    "tuesday": { "open": "08:00", "close": "17:00", "closed": false },
+    "wednesday": { "open": "08:00", "close": "17:00", "closed": false },
+    "thursday": { "open": "08:00", "close": "17:00", "closed": false },
+    "friday": { "open": "08:00", "close": "16:00", "closed": false },
+    "saturday": { "closed": true },
+    "sunday": { "closed": true }
+  },
+  "emergency_definitions": [
+    "Active sprinkler leak with flooding risk",
+    "Fire alarm panel outage in occupied building",
+    "Suppression system discharge emergency"
+  ],
+  "routing_rules": [
+    {
+      "trigger": "Caller reports active sprinkler leak or suppression emergency",
+      "destination": "dispatch",
+      "priority": 1,
+      "call_type": "emergency",
+      "notes": "Transfer immediately"
+    },
+    {
+      "trigger": "Caller requests inspection or certification",
+      "destination": "inspection_queue",
+      "priority": 2,
+      "call_type": "inspection",
+      "notes": "Collect property address and best callback"
+    },
+    {
+      "trigger": "General service request",
+      "destination": "service_queue",
+      "priority": 3,
+      "call_type": "non_emergency",
+      "notes": "Collect contact and issue details"
+    }
+  ],
+  "after_hours_handling": "Emergency calls should be escalated to dispatch. Non-emergency requests are collected for next business day follow-up.",
+  "transfer_timeout_seconds": 60,
+  "fallback_logic": "If transfer fails, apologize and confirm dispatch will follow up.",
+  "integration_rules": [
+    "Create ServiceTrade ticket for all non-emergency requests",
+    "Tag emergency calls for immediate follow-up"
+  ],
+  "special_constraints": [
+    "Do not provide pricing on calls",
+    "Confirm life-safety issues before ending emergency calls"
+  ]
+}

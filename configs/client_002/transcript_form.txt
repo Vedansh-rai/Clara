@@ -1,0 +1,43 @@
+{
+  "company_name": "TechPro IT Services",
+  "industry": "IT managed services",
+  "crm_system": "ServiceTitan",
+  "service_area": "Greater Minneapolis, MN",
+  "timezone": "America/Chicago",
+  "business_hours": {
+    "monday": { "open": "08:00", "close": "18:00", "closed": false },
+    "tuesday": { "open": "08:00", "close": "18:00", "closed": false },
+    "wednesday": { "open": "08:00", "close": "18:00", "closed": false },
+    "thursday": { "open": "08:00", "close": "18:00", "closed": false },
+    "friday": { "open": "08:00", "close": "17:00", "closed": false },
+    "saturday": { "closed": true },
+    "sunday": { "closed": true }
+  },
+  "emergency_definitions": [
+    "Complete server or network outage affecting business operations",
+    "Cybersecurity incident — ransomware, breach, or data loss",
+    "Phone or communication system failure"
+  ],
+  "routing_rules": [
+    { "trigger": "Server outage or cybersecurity incident", "destination": "on_call_engineer", "priority": 1, "call_type": "emergency", "notes": "Collect company name and nature of outage first" },
+    { "trigger": "General helpdesk or workstation issues", "destination": "helpdesk_queue", "priority": 2, "call_type": "non_emergency", "notes": "Create ticket and queue for next available tech" },
+    { "trigger": "New managed services inquiry", "destination": "sales_line", "priority": 3, "call_type": "general", "notes": "Collect company size and current setup" }
+  ],
+  "transfer_numbers": {
+    "on_call_engineer": "+1-612-555-0177",
+    "helpdesk_queue": "+1-612-555-0100",
+    "sales_line": "+1-612-555-0133"
+  },
+  "after_hours_handling": "Critical outages and security incidents go to on-call engineer 24/7. General helpdesk held for business hours.",
+  "transfer_timeout_seconds": 30,
+  "fallback_logic": "If engineer does not answer within 30 seconds, trigger on-call pager and confirm ETA of 15 minutes.",
+  "integration_rules": [
+    "Create ServiceTitan ticket for every inbound support call",
+    "Tag P1 priority for outage and security calls",
+    "Send ticket confirmation to caller email if available"
+  ],
+  "special_constraints": [
+    "Never attempt remote troubleshooting on the call — book ticket first",
+    "Always collect company name and point of contact before transferring"
+  ]
+}

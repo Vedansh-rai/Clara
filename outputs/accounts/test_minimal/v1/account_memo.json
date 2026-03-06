@@ -1,0 +1,20 @@
+{
+  "account_id": "test_minimal",
+  "company_name": null,
+  "business_hours": null,
+  "office_address": null,
+  "services_supported": [],
+  "emergency_definition": [],
+  "emergency_routing_rules": [],
+  "non_emergency_routing_rules": [],
+  "call_transfer_rules": [],
+  "integration_constraints": [],
+  "after_hours_flow_summary": null,
+  "office_hours_flow_summary": null,
+  "questions_or_unknowns": [
+    "Company name not stated",
+    "Business hours unknown",
+    "No CRM system mentioned"
+  ],
+  "notes": null
+}

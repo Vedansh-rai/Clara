@@ -1,0 +1,10 @@
+[
+  {
+    "field": "industry",
+    "old_value": null,
+    "new_value": "Electrical",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:46.278300+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  }
+]

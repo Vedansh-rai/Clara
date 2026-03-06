@@ -1,0 +1,201 @@
+[
+  {
+    "field": "service_area",
+    "old_value": null,
+    "new_value": "Central Orlando, FL",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.794587+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "business_hours",
+    "old_value": null,
+    "new_value": {
+      "monday": {
+        "open": "07:00",
+        "close": "18:00",
+        "closed": false
+      },
+      "tuesday": {
+        "open": "07:00",
+        "close": "18:00",
+        "closed": false
+      },
+      "wednesday": {
+        "open": "07:00",
+        "close": "18:00",
+        "closed": false
+      },
+      "thursday": {
+        "open": "07:00",
+        "close": "18:00",
+        "closed": false
+      },
+      "friday": {
+        "open": "07:00",
+        "close": "17:00",
+        "closed": false
+      },
+      "saturday": {
+        "open": "08:00",
+        "close": "13:00",
+        "closed": false
+      },
+      "sunday": {
+        "open": null,
+        "close": null,
+        "closed": true
+      }
+    },
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.795297+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "timezone",
+    "old_value": null,
+    "new_value": "America/New_York",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.796267+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "after_hours_handling",
+    "old_value": null,
+    "new_value": "Collect emergency details and transfer to on-call crew. Non-emergency requests held for next business day.",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.796927+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "transfer_timeout_seconds",
+    "old_value": null,
+    "new_value": 45,
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.797736+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "fallback_logic",
+    "old_value": null,
+    "new_value": "If transfer fails after 45 seconds, apologize, confirm on-call crew will respond within 30 minutes, and collect callback number.",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.798375+00:00",
+    "reason": "onboarding_confirmed \u2014 field was previously unknown"
+  },
+  {
+    "field": "emergency_definitions",
+    "old_value": null,
+    "new_value": [
+      "Irrigation system flooding or uncontrolled water discharge",
+      "Downed trees blocking access or causing property damage"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.799177+00:00",
+    "reason": "onboarding_confirmed \u2014 2 new item(s) added"
+  },
+  {
+    "field": "routing_rules",
+    "old_value": null,
+    "new_value": [
+      {
+        "trigger": "Irrigation flooding or major water damage",
+        "destination": "on_call_crew",
+        "priority": 1,
+        "call_type": "emergency",
+        "notes": "Immediate transfer"
+      },
+      {
+        "trigger": "New service estimate or inspection",
+        "destination": "scheduling_queue",
+        "priority": 2,
+        "call_type": "non_emergency",
+        "notes": "Collect address and preferred date"
+      },
+      {
+        "trigger": "Existing job reschedule or status",
+        "destination": "office_line",
+        "priority": 3,
+        "call_type": "general",
+        "notes": null
+      }
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.799857+00:00",
+    "reason": "onboarding_confirmed \u2014 3 new item(s) added"
+  },
+  {
+    "field": "integration_rules",
+    "old_value": null,
+    "new_value": [
+      "Create Jobber job for every new service request",
+      "Tag emergency calls with URGENT label"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.800476+00:00",
+    "reason": "onboarding_confirmed \u2014 2 new item(s) added"
+  },
+  {
+    "field": "special_constraints",
+    "old_value": null,
+    "new_value": [
+      "Do not quote prices on the call",
+      "Do not schedule outside the service area"
+    ],
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.801102+00:00",
+    "reason": "onboarding_confirmed \u2014 2 new item(s) added"
+  },
+  {
+    "field": "transfer_numbers",
+    "old_value": null,
+    "new_value": {
+      "on_call_crew": "+1-407-555-0133",
+      "office_line": "+1-407-555-0100",
+      "scheduling_queue": "+1-407-555-0144"
+    },
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.801735+00:00",
+    "reason": "onboarding_confirmed \u2014 new transfer numbers added"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "Business hours not discussed \u2014 exact days and times unknown",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.802495+00:00",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "Timezone not mentioned",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.803161+00:00",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "dispatch phone number",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.803729+00:00",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "CRM authentication / API details not provided",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.804287+00:00",
+    "reason": "Onboarding data addressed this open question"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old_value": "After-hours routing rules not specified",
+    "new_value": "RESOLVED",
+    "source": "form",
+    "timestamp": "2026-03-06 05:44:00.804904+00:00",
+    "reason": "Onboarding data addressed this open question"
+  }
+]
