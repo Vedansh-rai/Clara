@@ -3,8 +3,8 @@
   "company_name": "Fire Protection Services",
   "version": 2,
   "source_stage": "form",
-  "created_at": "2026-03-06T05:44:00.692183Z",
-  "updated_at": "2026-03-06T05:44:00.701795Z",
+  "created_at": "2026-03-06T08:02:46.628623Z",
+  "updated_at": "2026-03-06T08:02:46.642718Z",
   "industry": "Fire protection services",
   "crm_system": "ServiceTrade",
   "service_area": "North Texas commercial zone",
@@ -108,7 +108,7 @@
       "old_value": null,
       "new_value": "North Texas commercial zone",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.701910Z",
+      "timestamp": "2026-03-06T08:02:46.643121Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -152,7 +152,7 @@
         }
       },
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.702655Z",
+      "timestamp": "2026-03-06T08:02:46.644829Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -160,7 +160,7 @@
       "old_value": null,
       "new_value": "America/Chicago",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.703685Z",
+      "timestamp": "2026-03-06T08:02:46.646183Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -168,7 +168,7 @@
       "old_value": null,
       "new_value": "Emergency calls should be escalated to dispatch. Non-emergency requests are collected for next business day follow-up.",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.704366Z",
+      "timestamp": "2026-03-06T08:02:46.647020Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -176,7 +176,7 @@
       "old_value": null,
       "new_value": 60,
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.705183Z",
+      "timestamp": "2026-03-06T08:02:46.648408Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -184,7 +184,7 @@
       "old_value": null,
       "new_value": "If transfer fails, apologize and confirm dispatch will follow up.",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.705934Z",
+      "timestamp": "2026-03-06T08:02:46.649161Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -196,7 +196,7 @@
         "Suppression system discharge emergency"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.706747Z",
+      "timestamp": "2026-03-06T08:02:46.649975Z",
       "reason": "onboarding_confirmed — 3 new item(s) added"
     },
     {
@@ -226,7 +226,7 @@
         }
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.707479Z",
+      "timestamp": "2026-03-06T08:02:46.650709Z",
       "reason": "onboarding_confirmed — 3 new item(s) added"
     },
     {
@@ -237,7 +237,7 @@
         "Tag emergency calls for immediate follow-up"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.708135Z",
+      "timestamp": "2026-03-06T08:02:46.651358Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -248,7 +248,7 @@
         "Confirm life-safety issues before ending emergency calls"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.708776Z",
+      "timestamp": "2026-03-06T08:02:46.652002Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -256,7 +256,7 @@
       "old_value": "Business hours not discussed — exact days and times unknown",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.709618Z",
+      "timestamp": "2026-03-06T08:02:46.652728Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -264,7 +264,7 @@
       "old_value": "Timezone not mentioned",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.710419Z",
+      "timestamp": "2026-03-06T08:02:46.653443Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -272,7 +272,7 @@
       "old_value": "CRM authentication / API details not provided",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.711059Z",
+      "timestamp": "2026-03-06T08:02:46.654039Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -280,7 +280,7 @@
       "old_value": "After-hours routing rules not specified",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.711737Z",
+      "timestamp": "2026-03-06T08:02:46.654696Z",
       "reason": "Onboarding data addressed this open question"
     }
   ],

@@ -3,8 +3,8 @@
   "company_name": "ClearView Window Cleaning",
   "version": 2,
   "source_stage": "form",
-  "created_at": "2026-03-06T05:44:00.901600Z",
-  "updated_at": "2026-03-06T05:44:00.907113Z",
+  "created_at": "2026-03-06T08:02:46.934586Z",
+  "updated_at": "2026-03-06T08:02:46.941126Z",
   "industry": "Window cleaning services",
   "crm_system": "Jobber",
   "service_area": "San Diego Metro, CA",
@@ -105,7 +105,7 @@
       "old_value": null,
       "new_value": "San Diego Metro, CA",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.907192Z",
+      "timestamp": "2026-03-06T08:02:46.941234Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -149,7 +149,7 @@
         }
       },
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.907858Z",
+      "timestamp": "2026-03-06T08:02:46.942516Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -157,7 +157,7 @@
       "old_value": null,
       "new_value": "America/Los_Angeles",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.908967Z",
+      "timestamp": "2026-03-06T08:02:46.943470Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -165,7 +165,7 @@
       "old_value": null,
       "new_value": "No emergency calls expected. Collect all messages for next business day follow-up.",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.909615Z",
+      "timestamp": "2026-03-06T08:02:46.944104Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -173,7 +173,7 @@
       "old_value": null,
       "new_value": 30,
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.910438Z",
+      "timestamp": "2026-03-06T08:02:46.944920Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -181,7 +181,7 @@
       "old_value": null,
       "new_value": "If no answer, leave a friendly voicemail and confirm callback within one business day.",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.911080Z",
+      "timestamp": "2026-03-06T08:02:46.945559Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -211,7 +211,7 @@
         }
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.911896Z",
+      "timestamp": "2026-03-06T08:02:46.946381Z",
       "reason": "onboarding_confirmed — 3 new item(s) added"
     },
     {
@@ -221,7 +221,7 @@
         "Create Jobber quote for every new service inquiry"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.912531Z",
+      "timestamp": "2026-03-06T08:02:46.947507Z",
       "reason": "onboarding_confirmed — 1 new item(s) added"
     },
     {
@@ -232,7 +232,7 @@
         "Do not quote prices without knowing the property size"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.913188Z",
+      "timestamp": "2026-03-06T08:02:46.948311Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -243,7 +243,7 @@
         "owner_cell": "+1-619-555-0188"
       },
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.913900Z",
+      "timestamp": "2026-03-06T08:02:46.949011Z",
       "reason": "onboarding_confirmed — new transfer numbers added"
     },
     {
@@ -251,7 +251,7 @@
       "old_value": "Business hours not discussed — exact days and times unknown",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.914699Z",
+      "timestamp": "2026-03-06T08:02:46.950420Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -259,7 +259,7 @@
       "old_value": "Timezone not mentioned",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.915436Z",
+      "timestamp": "2026-03-06T08:02:46.951112Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -267,7 +267,7 @@
       "old_value": "dispatch phone number",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.916084Z",
+      "timestamp": "2026-03-06T08:02:46.951876Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -275,7 +275,7 @@
       "old_value": "CRM authentication / API details not provided",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.916732Z",
+      "timestamp": "2026-03-06T08:02:46.952526Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -283,7 +283,7 @@
       "old_value": "After-hours routing rules not specified",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.917442Z",
+      "timestamp": "2026-03-06T08:02:46.953466Z",
       "reason": "Onboarding data addressed this open question"
     }
   ],

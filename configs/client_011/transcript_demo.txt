@@ -1,0 +1,41 @@
+Speaker 1: 00:00
+Welcome Ben! Thank you for joining the Clara AI demo. To start, tell me about your business.
+
+Speaker 2: 00:15
+Thanks. I'm Ben, the owner of Ben's Electric Solutions based in Calgary, Alberta. Currently I am managing the office myself but my new operations manager, Greg, is starting soon to assist. We have 4 vans out on the road right now—3 journeymen and 1 apprentice—and we are looking to expand to a 5th van.
+
+Speaker 1: 00:45
+That's wonderful. Can you breakdown the services you provide?
+
+Speaker 2: 01:00
+We handle general service calls, odd jobs, maintenance, renovations, custom homes, and tenant improvements. We specialize heavily in EV chargers, hot tub hookups, panel changes, and troubleshooting. We do not do Gemstone lights anymore, and we don't do full hot tub installations, only the wiring side. 
+
+Speaker 1: 01:30
+Got it. What CRM are you running your operations on?
+
+Speaker 2: 01:45
+We use Jobber to run the entire business: quotes, scheduling, and invoicing.
+
+Speaker 1: 02:00
+Perfect. Let's discuss your call flow. What are your hours and emergency rules?
+
+Speaker 2: 02:15
+Most of our calls come in during business hours. Our standard service slots start at 8:00 AM. We generally turn down weekend work unless it's a VIP preferred client. For example, if a gas station's pumps go down, that's an emergency, and I go out and handle those calls personally.
+
+Speaker 1: 02:40
+How exactly would you like the Clara AI to handle and screen your incoming calls?
+
+Speaker 2: 03:00
+First, I want all sales and spam calls blocked and filtered out entirely. For routine service customers, the AI should gather all the job details and suggest times for the customer. However, it shouldn't finalize the booking directly; my team (me or Greg) will finalize it manually on the Jobber calendar. 
+
+Speaker 1: 03:30
+What about VIPs and personal calls?
+
+Speaker 2: 03:45
+VIP and preferred customers should either be routed directly to me or Clara should take the message and instantly notify me via SMS/email. Any personal calls, like from my wife or friends, need to be whitelisted to bypass the AI completely and ring my personal cell directly.
+
+Speaker 1: 04:10
+That sounds very doable. A few things for our onboarding manager: we'll eventually need to know exactly what time the phones close on weekdays, if there's a dispatch fee, and confirming notification preferences for Jobber. 
+
+Speaker 2: 04:30
+Sounds great, looking forward to getting started.

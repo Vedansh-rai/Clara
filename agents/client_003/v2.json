@@ -3,8 +3,8 @@
   "company_name": "Metro Plumbing Co",
   "version": 2,
   "source_stage": "form",
-  "created_at": "2026-03-06T05:44:00.743239Z",
-  "updated_at": "2026-03-06T05:44:00.748669Z",
+  "created_at": "2026-03-06T08:02:46.702332Z",
+  "updated_at": "2026-03-06T08:02:46.710875Z",
   "industry": "Plumbing services",
   "crm_system": "Jobber",
   "service_area": "Greater Phoenix area",
@@ -100,7 +100,7 @@
       "old_value": null,
       "new_value": "Greater Phoenix area",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.748750Z",
+      "timestamp": "2026-03-06T08:02:46.710963Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -144,7 +144,7 @@
         }
       },
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.749408Z",
+      "timestamp": "2026-03-06T08:02:46.711638Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -152,7 +152,7 @@
       "old_value": null,
       "new_value": "America/Phoenix",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.750359Z",
+      "timestamp": "2026-03-06T08:02:46.712586Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -160,7 +160,7 @@
       "old_value": null,
       "new_value": "Transfer emergencies to on-call dispatch and collect details for non-emergency follow-up.",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.750999Z",
+      "timestamp": "2026-03-06T08:02:46.713206Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -168,7 +168,7 @@
       "old_value": null,
       "new_value": 45,
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.751825Z",
+      "timestamp": "2026-03-06T08:02:46.714417Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -176,7 +176,7 @@
       "old_value": null,
       "new_value": "If transfer fails after 45 seconds, apologize and promise callback within 15 minutes.",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.752484Z",
+      "timestamp": "2026-03-06T08:02:46.715130Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -187,7 +187,7 @@
         "Sewer backup affecting occupied space"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.753319Z",
+      "timestamp": "2026-03-06T08:02:46.716137Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -210,7 +210,7 @@
         }
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.753991Z",
+      "timestamp": "2026-03-06T08:02:46.717260Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -220,7 +220,7 @@
         "Create Jobber request for all non-emergency callers"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.754606Z",
+      "timestamp": "2026-03-06T08:02:46.717939Z",
       "reason": "onboarding_confirmed — 1 new item(s) added"
     },
     {
@@ -230,7 +230,7 @@
         "Never quote prices on calls"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.755284Z",
+      "timestamp": "2026-03-06T08:02:46.718593Z",
       "reason": "onboarding_confirmed — 1 new item(s) added"
     },
     {
@@ -241,7 +241,7 @@
         "office_line": "+1-602-555-0122"
       },
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.756045Z",
+      "timestamp": "2026-03-06T08:02:46.719238Z",
       "reason": "onboarding_confirmed — new transfer numbers added"
     },
     {
@@ -249,7 +249,7 @@
       "old_value": "Business hours not discussed — exact days and times unknown",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.756826Z",
+      "timestamp": "2026-03-06T08:02:46.719981Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -257,7 +257,7 @@
       "old_value": "Timezone not mentioned",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.757501Z",
+      "timestamp": "2026-03-06T08:02:46.720640Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -265,7 +265,7 @@
       "old_value": "dispatch phone number",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.758088Z",
+      "timestamp": "2026-03-06T08:02:46.721213Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -273,7 +273,7 @@
       "old_value": "CRM authentication / API details not provided",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.758662Z",
+      "timestamp": "2026-03-06T08:02:46.721774Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -281,7 +281,7 @@
       "old_value": "After-hours routing rules not specified",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.759287Z",
+      "timestamp": "2026-03-06T08:02:46.722421Z",
       "reason": "Onboarding data addressed this open question"
     }
   ],

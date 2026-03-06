@@ -3,8 +3,8 @@
   "company_name": "Summit Roofing Co",
   "version": 2,
   "source_stage": "form",
-  "created_at": "2026-03-06T05:44:00.879147Z",
-  "updated_at": "2026-03-06T05:44:00.884222Z",
+  "created_at": "2026-03-06T08:02:46.904988Z",
+  "updated_at": "2026-03-06T08:02:46.911752Z",
   "industry": "Roofing services",
   "crm_system": "Jobber",
   "service_area": "Greater Denver, CO",
@@ -110,7 +110,7 @@
       "old_value": null,
       "new_value": "Greater Denver, CO",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.884300Z",
+      "timestamp": "2026-03-06T08:02:46.911843Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -154,7 +154,7 @@
         }
       },
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.884932Z",
+      "timestamp": "2026-03-06T08:02:46.912573Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -162,7 +162,7 @@
       "old_value": null,
       "new_value": "America/Denver",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.885889Z",
+      "timestamp": "2026-03-06T08:02:46.914246Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -170,7 +170,7 @@
       "old_value": null,
       "new_value": "Emergency leak or damage calls go to dispatch. All other calls collected for next business day.",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.886520Z",
+      "timestamp": "2026-03-06T08:02:46.915062Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -178,7 +178,7 @@
       "old_value": null,
       "new_value": 45,
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.887329Z",
+      "timestamp": "2026-03-06T08:02:46.916311Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -186,7 +186,7 @@
       "old_value": null,
       "new_value": "If no answer after 45 seconds, apologize and confirm an emergency crew will contact within 30 minutes.",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.887959Z",
+      "timestamp": "2026-03-06T08:02:46.917833Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -197,7 +197,7 @@
         "Storm-related structural damage with safety risk"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.888827Z",
+      "timestamp": "2026-03-06T08:02:46.918907Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -227,7 +227,7 @@
         }
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.889552Z",
+      "timestamp": "2026-03-06T08:02:46.919645Z",
       "reason": "onboarding_confirmed — 3 new item(s) added"
     },
     {
@@ -238,7 +238,7 @@
         "Flag all insurance claim calls for priority review"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.890194Z",
+      "timestamp": "2026-03-06T08:02:46.920299Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -249,7 +249,7 @@
         "Always ask for photos of damage to send to the crew"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.890819Z",
+      "timestamp": "2026-03-06T08:02:46.920935Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -261,7 +261,7 @@
         "scheduling_line": "+1-303-555-0100"
       },
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.891443Z",
+      "timestamp": "2026-03-06T08:02:46.921579Z",
       "reason": "onboarding_confirmed — new transfer numbers added"
     },
     {
@@ -269,7 +269,7 @@
       "old_value": "Business hours not discussed — exact days and times unknown",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.892208Z",
+      "timestamp": "2026-03-06T08:02:46.922430Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -277,7 +277,7 @@
       "old_value": "Timezone not mentioned",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.892862Z",
+      "timestamp": "2026-03-06T08:02:46.923303Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -285,7 +285,7 @@
       "old_value": "dispatch phone number",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.893421Z",
+      "timestamp": "2026-03-06T08:02:46.924362Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -293,7 +293,7 @@
       "old_value": "CRM authentication / API details not provided",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.893982Z",
+      "timestamp": "2026-03-06T08:02:46.925039Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -301,7 +301,7 @@
       "old_value": "After-hours routing rules not specified",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.894603Z",
+      "timestamp": "2026-03-06T08:02:46.925956Z",
       "reason": "Onboarding data addressed this open question"
     }
   ],

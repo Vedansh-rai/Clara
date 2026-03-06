@@ -3,8 +3,8 @@
   "company_name": "Company",
   "version": 2,
   "source_stage": "form",
-  "created_at": "2026-03-06T05:44:46.273649Z",
-  "updated_at": "2026-03-06T05:44:46.278220Z",
+  "created_at": "2026-03-06T08:03:29.122222Z",
+  "updated_at": "2026-03-06T08:03:29.128853Z",
   "industry": "Electrical",
   "crm_system": null,
   "service_area": null,
@@ -39,7 +39,7 @@
       "old_value": null,
       "new_value": "Electrical",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:46.278300Z",
+      "timestamp": "2026-03-06T08:03:29.128909Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     }
   ],

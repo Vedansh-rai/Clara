@@ -40,7 +40,11 @@ def build_final_prompt_from_v2(config: AgentConfig) -> str:
     company = config.company_name or _VAR("company_name")
     transfer_timeout = config.transfer_timeout_seconds or 60
     emergency_destination = _emergency_transfer_target_label(config)
-    fallback = config.fallback_logic or "Apologize and confirm dispatch will follow up."
+    raw_fallback = config.fallback_logic or "Apologize and confirm dispatch will follow up."
+    # Strip leading "If transfer fails[,/:]" so it doesn't duplicate the step prefix
+    import re as _re
+    _stripped = _re.sub(r"^[Ii]f transfer fails[\s,:\-]*", "", raw_fallback).strip()
+    fallback = _stripped[0].upper() + _stripped[1:] if _stripped else raw_fallback
 
     return "\n".join(
         [

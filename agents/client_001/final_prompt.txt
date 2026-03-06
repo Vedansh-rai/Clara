@@ -10,7 +10,7 @@ BUSINESS HOURS FLOW
 4. Route call based on purpose:
    - Emergency → transfer immediately to dispatch.
    - Non-emergency → collect service request details and confirm next steps.
-5. If transfer fails after 60 seconds: If transfer fails, apologize and confirm dispatch will follow up.
+5. If transfer fails after 60 seconds: Apologize and confirm dispatch will follow up.
 6. Confirm next steps with the caller.
 7. Ask if the caller needs anything else.
 8. Close the call professionally.
@@ -24,7 +24,7 @@ AFTER HOURS FLOW
 If emergency:
    - Collect caller name, phone number, and service address.
    - Attempt transfer to dispatch.
-   - If transfer fails after 60 seconds: If transfer fails, apologize and confirm dispatch will follow up.
+   - If transfer fails after 60 seconds: Apologize and confirm dispatch will follow up.
 
 If non-emergency:
    - Collect service request details.

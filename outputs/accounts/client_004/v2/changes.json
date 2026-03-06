@@ -4,7 +4,7 @@
     "old_value": null,
     "new_value": "Greater Seattle metro",
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.770848+00:00",
+    "timestamp": "2026-03-06 08:02:46.739040+00:00",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
@@ -48,7 +48,7 @@
       }
     },
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.771482+00:00",
+    "timestamp": "2026-03-06 08:02:46.741113+00:00",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
@@ -56,7 +56,7 @@
     "old_value": null,
     "new_value": "America/Los_Angeles",
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.772443+00:00",
+    "timestamp": "2026-03-06 08:02:46.742260+00:00",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
@@ -64,7 +64,7 @@
     "old_value": null,
     "new_value": "Escalate emergency outages to after-hours dispatch and collect all non-emergency requests for next-day callbacks.",
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.773083+00:00",
+    "timestamp": "2026-03-06 08:02:46.742969+00:00",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
@@ -72,7 +72,7 @@
     "old_value": null,
     "new_value": 60,
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.773878+00:00",
+    "timestamp": "2026-03-06 08:02:46.743891+00:00",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
@@ -80,7 +80,7 @@
     "old_value": null,
     "new_value": "If transfer fails, apologize and confirm dispatch callback.",
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.774505+00:00",
+    "timestamp": "2026-03-06 08:02:46.744884+00:00",
     "reason": "onboarding_confirmed \u2014 field was previously unknown"
   },
   {
@@ -91,7 +91,7 @@
       "No cooling in medical-sensitive environments"
     ],
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.775214+00:00",
+    "timestamp": "2026-03-06 08:02:46.745862+00:00",
     "reason": "onboarding_confirmed \u2014 2 new item(s) added"
   },
   {
@@ -114,7 +114,7 @@
       }
     ],
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.775876+00:00",
+    "timestamp": "2026-03-06 08:02:46.746579+00:00",
     "reason": "onboarding_confirmed \u2014 2 new item(s) added"
   },
   {
@@ -124,7 +124,7 @@
       "Create ServiceTitan lead for all qualified non-emergency calls"
     ],
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.776486+00:00",
+    "timestamp": "2026-03-06 08:02:46.747914+00:00",
     "reason": "onboarding_confirmed \u2014 1 new item(s) added"
   },
   {
@@ -134,7 +134,7 @@
       "Avoid technical troubleshooting over phone"
     ],
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.777095+00:00",
+    "timestamp": "2026-03-06 08:02:46.748843+00:00",
     "reason": "onboarding_confirmed \u2014 1 new item(s) added"
   },
   {
@@ -144,7 +144,7 @@
       "after_hours_dispatch": "+1-206-555-0199"
     },
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.777707+00:00",
+    "timestamp": "2026-03-06 08:02:46.749654+00:00",
     "reason": "onboarding_confirmed \u2014 new transfer numbers added"
   },
   {
@@ -152,7 +152,7 @@
     "old_value": "Business hours not discussed \u2014 exact days and times unknown",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.778384+00:00",
+    "timestamp": "2026-03-06 08:02:46.750968+00:00",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -160,7 +160,7 @@
     "old_value": "Timezone not mentioned",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.779028+00:00",
+    "timestamp": "2026-03-06 08:02:46.751950+00:00",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -168,7 +168,7 @@
     "old_value": "dispatch phone number",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.779588+00:00",
+    "timestamp": "2026-03-06 08:02:46.752634+00:00",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -176,7 +176,7 @@
     "old_value": "CRM authentication / API details not provided",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.780236+00:00",
+    "timestamp": "2026-03-06 08:02:46.753294+00:00",
     "reason": "Onboarding data addressed this open question"
   },
   {
@@ -184,7 +184,7 @@
     "old_value": "After-hours routing rules not specified",
     "new_value": "RESOLVED",
     "source": "form",
-    "timestamp": "2026-03-06 05:44:00.780854+00:00",
+    "timestamp": "2026-03-06 08:02:46.754000+00:00",
     "reason": "Onboarding data addressed this open question"
   }
 ]

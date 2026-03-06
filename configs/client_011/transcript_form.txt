@@ -1,0 +1,32 @@
+{
+  "company_name": "Ben's Electric Solutions",
+  "industry": "Electrical Services",
+  "crm_system": "Jobber",
+  "service_area": "Calgary, Alberta",
+  "business_hours": {
+    "monday": { "open": "08:00", "close": "17:00", "closed": false },
+    "tuesday": { "open": "08:00", "close": "17:00", "closed": false },
+    "wednesday": { "open": "08:00", "close": "17:00", "closed": false },
+    "thursday": { "open": "08:00", "close": "17:00", "closed": false },
+    "friday": { "open": "08:00", "close": "17:00", "closed": false },
+    "saturday": { "closed": true },
+    "sunday": { "closed": true }
+  },
+  "emergency_definitions": [
+    "Gas station pump outages for preferred clients"
+  ],
+  "routing_rules": [
+    {
+      "trigger": "Emergency or VIP preferred customer",
+      "destination": "ben_cell",
+      "priority": 1,
+      "call_type": "emergency"
+    },
+    {
+      "trigger": "Routine service inquiries (EV chargers, panel upgrades)",
+      "destination": "jobber_queue",
+      "priority": 2,
+      "call_type": "non_emergency"
+    }
+  ]
+}

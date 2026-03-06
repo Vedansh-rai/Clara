@@ -3,8 +3,8 @@
   "company_name": "Sunrise Landscaping",
   "version": 2,
   "source_stage": "form",
-  "created_at": "2026-03-06T05:44:00.788268Z",
-  "updated_at": "2026-03-06T05:44:00.794503Z",
+  "created_at": "2026-03-06T08:02:46.768621Z",
+  "updated_at": "2026-03-06T08:02:46.778334Z",
   "industry": "Landscaping services",
   "crm_system": "Jobber",
   "service_area": "Central Orlando, FL",
@@ -110,7 +110,7 @@
       "old_value": null,
       "new_value": "Central Orlando, FL",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.794587Z",
+      "timestamp": "2026-03-06T08:02:46.778426Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -154,7 +154,7 @@
         }
       },
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.795297Z",
+      "timestamp": "2026-03-06T08:02:46.779163Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -162,7 +162,7 @@
       "old_value": null,
       "new_value": "America/New_York",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.796267Z",
+      "timestamp": "2026-03-06T08:02:46.780236Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -170,7 +170,7 @@
       "old_value": null,
       "new_value": "Collect emergency details and transfer to on-call crew. Non-emergency requests held for next business day.",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.796927Z",
+      "timestamp": "2026-03-06T08:02:46.781491Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -178,7 +178,7 @@
       "old_value": null,
       "new_value": 45,
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.797736Z",
+      "timestamp": "2026-03-06T08:02:46.782470Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -186,7 +186,7 @@
       "old_value": null,
       "new_value": "If transfer fails after 45 seconds, apologize, confirm on-call crew will respond within 30 minutes, and collect callback number.",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.798375Z",
+      "timestamp": "2026-03-06T08:02:46.783283Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -197,7 +197,7 @@
         "Downed trees blocking access or causing property damage"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.799177Z",
+      "timestamp": "2026-03-06T08:02:46.784405Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -227,7 +227,7 @@
         }
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.799857Z",
+      "timestamp": "2026-03-06T08:02:46.785278Z",
       "reason": "onboarding_confirmed — 3 new item(s) added"
     },
     {
@@ -238,7 +238,7 @@
         "Tag emergency calls with URGENT label"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.800476Z",
+      "timestamp": "2026-03-06T08:02:46.785938Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -249,7 +249,7 @@
         "Do not schedule outside the service area"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.801102Z",
+      "timestamp": "2026-03-06T08:02:46.786649Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -261,7 +261,7 @@
         "scheduling_queue": "+1-407-555-0144"
       },
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.801735Z",
+      "timestamp": "2026-03-06T08:02:46.787279Z",
       "reason": "onboarding_confirmed — new transfer numbers added"
     },
     {
@@ -269,7 +269,7 @@
       "old_value": "Business hours not discussed — exact days and times unknown",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.802495Z",
+      "timestamp": "2026-03-06T08:02:46.788088Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -277,7 +277,7 @@
       "old_value": "Timezone not mentioned",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.803161Z",
+      "timestamp": "2026-03-06T08:02:46.789661Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -285,7 +285,7 @@
       "old_value": "dispatch phone number",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.803729Z",
+      "timestamp": "2026-03-06T08:02:46.791248Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -293,7 +293,7 @@
       "old_value": "CRM authentication / API details not provided",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.804287Z",
+      "timestamp": "2026-03-06T08:02:46.792097Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -301,7 +301,7 @@
       "old_value": "After-hours routing rules not specified",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.804904Z",
+      "timestamp": "2026-03-06T08:02:46.793002Z",
       "reason": "Onboarding data addressed this open question"
     }
   ],

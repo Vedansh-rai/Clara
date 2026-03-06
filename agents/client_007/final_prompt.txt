@@ -10,7 +10,7 @@ BUSINESS HOURS FLOW
 4. Route call based on purpose:
    - Emergency → transfer immediately to dispatch mobile.
    - Non-emergency → collect service request details and confirm next steps.
-5. If transfer fails after 20 seconds: If transfer fails after 20 seconds, apologize and send automated SMS with ETA to caller's number.
+5. If transfer fails after 20 seconds: After 20 seconds, apologize and send automated SMS with ETA to caller's number.
 6. Confirm next steps with the caller.
 7. Ask if the caller needs anything else.
 8. Close the call professionally.
@@ -24,7 +24,7 @@ AFTER HOURS FLOW
 If emergency:
    - Collect caller name, phone number, and service address.
    - Attempt transfer to dispatch mobile.
-   - If transfer fails after 20 seconds: If transfer fails after 20 seconds, apologize and send automated SMS with ETA to caller's number.
+   - If transfer fails after 20 seconds: After 20 seconds, apologize and send automated SMS with ETA to caller's number.
 
 If non-emergency:
    - Collect service request details.

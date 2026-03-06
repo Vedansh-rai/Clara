@@ -3,8 +3,8 @@
   "company_name": "Apex HVAC Solutions",
   "version": 2,
   "source_stage": "form",
-  "created_at": "2026-03-06T05:44:00.765610Z",
-  "updated_at": "2026-03-06T05:44:00.770766Z",
+  "created_at": "2026-03-06T08:02:46.731640Z",
+  "updated_at": "2026-03-06T08:02:46.738952Z",
   "industry": "HVAC services",
   "crm_system": "ServiceTitan",
   "service_area": "Greater Seattle metro",
@@ -99,7 +99,7 @@
       "old_value": null,
       "new_value": "Greater Seattle metro",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.770848Z",
+      "timestamp": "2026-03-06T08:02:46.739040Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -143,7 +143,7 @@
         }
       },
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.771482Z",
+      "timestamp": "2026-03-06T08:02:46.741113Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -151,7 +151,7 @@
       "old_value": null,
       "new_value": "America/Los_Angeles",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.772443Z",
+      "timestamp": "2026-03-06T08:02:46.742260Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -159,7 +159,7 @@
       "old_value": null,
       "new_value": "Escalate emergency outages to after-hours dispatch and collect all non-emergency requests for next-day callbacks.",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.773083Z",
+      "timestamp": "2026-03-06T08:02:46.742969Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -167,7 +167,7 @@
       "old_value": null,
       "new_value": 60,
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.773878Z",
+      "timestamp": "2026-03-06T08:02:46.743891Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -175,7 +175,7 @@
       "old_value": null,
       "new_value": "If transfer fails, apologize and confirm dispatch callback.",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.774505Z",
+      "timestamp": "2026-03-06T08:02:46.744884Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -186,7 +186,7 @@
         "No cooling in medical-sensitive environments"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.775214Z",
+      "timestamp": "2026-03-06T08:02:46.745862Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -209,7 +209,7 @@
         }
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.775876Z",
+      "timestamp": "2026-03-06T08:02:46.746579Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -219,7 +219,7 @@
         "Create ServiceTitan lead for all qualified non-emergency calls"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.776486Z",
+      "timestamp": "2026-03-06T08:02:46.747914Z",
       "reason": "onboarding_confirmed — 1 new item(s) added"
     },
     {
@@ -229,7 +229,7 @@
         "Avoid technical troubleshooting over phone"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.777095Z",
+      "timestamp": "2026-03-06T08:02:46.748843Z",
       "reason": "onboarding_confirmed — 1 new item(s) added"
     },
     {
@@ -239,7 +239,7 @@
         "after_hours_dispatch": "+1-206-555-0199"
       },
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.777707Z",
+      "timestamp": "2026-03-06T08:02:46.749654Z",
       "reason": "onboarding_confirmed — new transfer numbers added"
     },
     {
@@ -247,7 +247,7 @@
       "old_value": "Business hours not discussed — exact days and times unknown",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.778384Z",
+      "timestamp": "2026-03-06T08:02:46.750968Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -255,7 +255,7 @@
       "old_value": "Timezone not mentioned",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.779028Z",
+      "timestamp": "2026-03-06T08:02:46.751950Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -263,7 +263,7 @@
       "old_value": "dispatch phone number",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.779588Z",
+      "timestamp": "2026-03-06T08:02:46.752634Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -271,7 +271,7 @@
       "old_value": "CRM authentication / API details not provided",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.780236Z",
+      "timestamp": "2026-03-06T08:02:46.753294Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -279,7 +279,7 @@
       "old_value": "After-hours routing rules not specified",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.780854Z",
+      "timestamp": "2026-03-06T08:02:46.754000Z",
       "reason": "Onboarding data addressed this open question"
     }
   ],

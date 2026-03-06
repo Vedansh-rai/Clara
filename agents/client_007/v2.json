@@ -3,8 +3,8 @@
   "company_name": "Reliable Locksmith Services",
   "version": 2,
   "source_stage": "form",
-  "created_at": "2026-03-06T05:44:00.834675Z",
-  "updated_at": "2026-03-06T05:44:00.841018Z",
+  "created_at": "2026-03-06T08:02:46.844418Z",
+  "updated_at": "2026-03-06T08:02:46.856095Z",
   "industry": "Locksmith services",
   "crm_system": "ServiceTitan",
   "service_area": "Denver Metro Area, CO",
@@ -110,7 +110,7 @@
       "old_value": null,
       "new_value": "Denver Metro Area, CO",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.841143Z",
+      "timestamp": "2026-03-06T08:02:46.856579Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -154,7 +154,7 @@
         }
       },
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.841826Z",
+      "timestamp": "2026-03-06T08:02:46.857954Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -162,7 +162,7 @@
       "old_value": null,
       "new_value": "America/Denver",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.842751Z",
+      "timestamp": "2026-03-06T08:02:46.858951Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -170,7 +170,7 @@
       "old_value": null,
       "new_value": "Emergency lockouts transfer to dispatch 24/7. Non-urgent requests go to voicemail for next-day callback.",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.843370Z",
+      "timestamp": "2026-03-06T08:02:46.859610Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -178,7 +178,7 @@
       "old_value": null,
       "new_value": 20,
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.844197Z",
+      "timestamp": "2026-03-06T08:02:46.860466Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -186,7 +186,7 @@
       "old_value": null,
       "new_value": "If transfer fails after 20 seconds, apologize and send automated SMS with ETA to caller's number.",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.844836Z",
+      "timestamp": "2026-03-06T08:02:46.861123Z",
       "reason": "onboarding_confirmed — field was previously unknown"
     },
     {
@@ -198,7 +198,7 @@
         "Security breach — lock has been tampered with"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.845625Z",
+      "timestamp": "2026-03-06T08:02:46.862469Z",
       "reason": "onboarding_confirmed — 3 new item(s) added"
     },
     {
@@ -228,7 +228,7 @@
         }
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.846291Z",
+      "timestamp": "2026-03-06T08:02:46.863214Z",
       "reason": "onboarding_confirmed — 3 new item(s) added"
     },
     {
@@ -239,7 +239,7 @@
         "Tag emergency lockout calls for priority dispatch"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.846906Z",
+      "timestamp": "2026-03-06T08:02:46.864531Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -250,7 +250,7 @@
         "Do not quote prices on the phone — door rate only"
       ],
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.847517Z",
+      "timestamp": "2026-03-06T08:02:46.865567Z",
       "reason": "onboarding_confirmed — 2 new item(s) added"
     },
     {
@@ -261,7 +261,7 @@
         "scheduling_line": "+1-720-555-0100"
       },
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.848132Z",
+      "timestamp": "2026-03-06T08:02:46.866285Z",
       "reason": "onboarding_confirmed — new transfer numbers added"
     },
     {
@@ -269,7 +269,7 @@
       "old_value": "Business hours not discussed — exact days and times unknown",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.848843Z",
+      "timestamp": "2026-03-06T08:02:46.867259Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -277,7 +277,7 @@
       "old_value": "Timezone not mentioned",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.849482Z",
+      "timestamp": "2026-03-06T08:02:46.868277Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -285,7 +285,7 @@
       "old_value": "dispatch phone number",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.850030Z",
+      "timestamp": "2026-03-06T08:02:46.868948Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -293,7 +293,7 @@
       "old_value": "CRM authentication / API details not provided",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.850581Z",
+      "timestamp": "2026-03-06T08:02:46.869655Z",
       "reason": "Onboarding data addressed this open question"
     },
     {
@@ -301,7 +301,7 @@
       "old_value": "After-hours routing rules not specified",
       "new_value": "RESOLVED",
       "source": "form",
-      "timestamp": "2026-03-06T05:44:00.851195Z",
+      "timestamp": "2026-03-06T08:02:46.870344Z",
       "reason": "Onboarding data addressed this open question"
     }
   ],

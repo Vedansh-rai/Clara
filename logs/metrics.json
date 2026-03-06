@@ -1,16 +1,16 @@
 {
-  "run_at": "2026-03-06T05:44:00.923299+00:00",
-  "total_cases": 10,
-  "successful": 10,
+  "run_at": "2026-03-06T08:03:13.314528+00:00",
+  "total_cases": 11,
+  "successful": 11,
   "failed": 0,
-  "elapsed_seconds": 0.24,
+  "elapsed_seconds": 0.05,
   "totals": {
-    "v1_agents": 10,
-    "v2_agents": 10,
-    "prompts_generated": 10,
-    "total_changes": 157,
-    "total_resolved_unknowns": 49,
-    "total_remaining_unknowns": 41
+    "v1_agents": 11,
+    "v2_agents": 11,
+    "prompts_generated": 11,
+    "total_changes": 166,
+    "total_resolved_unknowns": 52,
+    "total_remaining_unknowns": 47
   },
   "clients": [
     {
@@ -171,6 +171,22 @@
       "has_after_hours": true,
       "crm_system": "Jobber",
       "timezone": "America/Los_Angeles",
+      "error": null
+    },
+    {
+      "client_id": "client_011",
+      "company_name": "Ben's Electric Solutions",
+      "case_dir": "case_99_bens_electric",
+      "status": "success",
+      "v1_unknowns": 9,
+      "v2_changes": 9,
+      "resolved_unknowns": 3,
+      "remaining_unknowns": 6,
+      "routing_rules": 2,
+      "prompt_chars": 1893,
+      "has_after_hours": false,
+      "crm_system": "Jobber",
+      "timezone": null,
       "error": null
     }
   ]
