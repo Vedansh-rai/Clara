@@ -396,15 +396,3 @@ pytest tests/test_idempotency.py
 Validated behavior:
 
 ✔ Running pipeline twice with the same input produces identical `v2.json` output.
-
-## Final Deliverable Checklist
-
-✔ v1 agent config  
-✔ v2 agent config  
-✔ change log  
-✔ final prompt  
-✔ unknown questions list  
-✔ pipeline logs  
-✔ README  
-✔ architecture diagram  
-✔ multiple test cases
